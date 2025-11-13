@@ -3,8 +3,7 @@
 import React from "react";
 import Link from "next/link";
 
-interface BaseProps {
-  children: string;
+interface BaseProps extends React.PropsWithChildren {
   variant?: keyof typeof variants;
 }
 
