@@ -22,7 +22,7 @@ export const LanguageSwitcher = () => {
           key={lng}
           type="button"
           onClick={() => handleSwitch(lng)}
-          className={`px-3 py-1 text-sm font-semibold rounded-md transition-colors duration-200
+          className={`px-1.5 py-1 text-sm font-semibold rounded-md transition-colors duration-200
             ${
               locale === lng
                 ? "bg-primary text-secondary-dark"
