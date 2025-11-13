@@ -10,7 +10,7 @@ interface AnimalCardProps {
 
 export const Card = ({ image, title, description }: AnimalCardProps) => {
   return (
-    <div className="rounded-xl bg-white shadow-lg overflow-hidden text-center">
+    <div className="rounded-xl bg-primary shadow-lg overflow-hidden text-center">
       <div className="relative w-full h-56">
         <Image src={image} alt={title} fill className="object-cover" />
       </div>
