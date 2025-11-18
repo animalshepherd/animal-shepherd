@@ -17,7 +17,7 @@ export default function HomePage() {
     <div className="relative min-h-screen w-full pt-16 bg-primary">
       <section className="flex flex-col md:flex-row items-center justify-between py-8 md:py-28 gap-8 px-4 md:px-20">
         <div className="md:flex-1">
-          <h1 className="text-secondary-dark font-bold text-3xl md:text-6xl leading-tight my-4 pr-0 md:pr-5 max-sm:break-all text-center">
+          <h1 className="text-secondary-dark font-bold text-3xl md:text-6xl my-4 pr-0 md:pr-5 text-center">
             {t("title")}
           </h1>
           <p className="text-secondary text-m font-normal mb-8 text-center">
