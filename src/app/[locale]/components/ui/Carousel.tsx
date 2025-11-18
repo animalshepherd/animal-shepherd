@@ -38,9 +38,7 @@ export function CarouselContainer() {
       <CarouselContent>
         {tipCards.map((card, index) => (
           <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-            <div className="object-cover">
-              <TipCard src={card.src} alt={card.alt} />
-            </div>
+            <TipCard src={card.src} alt={card.alt} />
           </CarouselItem>
         ))}
       </CarouselContent>
