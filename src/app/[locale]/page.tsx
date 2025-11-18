@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 
 import { Button } from "./components/ui/Button";
 import { Card } from "./components/ui/Card";
-import { CarouselDemo } from "./components/ui/Carousel";
+import { CarouselContainer } from "./components/ui/Carousel";
 
 export default function HomePage() {
   const t = useTranslations("HomePage");
@@ -195,7 +195,7 @@ export default function HomePage() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <CarouselDemo />
+          <CarouselContainer />
         </div>
       </section>
     </div>
