@@ -37,9 +37,9 @@ export default function HomePage() {
         <div className="md:flex-1 justify-center items-center">
           <div className="relative w-full h-96">
             <Image
-              src="/goodboy6.jpg"
+              src="/owner-dogs.webp"
               fill
-              alt="Haircut"
+              alt="Owner with dogs"
               className="object-cover rounded-lg"
             />
           </div>
@@ -57,7 +57,7 @@ export default function HomePage() {
             abandoned, injured, and neglected while promoting education,
             adoption, and sustainable living.
           </p>
-          <div className="flex flex-col md:flex-row gap-8 mb-5">
+          <div className="flex flex-col md:flex-row gap-8 mb-5 max-w-full">
             <div className="flex flex-col justify-center items-center p-4 w-72 bg-primary rounded-lg shadow-md">
               <Image
                 src="/paw.svg"
