@@ -24,7 +24,7 @@ export default function HomePage() {
             {t("paragraph")}
           </p>
           <div className="flex flex-col items-center justify-center md:flex-row gap-4">
-            <div className="flex flex-col md:flex-row gap-4 mb-8">
+            <div className="flex flex-row gap-4 mb-0 md:mb-8">
               <Button variant="secondary" onClick={clickButton}>
                 Donate Now
               </Button>
@@ -34,7 +34,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="md:flex-1 justify-center items-center">
+        <div className="w-full md:flex-1 justify-center items-center">
           <div className="relative w-full h-96">
             <Image
               src="/owner-dogs.webp"
