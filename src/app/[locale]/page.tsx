@@ -139,9 +139,9 @@ export default function HomePage() {
             </div>
             <div className="md:flex-1 relative w-full h-96">
               <Image
-                src="/goodboy4.jpg"
+                src="/owner-dog-02.webp"
                 fill
-                alt="Haircut"
+                alt="Owner with dogs"
                 className="object-cover rounded-lg"
               />
             </div>
@@ -161,13 +161,13 @@ export default function HomePage() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-5">
-          <Card image="/goodboy1.jpg" alt="Good Girl" />
+          <Card image="/dog-01.webp" alt="Dog sitting" />
 
-          <Card image="/goodboy2.jpg" alt="Good Boy 1" />
+          <Card image="/cat-04.webp" alt="Cat looking" />
 
-          <Card image="/goodboy3.jpg" alt="Good Boy 2" />
+          <Card image="/dog-22.webp" alt="Dog posing" />
 
-          <Card image="/goodboy4.jpg" alt="Family Shot" />
+          <Card image="/cat-06.webp" alt="Cat relaxing" />
         </div>
         <div className="flex flex-col items-center justify-center md:flex-row gap-4">
           <div className="flex flex-col md:flex-row gap-4 mt-2">
