@@ -20,7 +20,7 @@ export default function HomePage() {
           <h1 className="text-secondary-dark font-bold text-3xl md:text-6xl my-4 pr-0 md:pr-5 text-center">
             {t("title")}
           </h1>
-          <p className="text-secondary text-m font-normal mb-8 text-center">
+          <p className="text-secondary text-md font-normal mb-8 text-center">
             {t("paragraph")}
           </p>
           <div className="flex flex-col items-center justify-center md:flex-row gap-4">
@@ -37,7 +37,7 @@ export default function HomePage() {
         <div className="w-full md:flex-1 justify-center items-center">
           <div className="relative w-full h-96">
             <Image
-              src="/owner-dogs.webp"
+              src="/owner-dog-27.webp"
               fill
               alt="Owner with dogs"
               className="object-cover rounded-lg"
