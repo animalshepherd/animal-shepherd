@@ -48,7 +48,7 @@ export default function HomePage() {
 
       <section className="bg-secondary p-8">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-3xl font-bold mb-5 text-center leading-tight text-primary">
+          <h1 className="text-3xl font-bold mb-5 text-center text-primary">
             Making a Difference Every day
           </h1>
           <p className="max-w-4xl text-center mb-5 text-shadow-primary text-primary">
@@ -171,10 +171,10 @@ export default function HomePage() {
         </div>
         <div className="flex flex-col items-center justify-center md:flex-row gap-4">
           <div className="flex flex-col md:flex-row gap-4 mt-2">
-            <Button variant="primary" href="animals">
+            <Button variant="primary" href="adopt">
               Meet the Residents
             </Button>
-            <Button variant="primary" href="treatments">
+            <Button variant="primary" href="adopt">
               Learn About Adopting
             </Button>
           </div>
@@ -183,7 +183,7 @@ export default function HomePage() {
 
       <section className="bg-primary p-16 md:py-8">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-3xl font-bold mb-5 text-center leading-tight text-secondary-dark">
+          <h1 className="text-3xl font-bold mb-5 text-center text-secondary-dark">
             Tips for caring for your pets
           </h1>
           <p className="max-w-4xl text-center mb-5 text-shadow-primary text-secondary">
