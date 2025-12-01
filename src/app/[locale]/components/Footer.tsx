@@ -9,17 +9,15 @@ export const Footer = ({ links }: FooterProps) => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="w-full bg-secondary">
-      <div className="max-w-3xl mx-auto mb-6 flex justify-center items-center">
+      <div className="max-w-3xl mx-auto pt-4 mb-6 flex justify-center items-center">
         <Link href="/" className="flex items-start">
-          <div className="md:px-8 py-3">
-            <div className="relative h-12 w-12">
-              <Image
-                src="/animal-shepherd-logo.jpg"
-                fill
-                priority
-                alt="Logo desktop"
-              ></Image>
-            </div>
+          <div className="relative h-12 w-12">
+            <Image
+              src="/animal-shepherd-logo.jpg"
+              fill
+              priority
+              alt="Logo desktop"
+            ></Image>
           </div>
         </Link>
       </div>
@@ -75,8 +73,8 @@ export const Footer = ({ links }: FooterProps) => {
         <Image
           src="/logo-pedigree-adoptame.png"
           alt="Pedigree Adoptame Logo"
-          height={72}
-          width={72}
+          height={96}
+          width={96}
         ></Image>
       </div>
 
