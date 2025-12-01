@@ -31,7 +31,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     <NextIntlClientProvider messages={messages} locale={locale}>
       <NavBar links={navLinks} />
       {children}
-      <Footer />
+      <Footer links={navLinks} />
     </NextIntlClientProvider>
   );
 }
