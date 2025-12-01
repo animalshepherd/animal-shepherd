@@ -1,6 +1,63 @@
 {
   "HomePage": {
     "title": "Fighting for All Animals",
-    "paragraph": "We rescue, heal, and protect abandoned, injured, and neglected animals — giving them safety, love, and the chance to live freely. Every life matters, and every animal deserves a place to call home."
+    "paragraph": "We rescue, heal, and protect abandoned, injured, and neglected animals, giving them safety, love, and the chance to live freely. Every life matters, and every animal deserves a place to call home."
+  },
+  "Tips": {
+    "1": {
+      "heading": "Some tips from Animal Shepherd",
+      "title": "Tip #1",
+      "body": "Play with your pet both indoors and outdoors."
+    },
+    "2": {
+      "heading": "Adopt 2 better than 1",
+      "title": "Tip #2",
+      "body": "The best friend of an animal is always another animal. If you can, adopt two rather than one."
+    },
+    "3": {
+      "heading": "Always healthy food",
+      "title": "Tip #3",
+      "body": "Try vegan options for your pet; it is much healthier and will extend their life."
+    },
+    "4": {
+      "heading": "Avoid extreme heat",
+      "title": "Tip #4",
+      "body": "Avoid walking them during hot hours and consider getting pet health insurance."
+    },
+    "5": {
+      "heading": "Cats are incredible",
+      "title": "Tip #5",
+      "body": "Cats are amazing beings: fun, loving, and healing. Share your life with a rescued cat."
+    },
+    "6": {
+      "heading": "Do not confine them",
+      "title": "Tip #6",
+      "body": "Keep your pets free, not in cages. Adopting them only to keep them confined is cruel and unfair."
+    },
+    "7": {
+      "heading": "Give your time",
+      "title": "Tip #7",
+      "body": "Dedicate your time and effort to meaningful causes. Altruism is the future of the planet."
+    },
+    "8": {
+      "heading": "Regular vet visits",
+      "title": "Tip #8",
+      "body": "Take your pet to the vet regularly. They live fewer years than we do and deserve proper care."
+    },
+    "9": {
+      "heading": "Home baths",
+      "title": "Tip #9",
+      "body": "Did you know bathing your pet yourself strengthens your bond."
+    },
+    "10": {
+      "heading": "Help out",
+      "title": "Tip #10",
+      "body": "Help those who help."
+    },
+    "11": {
+      "heading": "Enjoy your pet",
+      "title": "Tip #11",
+      "body": "Enjoy your pet. Take them for daily walks and, when possible, bring them on countryside adventures."
+    }
   }
 }

@@ -1,6 +1,64 @@
 {
   "HomePage": {
     "title": "Defendiendo a Todos los Animales",
-    "paragraph": "Rescatamos, curamos y protegemos a los animales abandonados, heridos y maltratados, dándoles seguridad, cariño y la oportunidad de vivir en libertad; cada vida cuenta y cada animal merece un lugar que pueda llamar hogar."
+    "paragraph": "Rescatamos, curamos y protegemos a los animales abandonados, heridos y maltratados, dandoles seguridad, carino y la oportunidad de vivir en libertad; cada vida cuenta y cada animal merece un lugar que pueda llamar hogar."
+  },
+
+  "Tips": {
+    "1": {
+      "heading": "Algunos consejos de Animal Shepherd",
+      "title": "Tip #1",
+      "body": "Juega mucho con tu mascota tanto indoor como outdoor"
+    },
+    "2": {
+      "heading": "Adopta 2 mejor que 1",
+      "title": "Tip #2",
+      "body": "El mejor amigo de un animal es siempre otro animal, si puedes adopta dos mejor que uno."
+    },
+    "3": {
+      "heading": "Siempre comida saludable",
+      "title": "Tip #3",
+      "body": "Prueba opciones veganas para tu mascota, es mucho mas sano y alargara su vida."
+    },
+    "4": {
+      "heading": "Evita el calor extremo",
+      "title": "Tip #4",
+      "body": "Evita pasearlos en las horas de mucho calor y consigue un seguro medico para tu mascota."
+    },
+    "5": {
+      "heading": "Los gatos son increibles",
+      "title": "Tip #5",
+      "body": "Los gatos son seres increibles: divertidos, carinosos y sanadores. Comparte tu vida con un gato rescatado."
+    },
+    "6": {
+      "heading": "No los encierres",
+      "title": "Tip #6",
+      "body": "Mantén a tus mascotas en libertad y no en jaulas. Adoptarlos solo para tenerlos encerrados es cruel e injusto."
+    },
+    "7": {
+      "heading": "Dedica tu tiempo",
+      "title": "Tip #7",
+      "body": "Dedica tu tiempo y esfuerzo a causas que valgan la pena. El altruismo es el futuro del planeta."
+    },
+    "8": {
+      "heading": "Vet regular",
+      "title": "Tip #8",
+      "body": "Lleva a tu mascota al veterinario con regularidad. Viven menos anos que nosotros y merecen tu cuidado."
+    },
+    "9": {
+      "heading": "Banos en casa",
+      "title": "Tip #9",
+      "body": "Sabias que banar a tu mascota tu mismo fortalece el vinculo entre ustedes."
+    },
+    "10": {
+      "heading": "Ayuda",
+      "title": "Tip #10",
+      "body": "Ayuda a quienes ayudamos."
+    },
+    "11": {
+      "heading": "Disfruta tu mascota",
+      "title": "Tip #11",
+      "body": "Disfruta de tu mascota. Sacala a pasear a diario y siempre que puedas llevala de excursion al campo."
+    }
   }
 }
