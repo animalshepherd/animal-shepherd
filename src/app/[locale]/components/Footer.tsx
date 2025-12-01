@@ -34,6 +34,52 @@ export const Footer = ({ links }: FooterProps) => {
         </ul>
       </nav>
 
+      <div className="flex flex-row justify-center items-center gap-2">
+        <Image
+          src="/email-icon.svg"
+          alt="Email Icon"
+          height={24}
+          width={24}
+        ></Image>
+
+        <Image
+          src="/instagram-icon.svg"
+          alt="Instagram Icon"
+          height={24}
+          width={24}
+        ></Image>
+
+        <Image
+          src="/linkedin-icon.svg"
+          alt="LinkedIn Icon"
+          height={24}
+          width={24}
+        ></Image>
+
+        <Image
+          src="/paypal-icon.svg"
+          alt="PayPal Icon"
+          height={24}
+          width={24}
+        ></Image>
+
+        <Image
+          src="/whatsapp-icon.svg"
+          alt="WhatsApp Icon"
+          height={24}
+          width={24}
+        ></Image>
+      </div>
+
+      <div className="flex flex-row justify-center items-center gap-2">
+        <Image
+          src="/logo-pedigree-adoptame.png"
+          alt="Pedigree Adoptame Logo"
+          height={40}
+          width={40}
+        ></Image>
+      </div>
+
       <div className="flex flex-row justify-center items-center">
         <p className="text-center md:text-left text-sm">
           &copy; {currentYear}
