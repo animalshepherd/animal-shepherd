@@ -6,7 +6,9 @@ import { useTranslations } from "next-intl";
 
 import { Button } from "./components/ui/Button";
 import { Card } from "./components/ui/Card";
-import { CarouselContainer } from "./components/ui/Carousel";
+import { CarouselContainer } from "./components/ui/CarouselContainer";
+
+import { tipCards } from "@/data/tips";
 
 export default function HomePage() {
   const t = useTranslations("HomePage");
@@ -132,7 +134,7 @@ export default function HomePage() {
                 creature is valued.
               </p>
               <div className="flex flex-col items-center justify-center md:flex-row gap-4 mt-2">
-                <Button variant="secondary" href="treatments">
+                <Button variant="secondary" href="about">
                   Read Our Story
                 </Button>
               </div>
@@ -161,13 +163,12 @@ export default function HomePage() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-5">
-          <Card image="/dog-01.webp" alt="Dog sitting" />
+          <Card src="/dog-01.webp" alt="Dog sitting" />
 
-          <Card image="/cat-04.webp" alt="Cat looking" />
+          <Card src="/cat-04.webp" alt="Cat looking" />
 
-          <Card image="/dog-22.webp" alt="Dog posing" />
-
-          <Card image="/cat-06.webp" alt="Cat relaxing" />
+          <Card src="/dog-22.webp" alt="Dog posing" />
+          <Card src="/cat-06.webp" alt="Cat relaxing" />
         </div>
         <div className="flex flex-col items-center justify-center md:flex-row gap-4">
           <div className="flex flex-col md:flex-row gap-4 mt-2">
@@ -195,7 +196,10 @@ export default function HomePage() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <CarouselContainer />
+          <CarouselContainer
+            items={tipCards}
+            renderItem={(item) => <Card src={item.src} alt={item.alt} />}
+          />
         </div>
       </section>
     </div>
