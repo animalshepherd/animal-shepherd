@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 import { useTranslations } from "next-intl";
@@ -11,26 +9,27 @@ import { CarouselContainer } from "./components/ui/CarouselContainer";
 import { tipCards } from "@/data/tips";
 import { TipCard } from "./components/ui/TipCard";
 
+import { getTipsData } from "@/lib/getTipsData";
+
 export default function HomePage() {
-  const t = useTranslations("HomePage");
-  const clickButton = () => {
-    console.log("hit");
-  };
+  const home = useTranslations("HomePage");
+  const tips = useTranslations("Tips");
+
+  const tipsArray = getTipsData(tips);
+
   return (
     <div className="relative min-h-screen w-full pt-16 bg-primary">
       <section className="flex flex-col md:flex-row items-center justify-between py-8 md:py-28 gap-8 px-4 md:px-20">
         <div className="md:flex-1">
           <h1 className="text-secondary-dark font-bold text-3xl md:text-6xl my-4 pr-0 md:pr-5 text-center">
-            {t("title")}
+            {home("title")}
           </h1>
           <p className="text-secondary text-md font-normal mb-8 text-center">
-            {t("paragraph")}
+            {home("paragraph")}
           </p>
           <div className="flex flex-col items-center justify-center md:flex-row gap-4">
             <div className="flex flex-row gap-4 mb-0 md:mb-8">
-              <Button variant="secondary" onClick={clickButton}>
-                Donate Now
-              </Button>
+              <Button variant="secondary">Donate Now</Button>
               <Button variant="primary" href="getinvolved">
                 Get Involved
               </Button>
