@@ -1,10 +1,10 @@
-type TipCardData = {
+type TipsImageData = {
   id: number;
   src: string;
   alt: string;
 };
 
-export const tipCards: TipCardData[] = [
+export const tipCards: TipsImageData[] = [
   { id: 1, src: "/tip1.jpg", alt: "Tip #1'" },
   { id: 2, src: "/tip2.jpg", alt: "Tip #2" },
   { id: 3, src: "/tip3.jpg", alt: "Tip #3" },
