@@ -21,14 +21,10 @@ export const TipCard = ({ title, heading, body, src, alt }: TipCardProps) => {
         </h3>
       </div>
 
-      <div className="my-6 flex justify-center">
-        <Image
-          src={src}
-          alt={alt}
-          width={800}
-          height={1200}
-          className="w-full h-auto"
-        />
+      <div className="my-6 flex justify-center h-full relative">
+        <div className="relative w-full h-72">
+          <Image src={src} alt={alt} fill className="object-contain" />
+        </div>
       </div>
 
       <p className="text-base leading-relaxed text-secondary text-center">
