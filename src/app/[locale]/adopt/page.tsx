@@ -5,140 +5,120 @@ import Image from "next/image";
 import { Button } from "../components/ui/Button";
 import { AnimalCard } from "../components/ui/AnimalCard";
 
+import { animals } from "@/data/animals";
+import { adoptionSteps } from "@/data/steps";
+
 export default function Adopt() {
   return (
-    <div className="relative min-h-screen w-full bg-primary">
-      <section className="w-screen">
-        <div className="relative w-full h-[40vh] md:h-[45vh]">
+    <div className="flex flex-col w-full bg-primary antialiased">
+      <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
           <Image
             src="/dog-55.webp"
-            alt="Good boy"
+            alt="A happy rescued dog at the sanctuary"
             fill
+            priority
             className="object-cover"
-          ></Image>
+          />
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+
+        <div className="relative z-10 w-full max-w-4xl px-6 text-center text-white">
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
+            Adopt and Change a Life
+          </h1>
+          <p className="text-lg md:text-xl font-medium text-white/90 max-w-2xl mx-auto">
+            Every animal deserves security, compassion, and a place to thrive.
+            Find your new companion and help us make room for another rescue.
+          </p>
         </div>
       </section>
 
-      <section className="bg-secondary flex flex-col items-center px-6 md:px-12 lg:px-20 pt-12 pb-16">
-        <h2 className="text-primary text-2xl md:text-4xl font-semibold mb-6 text-center">
-          Adopt and Change a Life
-        </h2>
-        <div className="max-w-3xl space-y-6 text-center">
-          <p className="text-primary text-md leading-relaxed">
-            Our sanctuary believes every animal deserves security, compassion,
-            and a place to thrive. This page explains how our adoption process
-            works and what you can expect when you begin your journey toward
-            welcoming a new companion.
+      <section className="relative z-10 -mt-12 px-6 lg:px-20 max-w-6xl mx-auto w-full">
+        <div className="bg-secondary p-8 md:p-12 rounded-3xl shadow-2xl text-center">
+          <h2 className="text-primary text-2xl md:text-3xl font-bold mb-6">
+            A Lifelong Commitment
+          </h2>
+          <p className="text-primary/90 text-lg leading-relaxed max-w-3xl mx-auto mb-8">
+            Our adoption process is thoughtful and focused on the long-term
+            well-being of each animal. We work closely with you to ensure a
+            responsible match for your lifestyle and their specific needs.
           </p>
-        </div>
-        <div className="mt-10">
-          <Button variant="primary" href="/forms/contrato_de_adopción.pdf">
-            Apply to Adopt
+          <Button
+            variant="primary"
+            href="/forms/contrato_de_adopción.pdf"
+            className="bg-white text-secondary-dark hover:bg-gray-100 border-none px-10"
+          >
+            Download Application
           </Button>
         </div>
       </section>
 
-      <section className="bg-primary flex flex-col items-center justify-center px-6 md:px-12 lg:px-20 py-16">
-        <h2 className="text-secondary-dark text-2xl font-semibold mb-6">
-          About Adopting
-        </h2>
-        <div className="max-w-3xl text-secondary-dark text-md font-normal text-center px-4 leading-relaxed space-y-6">
-          <p className="">
-            We are committed to helping you find the right dog, cat, or kitten
-            for your family and lifestyle. Our adoption process is thoughtful
-            and focused on the long-term wellbeing of each animal, ensuring
-            every placement is safe, responsible, and a good match for both the
-            animal and the adopter.
-          </p>
-          <p className="">
-            To begin the adoption process, you can download our adoption
-            application directly from this page. After reviewing your
-            application, our team will be in touch to discuss next steps, answer
-            any questions, and arrange a suitable introduction when appropriate.
-          </p>
-        </div>
-      </section>
-
-      <section className="bg-secondary flex flex-col items-center justify-center px-6 md:px-12 lg:px-20 py-16">
-        <h2 className="text-primary text-2xl font-semibold">How to Adopt</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 my-4 max-w-full">
-          <div className="text-center p-4 rounded-xl">
-            <h3 className="text-primary pb-2 text-lg font-semibold">
-              Step 1: Browse Available Pets
-            </h3>
-            <p className="text-primary">
-              Explore our website to find the perfect pet that matches your
-              lifestyle and preferences.
-            </p>
-          </div>
-
-          <div className="text-center p-4 rounded-xl">
-            <h3 className="text-primary pb-2 text-lg font-semibold">
-              Step 2: Submit an Application
-            </h3>
-            <p className="text-primary">
-              Fill out our adoption application form with details about your
-              home and lifestyle.
-            </p>
-          </div>
-
-          <div className="text-center p-4 rounded-xl">
-            <h3 className="text-primary pb-2 text-lg font-semibold">
-              Step 3: Meet and Greet
-            </h3>
-            <p className="text-primary">
-              Arrange a meeting with the pet to ensure compatibility and answer
-              any questions.
-            </p>
-          </div>
-
-          <div className="text-center p-4 rounded-xl">
-            <h3 className="text-primary pb-2 text-lg font-semibold">
-              Step 4: Finalize Adoption
-            </h3>
-            <p className="text-primary">
-              Complete the adoption process, including paperwork and fees, to
-              welcome your new pet home.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-primary px-6 md:px-12 lg:px-20 py-16">
-        <div className="flex flex-col justify-center items-center">
-          <h2 className="text-secondary-dark text-2xl font-semibold mb-4">
-            Meet some of our animals:
+      <section className="py-24 px-6 lg:px-20 max-w-7xl mx-auto">
+        <header className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
+            How to Adopt
           </h2>
-          <p className="text-secondary-dark text-center max-w-xl mx-auto mb-4">
-            The animals shown here represent some of the many individuals who
-            have been part of our sanctuary, both past and present, and offer a
-            glimpse into daily life and care at the sanctuary.
-          </p>
+          <div className="h-1 w-20 bg-secondary mx-auto rounded-full" />
+        </header>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {adoptionSteps.map((step) => (
+            <div
+              key={step.number}
+              className="relative p-8 bg-primary border border-gray-100 rounded-3xl shadow-sm hover:shadow-md transition-shadow group"
+            >
+              <span className="absolute -top-4 left-8 bg-secondary text-primary font-bold px-4 py-1 rounded-full text-sm">
+                Step {step.number}
+              </span>
+              <h3 className="text-xl font-bold text-secondary-dark mt-4 mb-3 group-hover:text-secondary transition-colors">
+                {step.title}
+              </h3>
+              <p className="text-secondary leading-relaxed text-sm">
+                {step.description}
+              </p>
+            </div>
+          ))}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <AnimalCard src="/dog-24.webp" alt="Dog sitting" />
+      </section>
 
-          <AnimalCard src="/cat-04.webp" alt="Cat looking" />
+      <section className="bg-secondary/5 py-24 px-6 lg:px-20">
+        <div className="max-w-4xl mx-auto text-center space-y-8">
+          <h2 className="text-3xl font-bold text-secondary-dark">
+            Commitment to Care
+          </h2>
+          <div className="text-secondary text-lg leading-relaxed space-y-6">
+            <p>
+              We are committed to helping you find the right dog, cat, or farm
+              resident for your family. After reviewing your application, our
+              team will be in touch to discuss next steps, answer questions, and
+              arrange introductions.
+            </p>
+            <p>
+              Adoption isn&apos;t just about finding a pet; it&apos;s about
+              saving a life. Every adoption from Animal Shepherd creates a
+              vacancy that allows us to rescue another animal in urgent need.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="py-24 px-6 lg:px-20 max-w-screen-2xl mx-auto w-full">
+        <header className="text-center mb-16 space-y-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark">
+            Meet the Family: Past & Present
+          </h2>
+          <div className="h-1 w-20 bg-secondary mx-auto rounded-full" />
+          <p className="text-secondary max-w-2xl mx-auto text-lg">
+            Each face below represents a life protected by our community. These
+            are the individuals who have called Animal Shepherd home, from those
+            currently seeking families to our cherished success stories.
+          </p>
+        </header>
 
-          <AnimalCard src="/dog-28.webp" alt="Dog posing" />
-
-          <AnimalCard src="/cat-06.webp" alt="Cat relaxing" />
-
-          <AnimalCard src="/dog-45.webp" alt="Dog relaxing" />
-
-          <AnimalCard src="/dog-27.webp" alt="Dog relaxing" />
-
-          <AnimalCard src="/cat-17.webp" alt="Cat relaxing" />
-
-          <AnimalCard src="/dog-39.webp" alt="Dog relaxing" />
-
-          <AnimalCard src="/cat-12.webp" alt="Cat relaxing" />
-
-          <AnimalCard src="/dog-47.webp" alt="Dog relaxing" />
-
-          <AnimalCard src="/cat-18.webp" alt="Cat relaxing" />
-
-          <AnimalCard src="/dog-65.webp" alt="Dog relaxing" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {animals.map((animal) => (
+            <AnimalCard key={animal.src} src={animal.src} alt={animal.alt} />
+          ))}
         </div>
       </section>
     </div>
