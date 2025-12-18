@@ -1,16 +1,13 @@
 import Image from "next/image";
-
 import { useTranslations } from "next-intl";
 
 import { Button } from "./components/ui/Button";
 import { AnimalCard } from "./components/ui/AnimalCard";
 import { CarouselContainer } from "./components/ui/CarouselContainer";
-
-import { tipCards } from "@/data/tips";
 import { TipCard } from "./components/ui/TipCard";
 
+import { tipCards } from "@/data/tips";
 import { getTipsData } from "@/lib/getTipsData";
-
 import { lookupTable } from "@/lib/createTipsLookup";
 
 export default function HomePage() {
@@ -62,7 +59,7 @@ export default function HomePage() {
             abandoned, injured, and neglected while promoting education,
             adoption, and sustainable living.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10 max-w-5xl mx-auto">
+          <div className="flex flex-col md:flex-row gap-8 mb-5 max-w-full">
             <div className="flex flex-col justify-center items-center p-4 bg-primary rounded-lg shadow-md">
               <Image
                 src="/paw.svg"
@@ -129,7 +126,7 @@ export default function HomePage() {
                   can live freely, recover fully, and experience love without
                   fear.
                 </p>
-                <p>
+                <p className="max-w-prose text-center text-secondary mb-4">
                   Beyond rescue, Animal Shepherd is a community hub for
                   education, advocacy, and sustainable living. We promote
                   responsible pet care, adoption, and environmental stewardship
