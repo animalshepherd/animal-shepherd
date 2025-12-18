@@ -22,7 +22,7 @@ export default function HomePage() {
       <section className="relative min-h-[600px] md:h-[85vh] w-full flex items-center justify-center overflow-hidden py-20 md:py-0">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/owner-dogs-30.webp"
+            src="/owner-dog-29.webp"
             fill
             priority
             alt="Sanctuary residents"
@@ -35,7 +35,7 @@ export default function HomePage() {
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
             {home("title")}
           </h1>
-          <p className="text-base sm:text-lg md:text-2xl font-medium mb-10 text-white/90 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-2xl font-medium mb-10 text-white/90 max-w-2xl mx-auto">
             {home("paragraph")}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4">
@@ -131,7 +131,7 @@ export default function HomePage() {
           </div>
           <div className="relative h-[300px] sm:h-[400px] md:h-[450px] w-full rounded-3xl overflow-hidden shadow-xl">
             <Image
-              src="/owner-dog-02.webp"
+              src="/owner-dog-28.webp"
               fill
               alt="Caregiver with animal"
               className="object-cover"
