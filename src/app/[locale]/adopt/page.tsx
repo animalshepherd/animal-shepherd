@@ -44,11 +44,7 @@ export default function Adopt() {
             well-being of each animal. We work closely with you to ensure a
             responsible match for your lifestyle and their specific needs.
           </p>
-          <Button
-            variant="primary"
-            href="/forms/contrato_de_adopción.pdf"
-            className="bg-white text-secondary-dark hover:bg-gray-100 border-none px-10"
-          >
+          <Button variant="primary" href="/forms/contrato_de_adopción.pdf">
             Download Application
           </Button>
         </div>
