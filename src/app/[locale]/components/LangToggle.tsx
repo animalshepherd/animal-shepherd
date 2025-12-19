@@ -16,7 +16,7 @@ export const LanguageSwitcher = () => {
   }
 
   return (
-    <div className="flex items-center gap-2 mr-4">
+    <div className="flex items-center gap-2">
       {locales.map((lng) => (
         <button
           key={lng}
