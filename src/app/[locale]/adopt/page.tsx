@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 
-import { Button } from "../components/ui/Button";
 import { AnimalCard } from "../components/ui/AnimalCard";
+import { HeroActionBox } from "../components/ui/HeroActionBox";
 
 import { animals } from "@/data/animals";
 import { adoptionSteps } from "@/data/steps";
@@ -34,21 +34,13 @@ export default function AdoptPage() {
         </div>
       </section>
 
-      <section className="relative z-10 -mt-12 px-6 lg:px-20 max-w-6xl mx-auto w-full">
-        <div className="bg-secondary p-8 md:p-12 rounded-3xl shadow-2xl text-center">
-          <h2 className="text-primary text-2xl md:text-3xl font-bold mb-6">
-            A Lifelong Commitment
-          </h2>
-          <p className="text-primary/90 text-lg leading-relaxed max-w-3xl mx-auto mb-8">
-            Our adoption process is thoughtful and focused on the long-term
-            well-being of each animal. We work closely with you to ensure a
-            responsible match for your lifestyle and their specific needs.
-          </p>
-          <Button variant="primary" href="/forms/contrato_de_adopción.pdf">
-            Download Application
-          </Button>
-        </div>
-      </section>
+      <HeroActionBox
+        title="A Lifelong Commitment"
+        description="Our adoption process is thoughtful and focused on the long-term well-being of each animal. We work closely with you to ensure a responsible match for your lifestyle and their specific needs, providing photos and videos of each resident to help you find the right fit."
+        buttonLabel="Download Application"
+        buttonHref="/forms/contrato_de_adopción.pdf"
+        buttonVariant="primary"
+      />
 
       <section className="py-24 px-6 lg:px-20 max-w-7xl mx-auto">
         <header className="text-center mb-16">
