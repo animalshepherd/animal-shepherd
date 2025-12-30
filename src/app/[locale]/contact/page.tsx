@@ -91,7 +91,7 @@ export default function ContactPage() {
             />
           </div>
           <div className="text-center">
-            <Button variant="secondary" size="lg" className="px-16">
+            <Button variant="secondary" href="/donate">
               Send Message
             </Button>
           </div>
