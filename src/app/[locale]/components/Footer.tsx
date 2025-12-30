@@ -50,7 +50,7 @@ export const Footer = ({ links }: FooterProps) => {
 
         <li>
           <Link
-            href="https://instagram.com/animalshepherd"
+            href="https://instagram.com/animal.shepherd"
             aria-label="Animal Shepherd on Instagram"
             target="_blank"
             rel="noopener noreferrer"
