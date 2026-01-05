@@ -14,6 +14,6 @@ export const tipCards: TipsImageData[] = [
   { id: 7, src: "/tip7.jpg", alt: "Tip #7" },
   { id: 8, src: "/tip8.jpg", alt: "Tip #8" },
   { id: 9, src: "/tip9.jpg", alt: "Tip #9" },
-  { id: 10, src: "/tip11.jpg", alt: "Tip #10" },
+  { id: 10, src: "/tip10.jpg", alt: "Tip #10" },
   { id: 11, src: "/tip11.jpg", alt: "Tip #11" },
 ];
