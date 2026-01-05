@@ -73,7 +73,7 @@ export default function HomePage() {
             <div className="flex flex-col items-center text-center px-2">
               <div className="bg-primary/20 p-3 rounded-full mb-4">
                 <Image
-                  src="/heart.svg"
+                  src="/healthcare.svg"
                   alt=""
                   width={32}
                   height={32}
@@ -91,7 +91,7 @@ export default function HomePage() {
             <div className="flex flex-col items-center text-center px-2">
               <div className="bg-primary/20 p-3 rounded-full mb-4">
                 <Image
-                  src="/healthcare.svg"
+                  src="/earth.svg"
                   alt=""
                   width={32}
                   height={32}
