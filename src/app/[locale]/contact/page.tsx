@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-
+import { teamMembers } from "@/data/team";
 import { Button } from "../components/ui/Button";
 import { HeroActionBox } from "../components/ui/HeroActionBox";
 
@@ -25,87 +25,151 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="text-lg md:text-xl font-medium text-white/90 max-w-2xl mx-auto">
-            We are always open to new ideas, sharing, and listening to feedback.
-            Feel free to send us a message.
+            We are always open to new ideas, strategic partnerships, and
+            professional feedback. Feel free to send us a message.
           </p>
         </div>
       </section>
 
       <HeroActionBox
         title="Direct Communication"
-        description="If you are interested in the things we do and want to know more, you are just a click away. We are always open to new ideas, sharing and listening to feedback; so, feel free to send us a message."
+        description="If you are interested in the things we do and want to know more, you are just a click away."
         buttonLabel="info@animalshepherd.org"
         buttonHref="mailto:info@animalshepherd.org"
         buttonVariant="primary"
       />
 
-      <section className="py-24 px-6 lg:px-20 max-w-4xl mx-auto w-full">
+      <section className="py-24 px-6 lg:px-20 max-w-7xl mx-auto w-full">
         <header className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
-            Send a Message
+          <h2 className="text-xs font-bold text-secondary tracking-[0.3em] uppercase mb-4">
+            Our Global Team
           </h2>
-          <div className="h-1 w-20 bg-secondary mx-auto rounded-full" />
+          <h3 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-6">
+            Guardians of the Sanctuary
+          </h3>
+          <p className="text-secondary text-lg max-w-2xl mx-auto leading-relaxed">
+            This is the dedicated team working alongside Ryan to protect our
+            residents, restore local ecosystems, and advocate for those who have
+            no voice.
+          </p>
+          <div className="h-1 w-20 bg-secondary mx-auto rounded-full mt-8" />
         </header>
 
-        <form className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {teamMembers.map((member) => (
+            <div
+              key={member.email}
+              className="p-8 bg-secondary/5 rounded-3xl border border-gray-100 flex flex-col items-center text-center"
+            >
+              <p className="font-bold text-secondary-dark text-lg mb-1">
+                {member.name}
+              </p>
+              <p className="text-secondary/60 text-[10px] uppercase tracking-widest font-bold mb-6">
+                {member.role}
+              </p>
+              <a
+                href={`mailto:${member.email}`}
+                className="text-sm font-medium text-secondary hover:text-secondary-dark transition-colors border-b border-secondary/10 hover:border-secondary-dark pb-1"
+              >
+                {member.email}
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-secondary/5 py-24 px-6 lg:px-20 border-y border-gray-100">
+        <div className="max-w-4xl mx-auto w-full">
+          <header className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
+              Send a Message
+            </h2>
+            <div className="h-1 w-20 bg-secondary mx-auto rounded-full" />
+          </header>
+
+          <form className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <label className="text-xs font-bold text-secondary-dark uppercase tracking-[0.2em] ml-2">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full p-4 rounded-2xl bg-primary border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all"
+                />
+              </div>
+              <div className="space-y-2">
+                <label className="text-xs font-bold text-secondary-dark uppercase tracking-[0.2em] ml-2">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="w-full p-4 rounded-2xl bg-primary border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all"
+                />
+              </div>
+            </div>
             <div className="space-y-2">
-              <label className="text-sm font-bold text-secondary-dark uppercase tracking-wider">
-                Name
+              <label className="text-xs font-bold text-secondary-dark uppercase tracking-[0.2em] ml-2">
+                Subject
               </label>
               <input
                 type="text"
-                placeholder="Your Name"
-                className="w-full p-4 rounded-2xl bg-secondary/5 border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all"
+                placeholder="How can we help?"
+                className="w-full p-4 rounded-2xl bg-primary border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all"
               />
             </div>
             <div className="space-y-2">
-              <label className="text-sm font-bold text-secondary-dark uppercase tracking-wider">
-                Email
+              <label className="text-xs font-bold text-secondary-dark uppercase tracking-[0.2em] ml-2">
+                Message
               </label>
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="w-full p-4 rounded-2xl bg-secondary/5 border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all"
+              <textarea
+                rows={6}
+                placeholder="Enter your message here..."
+                className="w-full p-4 rounded-2xl bg-primary border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all resize-none"
               />
             </div>
-          </div>
-          <div className="space-y-2">
-            <label className="text-sm font-bold text-secondary-dark uppercase tracking-wider">
-              Subject
-            </label>
-            <input
-              type="text"
-              placeholder="How can we help?"
-              className="w-full p-4 rounded-2xl bg-secondary/5 border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all"
-            />
-          </div>
-          <div className="space-y-2">
-            <label className="text-sm font-bold text-secondary-dark uppercase tracking-wider">
-              Message
-            </label>
-            <textarea
-              rows={6}
-              placeholder="Enter your message here..."
-              className="w-full p-4 rounded-2xl bg-secondary/5 border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all resize-none"
-            />
-          </div>
-          <div className="text-center">
-            <Button variant="secondary" href="/donate">
-              Send Message
-            </Button>
-          </div>
-        </form>
+            <div className="text-center pt-4">
+              {/* update button for the on submit */}
+              <Button
+                variant="secondary"
+                size="lg"
+                className="px-12"
+                href="/getinvolved"
+              >
+                Send Message
+              </Button>
+            </div>
+          </form>
+        </div>
       </section>
 
-      <section className="bg-secondary/5 py-16 px-6 lg:px-20 border-t border-gray-100">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="mt-8">
-            <p className="text-secondary-dark font-bold mb-2">
-              Sanctuary Hours
+      <section className="py-24 px-6 lg:px-20 max-w-4xl mx-auto text-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+          <div className="space-y-4">
+            <h2 className="text-2xl font-bold text-secondary-dark uppercase tracking-widest">
+              Visit Us
+            </h2>
+            <div className="h-1 w-12 bg-secondary mx-auto rounded-full" />
+            <p className="text-secondary-dark font-medium italic">
+              By appointment only.
             </p>
-            <p className="text-secondary">
-              Monday — Sunday: 09:00 am - 06:00 pm
+            <p className="text-secondary leading-relaxed">
+              Animal Shepherd Sanctuary,
+              <br />
+              Querétaro, Mexico.
+            </p>
+          </div>
+          <div className="space-y-4">
+            <h2 className="text-2xl font-bold text-secondary-dark uppercase tracking-widest">
+              Sanctuary Hours
+            </h2>
+            <div className="h-1 w-12 bg-secondary mx-auto rounded-full" />
+            <p className="text-secondary leading-relaxed pt-2">
+              Monday — Sunday:
+              <br />
+              09:00 am - 06:00 pm
             </p>
           </div>
         </div>
