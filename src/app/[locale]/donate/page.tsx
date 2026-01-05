@@ -66,9 +66,14 @@ export default function DonatePage() {
       <section className="bg-secondary/5 py-24 px-6 lg:px-20">
         <div className="max-w-4xl mx-auto">
           <div className="bg-primary p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100">
-            <h2 className="text-2xl md:text-3xl font-bold text-secondary-dark mb-10 text-center">
-              Direct Bank Transfer
-            </h2>
+            <header className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-secondary-dark mb-2">
+                Direct Bank Transfer
+              </h2>
+              <p className="text-secondary/60 font-medium text-sm uppercase tracking-wide">
+                Donations Account
+              </p>
+            </header>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 text-center">
               <div className="space-y-1">
@@ -76,7 +81,7 @@ export default function DonatePage() {
                   Bank
                 </p>
                 <p className="text-lg font-medium text-secondary-dark">
-                  Banco Santander (México) S.A.
+                  BBVA MÉXICO
                 </p>
               </div>
               <div className="space-y-1">
@@ -84,31 +89,45 @@ export default function DonatePage() {
                   Account Holder
                 </p>
                 <p className="text-lg font-medium text-secondary-dark">
-                  Ryan Cosgaya
+                  ANIMAL SHEPHERD AC
                 </p>
               </div>
               <div className="space-y-1">
                 <p className="text-xs uppercase tracking-wider font-bold text-secondary/50">
-                  Account Number / CLABE
+                  Account Number
                 </p>
                 <p className="text-lg font-mono font-medium text-secondary-dark tracking-tight">
-                  014580200047831470
+                  0126038646
                 </p>
               </div>
               <div className="space-y-1">
                 <p className="text-xs uppercase tracking-wider font-bold text-secondary/50">
-                  Swift Code
+                  CLABE
+                </p>
+                <p className="text-lg font-mono font-medium text-secondary-dark tracking-tight">
+                  012180001260386468
+                </p>
+              </div>
+              <div className="space-y-1 md:col-span-2">
+                <p className="text-xs uppercase tracking-wider font-bold text-secondary/50">
+                  SWIFT / BIC
                 </p>
                 <p className="text-lg font-mono font-medium text-secondary-dark">
-                  BSCHESMM
+                  BCMRMXMMPYM
                 </p>
               </div>
             </div>
 
-            <div className="mt-12 pt-8 border-t border-gray-100 text-center">
+            <div className="mt-12 pt-8 border-t border-gray-100 text-center space-y-4">
               <p className="text-sm text-secondary/70 italic">
                 Please include your name as a reference so we may properly
                 acknowledge your gift.
+              </p>
+              <p className="text-[11px] text-secondary/60 max-w-lg mx-auto leading-relaxed">
+                Our account is enabled to receive international donations and we
+                are one of the few organizations equipped with a POS (Point of
+                Sale) terminal to conveniently receive gifts and collect
+                adoption fees.
               </p>
             </div>
           </div>
@@ -123,33 +142,39 @@ export default function DonatePage() {
           <div className="h-1 w-20 bg-secondary mx-auto rounded-full" />
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="p-8 bg-primary border border-gray-100 rounded-3xl text-center space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+          <div className="flex flex-col p-8 bg-primary border border-gray-100 rounded-3xl text-center space-y-4 h-full">
             <h3 className="font-bold text-secondary-dark text-xl">
               Sponsor a Resident
             </h3>
-            <p className="text-secondary text-sm">
-              Provide monthly support specifically for one animal&apos;s food
-              and medical needs.
-            </p>
+            <div className="flex-1">
+              <p className="text-secondary text-sm">
+                Provide monthly support specifically for one animal&apos;s food
+                and medical needs.
+              </p>
+            </div>
           </div>
-          <div className="p-8 bg-primary border border-gray-100 rounded-3xl text-center space-y-4">
+          <div className="flex flex-col p-8 bg-primary border border-gray-100 rounded-3xl text-center space-y-4 h-full">
             <h3 className="font-bold text-secondary-dark text-xl">
               Donate Supplies
             </h3>
-            <p className="text-secondary text-sm">
-              We are always in need of high-quality food, bedding, and medical
-              supplies for our sanctuary.
-            </p>
+            <div className="flex-1">
+              <p className="text-secondary text-sm">
+                We are always in need of high-quality food, bedding, and medical
+                supplies for our sanctuary.
+              </p>
+            </div>
           </div>
-          <div className="p-8 bg-primary border border-gray-100 rounded-3xl text-center space-y-4">
+          <div className="flex flex-col p-8 bg-primary border border-gray-100 rounded-3xl text-center space-y-4 h-full">
             <h3 className="font-bold text-secondary-dark text-xl">
               Legacy Giving
             </h3>
-            <p className="text-secondary text-sm">
-              Include Animal Shepherd in your estate planning to ensure the
-              future of our mission.
-            </p>
+            <div className="flex-1">
+              <p className="text-secondary text-sm">
+                Include Animal Shepherd in your estate planning to ensure the
+                future of our mission.
+              </p>
+            </div>
           </div>
         </div>
       </section>
