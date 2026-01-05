@@ -235,7 +235,41 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-24 bg-secondary/5 border-t border-gray-100">
+      <section className="bg-secondary py-24 px-6 lg:px-20 text-white">
+        <div className="max-w-4xl mx-auto text-center space-y-10">
+          <div className="space-y-4">
+            <h2 className="text-xs font-bold tracking-[0.3em] uppercase opacity-70">
+              DEDICATION
+            </h2>
+            <h3 className="text-2xl md:text-3xl font-bold italic leading-tight">
+              This project is dedicated to the memory of Cioli, &quot;Savior of
+              100 lives.&quot;
+            </h3>
+            <div className="h-1 w-20 bg-primary mx-auto rounded-full" />
+          </div>
+
+          <div className="space-y-6 text-lg md:text-xl font-light leading-relaxed max-w-3xl mx-auto">
+            <p>
+              On the shores of Santander, forged by the freezing waters of the
+              Bay of Biscay, a young kid born in The Netherlands named Ryan
+              learned from this man that duty is non-negotiable and that life is
+              defended in silence.
+            </p>
+            <p>
+              That boy was his best disciple. Today, under the Mexican sky, that
+              same will has saved over 1,000 lives.
+            </p>
+          </div>
+
+          <div className="pt-6">
+            <p className="text-xl font-bold uppercase tracking-widest">
+              Thank you Cioli. The watch continues.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-primary border-t border-gray-100">
         <div className="max-w-4xl mx-auto text-center px-6">
           <h2 className="text-3xl font-bold text-secondary-dark mb-6">
             Join Our Mission
