@@ -56,7 +56,7 @@ export default function HomePage() {
               <div className="bg-primary/20 p-3 rounded-full mb-4">
                 <Image
                   src="/paw.svg"
-                  alt=""
+                  alt="paw-icon"
                   width={32}
                   height={32}
                   className="h-8 w-8"
@@ -74,7 +74,7 @@ export default function HomePage() {
               <div className="bg-primary/20 p-3 rounded-full mb-4">
                 <Image
                   src="/healthcare.svg"
-                  alt=""
+                  alt="healthcare-icon"
                   width={32}
                   height={32}
                   className="h-8 w-8"
@@ -92,7 +92,7 @@ export default function HomePage() {
               <div className="bg-primary/20 p-3 rounded-full mb-4">
                 <Image
                   src="/earth.svg"
-                  alt=""
+                  alt="earth-icon"
                   width={32}
                   height={32}
                   className="h-8 w-8"
