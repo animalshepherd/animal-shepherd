@@ -69,7 +69,7 @@ export default function AboutPage() {
           </h2>
           <div className="text-secondary text-lg leading-relaxed space-y-6">
             <p>
-              Each year, we save the lives of more than 400 homeless animals and
+              Each year, we save the lives of more than 200 homeless animals and
               provide daily care for approximately 60 dogs, 40 cats, and
               additional farm residents. Every life is treated with dignity,
               patience, and long-term commitment.
@@ -80,6 +80,35 @@ export default function AboutPage() {
               and providing alternatives for animals facing euthanasia, focusing
               on prevention and long-term education.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 px-6 lg:px-20 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="space-y-6">
+            <h3 className="text-sm font-bold text-secondary tracking-widest uppercase">
+              NATURE & HABITAT
+            </h3>
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark">
+              A Legacy of Conservation
+            </h2>
+            <div className="h-1 w-20 bg-secondary rounded-full" />
+            <p className="text-secondary text-lg leading-relaxed">
+              Beyond our sanctuary walls, we are dedicated to the protection of
+              the ecosystems that sustain all life. Our commitment to the planet
+              is as deep as our commitment to its animals. We manage an
+              ecological reserve where biodiversity is protected and the natural
+              landscape is allowed to flourish.
+            </p>
+          </div>
+          <div className="relative aspect-video lg:aspect-square rounded-3xl overflow-hidden shadow-xl">
+            <Image
+              src="/cat-17.webp"
+              alt="Cat in nature"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
       </section>
@@ -166,7 +195,7 @@ export default function AboutPage() {
 
       <section className="py-24 px-6 lg:px-20 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="relative aspect-4/5 rounded-3xl overflow-hidden shadow-xl">
+          <div className="relative aspect-4/5 rounded-3xl overflow-hidden shadow-xl order-last lg:order-first">
             <Image
               src="/owner-dog-30.webp"
               alt="Founder of Animal Shepherd with a rescue animal"
@@ -176,36 +205,31 @@ export default function AboutPage() {
           </div>
 
           <div className="space-y-6">
+            <h3 className="text-sm font-bold text-secondary tracking-widest uppercase">
+              LAND RESTORATION
+            </h3>
             <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark">
-              Lorem Ipsum Dolor Sit Amet
+              Restoring Ecosystems for the Future
             </h2>
             <div className="h-1 w-20 bg-secondary rounded-full" />
 
             <div className="text-secondary text-lg leading-relaxed space-y-4">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Since 2015, we have been actively restoring over 80 hectares of
+                local ecosystems. Through strategic reforestation, we have
+                planted approximately 5,000 trees, creating a
+                carbon-sequestering landscape that serves as a permanent refuge
+                for both rescued and wild species.
               </p>
               <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
-              </p>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo.
+                Our approach combines permaculture with environmental management
+                to ensure a sustainable future.
               </p>
             </div>
 
-            <blockquote className="border-l-4 border-secondary pl-6 italic text-secondary-dark font-medium">
-              &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua ut
-              enim ad minim veniam.&quot;
+            <blockquote className="border-l-4 border-secondary pl-6 italic text-secondary-dark font-medium py-2">
+              &quot;We promote a deep respect for life and the world we share,
+              fostering an ethic of coexistence and shared responsibility.&quot;
             </blockquote>
           </div>
         </div>
