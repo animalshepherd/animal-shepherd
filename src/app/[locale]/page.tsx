@@ -63,10 +63,10 @@ export default function HomePage() {
                 />
               </div>
               <p className="text-3xl md:text-4xl font-black text-primary mb-1 tracking-tight">
-                400+
+                1000+
               </p>
               <p className="text-primary/80 font-semibold text-xs md:text-sm uppercase tracking-widest leading-tight">
-                rescuing annually
+                rescued animals
               </p>
             </div>
 
@@ -81,10 +81,10 @@ export default function HomePage() {
                 />
               </div>
               <p className="text-3xl md:text-4xl font-black text-primary mb-1 tracking-tight">
-                100+
+                5000+
               </p>
               <p className="text-primary/80 font-semibold text-xs md:text-sm uppercase tracking-widest leading-tight">
-                daily residents
+                trees planted
               </p>
             </div>
 
@@ -99,10 +99,10 @@ export default function HomePage() {
                 />
               </div>
               <p className="text-3xl md:text-4xl font-black text-primary mb-1 tracking-tight">
-                24/7
+                80+
               </p>
               <p className="text-primary/80 font-semibold text-xs md:text-sm uppercase tracking-widest leading-tight">
-                emergency care
+                reforested hectacres
               </p>
             </div>
           </div>
