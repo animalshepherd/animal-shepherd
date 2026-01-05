@@ -22,13 +22,13 @@ export default function HomePage() {
       <section className="relative min-h-[600px] md:h-[85vh] w-full flex items-center justify-center overflow-hidden py-20 md:py-0">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/owner-dog-29.webp"
+            src="/homepage-hero.webp"
             fill
             priority
-            alt="Sanctuary residents"
+            alt="Founder interacting with sanctuary dogs"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-black/55" />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
 
         <div className="relative z-10 w-full max-w-5xl px-4 md:px-6 text-center text-white">
