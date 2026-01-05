@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-
 import { AnimalCard } from "../components/ui/AnimalCard";
 import { HeroActionBox } from "../components/ui/HeroActionBox";
+import { Button } from "../components/ui/Button";
 
 import { animals } from "@/data/animals";
 import { adoptionSteps } from "@/data/steps";
@@ -36,9 +36,9 @@ export default function AdoptPage() {
 
       <HeroActionBox
         title="A Lifelong Commitment"
-        description="Our adoption process is thoughtful and focused on the long-term well-being of each animal. We work closely with you to ensure a responsible match for your lifestyle and their specific needs, providing photos and videos of each resident to help you find the right fit."
-        buttonLabel="Download Application"
-        buttonHref="/forms/contrato_de_adopción.pdf"
+        description="Our adoption process is thoughtful and focused on the long-term well-being of each animal. We work closely with you to ensure a responsible match for your lifestyle and their specific needs."
+        buttonLabel="Start Application"
+        buttonHref="#adoption-form"
         buttonVariant="primary"
       />
 
@@ -70,27 +70,121 @@ export default function AdoptPage() {
         </div>
       </section>
 
-      <section className="bg-secondary/5 py-24 px-6 lg:px-20">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="text-3xl font-bold text-secondary-dark">
-            Commitment to Care
-          </h2>
-          <div className="text-secondary text-lg leading-relaxed space-y-6">
-            <p>
-              We are committed to helping you find the right dog, cat, or farm
-              resident for your family. After reviewing your application, our
-              team will be in touch to discuss next steps, answer questions, and
-              arrange introductions.
+      <section
+        id="adoption-form"
+        className="bg-secondary/5 py-24 px-6 lg:px-20 border-y border-gray-100 scroll-mt-10"
+      >
+        <div className="max-w-4xl mx-auto w-full">
+          <header className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-6">
+              Animal Adoption Application
+            </h2>
+            <p className="text-secondary text-lg leading-relaxed max-w-2xl mx-auto">
+              Thank you for choosing to save a life. This form is the first
+              step. If your profile is a match, we will contact you for a
+              detailed interview and a virtual home visit.
             </p>
-            <p>
-              Adoption isn&apos;t just about finding a pet; it&apos;s about
-              saving a life. Every adoption from Animal Shepherd creates a
-              vacancy that allows us to rescue another animal in urgent need.
-            </p>
-          </div>
+            <div className="h-1 w-20 bg-secondary mx-auto rounded-full mt-8" />
+          </header>
+
+          <form className="bg-primary p-8 md:p-12 rounded-[40px] shadow-sm border border-gray-100">
+            <div className="grid grid-cols-1 gap-10">
+              <div className="flex flex-col gap-3">
+                <label className="text-[11px] font-bold text-secondary-dark uppercase tracking-widest ml-1">
+                  1. Who do you want to adopt and why? *
+                </label>
+                <textarea
+                  required
+                  rows={3}
+                  placeholder="Cat or Dog and your main reason for adopting"
+                  className="w-full p-4 rounded-2xl bg-secondary/5 border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all resize-none"
+                />
+              </div>
+
+              <div className="flex flex-col gap-3">
+                <label className="text-[11px] font-bold text-secondary-dark uppercase tracking-widest ml-1">
+                  2. Full Name *
+                </label>
+                <input
+                  required
+                  type="text"
+                  placeholder="First and last name"
+                  className="w-full p-4 rounded-2xl bg-secondary/5 border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all"
+                />
+              </div>
+
+              <div className="flex flex-col gap-3">
+                <label className="text-[11px] font-bold text-secondary-dark uppercase tracking-widest ml-1">
+                  3. Contact Information *
+                </label>
+                <input
+                  required
+                  type="text"
+                  placeholder="Phone, Email, and @Instagram"
+                  className="w-full p-4 rounded-2xl bg-secondary/5 border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all"
+                />
+              </div>
+
+              <div className="flex flex-col gap-3">
+                <label className="text-[11px] font-bold text-secondary-dark uppercase tracking-widest ml-1">
+                  4. Location *
+                </label>
+                <input
+                  required
+                  type="text"
+                  placeholder="City, Borough/Area, and Neighborhood"
+                  className="w-full p-4 rounded-2xl bg-secondary/5 border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all"
+                />
+              </div>
+
+              <div className="flex flex-col gap-3">
+                <label className="text-[11px] font-bold text-secondary-dark uppercase tracking-widest ml-1">
+                  5. Housing & Household *
+                </label>
+                <textarea
+                  required
+                  rows={3}
+                  placeholder="House or apartment? / Owned or rented? / Do you live with children or other pets?"
+                  className="w-full p-4 rounded-2xl bg-secondary/5 border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all resize-none"
+                />
+              </div>
+
+              <div className="flex flex-col gap-3">
+                <label className="text-[11px] font-bold text-secondary-dark uppercase tracking-widest ml-1">
+                  6. Lifestyle & Routine *
+                </label>
+                <textarea
+                  required
+                  rows={3}
+                  placeholder="How many hours will the pet be alone daily and where will they sleep?"
+                  className="w-full p-4 rounded-2xl bg-secondary/5 border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all resize-none"
+                />
+              </div>
+
+              <div className="flex flex-col items-center gap-6 pt-6 border-t border-secondary/5">
+                {/* update button for the on submit */}
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  className="px-16"
+                  href="/getinvolved"
+                >
+                  Submit Application
+                </Button>
+                <p className="text-[10px] text-secondary/50 uppercase tracking-[0.2em] text-center leading-relaxed">
+                  By clicking submit, I accept the privacy terms and conditions
+                  of Animal Shepherd AC.
+                </p>
+              </div>
+            </div>
+          </form>
         </div>
       </section>
-      <section className="py-24 px-6 lg:px-20 max-w-screen-2xl mx-auto w-full">
+
+      <section
+        id="meet-the-family"
+        className="py-24 px-6 lg:px-20 max-w-screen-2xl mx-auto w-full scroll-mt-20"
+      >
         <header className="text-center mb-16 space-y-4">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark">
             Meet the Family: Past & Present

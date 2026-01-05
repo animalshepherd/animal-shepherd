@@ -1,32 +1,32 @@
 export interface AdoptionStep {
-  number: string;
+  number: number;
   title: string;
   description: string;
 }
 
 export const adoptionSteps: AdoptionStep[] = [
   {
-    number: "01",
-    title: "Browse Residents",
+    number: 1,
+    title: "Adoption Form",
     description:
-      "Explore our available animals below to find a pet that matches your lifestyle.",
+      "Complete our streamlined 6-field application to share your lifestyle and preferences with our team.",
   },
   {
-    number: "02",
-    title: "Submit Application",
+    number: 2,
+    title: "Discovery Call",
     description:
-      "Complete the adoption form with details about your home and previous experience.",
+      "We will schedule a brief phone interview to discuss your application and answer any initial questions.",
   },
   {
-    number: "03",
+    number: 3,
     title: "Meet & Greet",
     description:
-      "Arrange an introduction to ensure compatibility between you and the animal.",
+      "Arrange an appointment to visit the sanctuary, meet our residents, and find your perfect companion.",
   },
   {
-    number: "04",
-    title: "Finalize & Welcome",
+    number: 4,
+    title: "Finalize",
     description:
-      "Complete the final paperwork and prepare your home for your new best friend.",
+      "Once a match is confirmed, we complete the adoption agreement and prepare for your new friend's arrival.",
   },
 ];
