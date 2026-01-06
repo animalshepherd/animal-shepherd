@@ -1,64 +1,74 @@
 {
-  "HomePage": {
-    "title": "Defendiendo a Todos los Animales",
-    "paragraph": "Rescatamos, curamos y protegemos a los animales abandonados, heridos y maltratados, dandoles seguridad, carino y la oportunidad de vivir en libertad; cada vida cuenta y cada animal merece un lugar que pueda llamar hogar."
+  "Navigation": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "adopt": "Adoptar",
+    "partnerships": "Alianzas",
+    "getinvolved": "Involúcrate",
+    "donate": "Donar",
+    "contact": "Contacto"
   },
-
-  "Tips": {
-    "1": {
-      "heading": "Jugar juntos todos los dias",
-      "title": "Tip #1",
-      "body": "Jugar con tu mascota dentro y fuera de casa fortalece la confianza y el vinculo."
+  "HomePage": {
+    "Hero": {
+      "title": "Defendiendo a Todos los Animales",
+      "paragraph": "Rescatamos, curamos y protegemos a los animales abandonados, heridos y maltratados, dandoles seguridad, carino y la oportunidad de vivir en libertad; cada vida cuenta y cada animal merece un lugar que pueda llamar hogar."
     },
-    "2": {
-      "heading": "Adoptar juntos si es posible",
-      "title": "Tip #2",
-      "body": "Los animales se sienten mejor con compania. Adoptar dos puede mejorar su bienestar."
-    },
-    "3": {
-      "heading": "Alimentacion saludable",
-      "title": "Tip #3",
-      "body": "Ofrecer opciones vegetales puede apoyar la salud y vitalidad de tu mascota."
-    },
-    "4": {
-      "heading": "Protegerlos del calor",
-      "title": "Tip #4",
-      "body": "Evita paseos en horas de calor extremo y cuida la salud y comodidad de tu mascota."
-    },
-    "5": {
-      "heading": "Considera adoptar un gato",
-      "title": "Tip #5",
-      "body": "Los gatos son companeros carinosos y tranquilos que pueden cambiar vidas."
-    },
-    "6": {
-      "heading": "Respetar su libertad",
-      "title": "Tip #6",
-      "body": "Las mascotas merecen dignidad. Evita mantenerlas encerradas y dales libertad."
-    },
-    "7": {
-      "heading": "Ofrecer tu tiempo",
-      "title": "Tip #7",
-      "body": "Compartir tu tiempo apoya causas importantes y ayuda a crear un mundo mejor."
-    },
-    "8": {
-      "heading": "Visitas veterinarias regulares",
-      "title": "Tip #8",
-      "body": "Las revisiones frecuentes ayudan a detectar problemas y cuidar su salud."
-    },
-    "9": {
-      "heading": "Banarlos en casa",
-      "title": "Tip #9",
-      "body": "Banar a tu mascota en casa reduce el estres y fortalece su relacion contigo."
-    },
-    "10": {
-      "heading": "Apoyar a los rescates",
-      "title": "Tip #10",
-      "body": "Las donaciones permiten dar alimento, atencion medica y refugio a animales rescatados."
-    },
-    "11": {
-      "heading": "Disfrutar el tiempo juntos",
-      "title": "Tip #11",
-      "body": "Comparte tiempo de calidad con tu mascota en paseos diarios y actividades al aire libre."
+    "Tips": {
+      "1": {
+        "heading": "Jugar juntos todos los dias",
+        "title": "Tip #1",
+        "body": "Jugar con tu mascota dentro y fuera de casa fortalece la confianza y el vinculo."
+      },
+      "2": {
+        "heading": "Adoptar juntos si es posible",
+        "title": "Tip #2",
+        "body": "Los animales se sienten mejor con compania. Adoptar dos puede mejorar su bienestar."
+      },
+      "3": {
+        "heading": "Alimentacion saludable",
+        "title": "Tip #3",
+        "body": "Ofrecer opciones vegetales puede apoyar la salud y vitalidad de tu mascota."
+      },
+      "4": {
+        "heading": "Protegerlos del calor",
+        "title": "Tip #4",
+        "body": "Evita paseos en horas de calor extremo y cuida la salud y comodidad de tu mascota."
+      },
+      "5": {
+        "heading": "Considera adoptar un gato",
+        "title": "Tip #5",
+        "body": "Los gatos son companeros carinosos y tranquilos que pueden cambiar vidas."
+      },
+      "6": {
+        "heading": "Respetar su libertad",
+        "title": "Tip #6",
+        "body": "Las mascotas merecen dignidad. Evita mantenerlas encerradas y dales libertad."
+      },
+      "7": {
+        "heading": "Ofrecer tu tiempo",
+        "title": "Tip #7",
+        "body": "Compartir tu tiempo apoya causas importantes y ayuda a crear un mundo mejor."
+      },
+      "8": {
+        "heading": "Visitas veterinarias regulares",
+        "title": "Tip #8",
+        "body": "Las revisiones frecuentes ayudan a detectar problemas y cuidar su salud."
+      },
+      "9": {
+        "heading": "Banarlos en casa",
+        "title": "Tip #9",
+        "body": "Banar a tu mascota en casa reduce el estres y fortalece su relacion contigo."
+      },
+      "10": {
+        "heading": "Apoyar a los rescates",
+        "title": "Tip #10",
+        "body": "Las donaciones permiten dar alimento, atencion medica y refugio a animales rescatados."
+      },
+      "11": {
+        "heading": "Disfrutar el tiempo juntos",
+        "title": "Tip #11",
+        "body": "Comparte tiempo de calidad con tu mascota en paseos diarios y actividades al aire libre."
+      }
     }
   }
 }

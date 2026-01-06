@@ -11,8 +11,8 @@ import { getTipsData } from "@/lib/getTipsData";
 import { lookupTable } from "@/lib/createTipsLookup";
 
 export default function HomePage() {
-  const home = useTranslations("HomePage");
-  const tips = useTranslations("Tips");
+  const homeHero = useTranslations("HomePage.Hero");
+  const tips = useTranslations("HomePage.Tips");
 
   const tipsArray = getTipsData(tips);
   const TipsCardData = lookupTable(tipsArray, tipCards);
@@ -33,10 +33,10 @@ export default function HomePage() {
 
         <div className="relative z-10 w-full max-w-5xl px-4 md:px-6 text-center text-white">
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
-            {home("title")}
+            {homeHero("title")}
           </h1>
           <p className="text-base sm:text-lg md:text-2xl font-medium mb-10 text-white/90 max-w-2xl mx-auto">
-            {home("paragraph")}
+            {homeHero("paragraph")}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4">
             <Button variant="secondary" href="/donate">
