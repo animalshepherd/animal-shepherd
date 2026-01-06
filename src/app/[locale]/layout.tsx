@@ -13,9 +13,10 @@ type Props = {
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Adopt", href: "/adopt" },
-  { label: "Get Involved", href: "/getinvolved" },
   { label: "About", href: "/about" },
+  { label: "Adopt", href: "/adopt" },
+  { label: "Partnerships", href: "/partnerships" },
+  { label: "Get Involved", href: "/getinvolved" },
   { label: "Donate", href: "/donate" },
   { label: "Contact", href: "/contact" },
 ];
