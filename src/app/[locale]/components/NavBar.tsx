@@ -18,14 +18,14 @@ export const NavBar = ({ links }: NavBarProps) => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="bg-secondary fixed w-full z-30 top-0 left-0 border-b border-secondary-dark h-16">
-      <div className="max-w-7xl grid grid-cols-2 lg:grid-cols-3 items-center h-full mx-auto px-4 xl:px-0">
-        <Link
-          href="/"
-          className="flex items-center justify-start"
-          onClick={closeMenu}
-        >
-          <div className="flex items-center h-full">
+    <header className="fixed top-0 left-0 z-50 w-full h-16 border-b border-secondary-dark bg-secondary">
+      <div className="mx-auto flex h-full max-w-7xl items-center px-4 xl:px-0">
+        <div className="flex flex-1 items-center justify-start">
+          <Link
+            href="/"
+            className="flex items-center transition-transform hover:scale-105"
+            onClick={closeMenu}
+          >
             <div className="relative h-10 w-10">
               <Image
                 src="/animal-shepherd-logo.jpg"
@@ -35,16 +35,16 @@ export const NavBar = ({ links }: NavBarProps) => {
                 className="rounded-sm"
               />
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
 
-        <nav className="hidden lg:flex justify-center">
-          <ul className="flex items-center gap-6 font-medium">
+        <nav className="hidden lg:flex flex-2 items-center justify-center">
+          <ul className="flex items-center gap-4">
             {links.map((link) => (
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="text-primary font-semibold whitespace-nowrap hover:opacity-80 transition-opacity"
+                  className="text-primary text-sm font-bold uppercase tracking-widest transition-opacity hover:opacity-70 whitespace-nowrap"
                 >
                   {link.label}
                 </Link>
@@ -53,10 +53,18 @@ export const NavBar = ({ links }: NavBarProps) => {
           </ul>
         </nav>
 
-        <div className="flex items-center justify-end md:gap-4">
-          <LanguageSwitcher />
+        <div className="flex flex-1 items-center justify-end gap-2 md:gap-4">
+          <div className="flex items-center">
+            <LanguageSwitcher />
+          </div>
+
           <div className="hidden md:block">
-            <Button variant="primary" href="/donate">
+            <Button
+              variant="primary"
+              href="/donate"
+              size="sm"
+              className="uppercase tracking-widest whitespace-nowrap"
+            >
               Donate
             </Button>
           </div>
@@ -64,14 +72,14 @@ export const NavBar = ({ links }: NavBarProps) => {
           <button
             onClick={toggleMenu}
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-primary rounded-lg lg:hidden hover:bg-secondary-dark focus:outline-none transition-colors"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-primary transition-colors hover:bg-secondary-dark lg:hidden"
             aria-expanded={isOpen}
           >
             <span className="sr-only">
               {isOpen ? "Close menu" : "Open menu"}
             </span>
             <svg
-              className="w-6 h-6"
+              className="h-6 w-6"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -79,17 +87,17 @@ export const NavBar = ({ links }: NavBarProps) => {
             >
               {isOpen ? (
                 <path
+                  d="M6 18L18 6M6 6l12 12"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
                 />
               ) : (
                 <path
+                  d="M4 6h16M4 12h16M4 18h16"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
                 />
               )}
             </svg>
@@ -98,12 +106,12 @@ export const NavBar = ({ links }: NavBarProps) => {
       </div>
 
       <div
-        className={`fixed inset-0 top-16 bg-secondary z-20 lg:hidden transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-0 top-16 z-40 bg-secondary transition-transform duration-300 ease-in-out lg:hidden ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <nav className="flex flex-col h-full p-6">
-          <ul className="flex flex-col gap-6 text-xl font-semibold text-primary">
+        <nav className="flex h-full flex-col p-8">
+          <ul className="flex flex-col gap-6">
             {links.map((link) => (
               <li
                 key={link.label}
@@ -112,26 +120,22 @@ export const NavBar = ({ links }: NavBarProps) => {
                 <Link
                   href={link.href}
                   onClick={closeMenu}
-                  className="block w-full"
+                  className="block w-full text-2xl font-bold tracking-tight text-primary"
                 >
                   {link.label}
                 </Link>
               </li>
             ))}
           </ul>
-
-          <div className="mt-auto pb-10 space-y-4">
+          <div className="mt-auto space-y-6 pb-12">
             <Button
               variant="primary"
               href="/donate"
-              className="w-full py-4"
+              className="w-full py-5 uppercase tracking-widest"
               onClick={closeMenu}
             >
               Donate Now
             </Button>
-            <p className="text-primary/60 text-center text-sm italic">
-              Every life is precious.
-            </p>
           </div>
         </nav>
       </div>
