@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-
 import { Button } from "../components/ui/Button";
 import { HeroActionBox } from "../components/ui/HeroActionBox";
 
@@ -17,7 +16,7 @@ export default function AboutPage() {
             priority
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
 
         <div className="relative z-10 w-full max-w-4xl px-6 text-center text-white">
@@ -38,33 +37,9 @@ export default function AboutPage() {
         buttonHref="/getinvolved"
       />
 
-      <section className="py-24 px-6 lg:px-20 max-w-5xl mx-auto">
-        <header className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
-            Our Sanctuary
-          </h2>
-          <div className="h-1 w-20 bg-secondary mx-auto rounded-full" />
-        </header>
-
-        <div className="space-y-8 text-secondary text-lg leading-relaxed text-center">
-          <p>
-            What began as a mission to help cats, dogs, and farm animals has
-            grown into a multifaceted sanctuary. Today, Animal Shepherd operates
-            a no-cage shelter, pet-assisted therapy center, and eco-friendly
-            retreat. Our facilities consist of three main buildings and smaller
-            structures designed for comfort, healing, and fresh-air access.
-          </p>
-          <p>
-            Visitors often describe our space as a place of calm. It is a refuge
-            where compassion, care, and respect for life are felt immediately
-            upon arrival.
-          </p>
-        </div>
-      </section>
-
-      <section className="bg-secondary/5 py-24 px-6 lg:px-20">
+      <section className="bg-primary py-16 md:py-24 px-6 lg:px-20 border-b border-secondary/5">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="text-3xl font-bold text-secondary-dark">
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
             Our Impact & Responsibility
           </h2>
           <div className="text-secondary text-lg leading-relaxed space-y-6">
@@ -74,7 +49,7 @@ export default function AboutPage() {
               additional farm residents. Every life is treated with dignity,
               patience, and long-term commitment.
             </p>
-            <p>
+            <p className="text-base opacity-80 italic">
               Beyond rescue, we are responsible for investigating cases of
               neglect and abuse. Our work extends to managing feral populations
               and providing alternatives for animals facing euthanasia, focusing
@@ -84,16 +59,122 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="bg-parchment py-16 md:py-24 px-6 lg:px-20 border-b border-secondary/5">
+        <div className="max-w-7xl mx-auto">
+          <header className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4 uppercase tracking-wide">
+              Our Pillars of Care
+            </h2>
+            <div className="h-1 w-20 bg-secondary mx-auto rounded-full" />
+            <p className="text-secondary max-w-2xl mx-auto mt-6 text-sm md:text-base">
+              Our work is structured across three strategic areas to ensure a
+              comprehensive approach to animal welfare and community
+              sustainability.
+            </p>
+          </header>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-8 bg-primary-dark/20 border border-secondary-dark/10 rounded-3xl shadow-sm">
+              <h3 className="text-xl font-bold text-secondary-dark mb-4 uppercase tracking-wider">
+                Rescue & Clinical
+              </h3>
+              <ul className="space-y-3 text-secondary-dark text-sm">
+                <li className="flex items-start">
+                  <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
+                  24-hour emergency response services
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
+                  Veterinary care and spay/neuter programs
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
+                  Adoption and rehabilitation services
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
+                  Hospice care and specialized medical support
+                </li>
+              </ul>
+            </div>
+
+            <div className="p-8 bg-primary-dark/20 border border-secondary-dark/10 rounded-3xl shadow-sm">
+              <h3 className="text-xl font-bold text-secondary-dark mb-4 uppercase tracking-wider">
+                Sanctuary & Wellness
+              </h3>
+              <ul className="space-y-3 text-secondary-dark text-sm">
+                <li className="flex items-start">
+                  <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
+                  Farm sanctuary and animal shelter
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
+                  Pet hotel, eco camping, and lodging
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
+                  Animal-assisted therapy center
+                </li>
+              </ul>
+            </div>
+
+            <div className="p-8 bg-primary-dark/20 border border-secondary-dark/10 rounded-3xl shadow-sm">
+              <h3 className="text-xl font-bold text-secondary-dark mb-4 uppercase tracking-wider">
+                Advocacy & Outreach
+              </h3>
+              <ul className="space-y-3 text-secondary-dark text-sm">
+                <li className="flex items-start">
+                  <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
+                  Dog training and behavioral programs
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
+                  Permaculture and sustainable living workshops
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
+                  Community consulting and animal advocacy
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-secondary py-16 md:py-24 px-6 lg:px-20 text-primary">
+        <div className="max-w-4xl mx-auto text-center space-y-8">
+          <h2 className="text-3xl font-bold uppercase tracking-widest">
+            Our Sanctuary
+          </h2>
+          <div className="h-1 w-16 bg-primary mx-auto rounded-full" />
+          <div className="text-lg leading-relaxed space-y-6 opacity-95">
+            <p>
+              What began as a mission to help cats, dogs, and farm animals has
+              grown into a multifaceted sanctuary. Today, Animal Shepherd
+              operates a no-cage shelter, pet-assisted therapy center, and
+              eco-friendly retreat. Our facilities consist of three main
+              buildings and smaller structures designed for comfort, healing,
+              and fresh-air access.
+            </p>
+            <p className="italic opacity-80 text-base text-primary/80">
+              Visitors often describe our space as a place of calm. It is a
+              refuge where compassion, care, and respect for life are felt
+              immediately upon arrival.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 px-6 lg:px-20 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-6">
-            <h3 className="text-sm font-bold text-secondary tracking-widest uppercase">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24 lg:mb-32">
+          <div className="space-y-6 text-center lg:text-left">
+            <h3 className="text-xs font-bold text-secondary tracking-widest uppercase">
               NATURE & HABITAT
             </h3>
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark uppercase tracking-tight">
               A Legacy of Conservation
             </h2>
-            <div className="h-1 w-20 bg-secondary rounded-full" />
+            <div className="h-1 w-20 bg-secondary mx-auto lg:mx-0 rounded-full" />
             <p className="text-secondary text-lg leading-relaxed">
               Beyond our sanctuary walls, we are dedicated to the protection of
               the ecosystems that sustain all life. Our commitment to the planet
@@ -102,7 +183,7 @@ export default function AboutPage() {
               landscape is allowed to flourish.
             </p>
           </div>
-          <div className="relative aspect-video lg:aspect-square rounded-3xl overflow-hidden shadow-xl">
+          <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl">
             <Image
               src="/cat-17.webp"
               alt="Cat in nature"
@@ -111,91 +192,9 @@ export default function AboutPage() {
             />
           </div>
         </div>
-      </section>
 
-      <section className="py-24 px-6 lg:px-20 max-w-7xl mx-auto">
-        <header className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
-            Our Pillars of Care
-          </h2>
-          <div className="h-1 w-20 bg-secondary mx-auto rounded-full" />
-          <p className="text-secondary max-w-2xl mx-auto mt-6">
-            Our work is structured across three strategic areas to ensure a
-            comprehensive approach to animal welfare and community
-            sustainability.
-          </p>
-        </header>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="p-8 bg-primary border border-gray-100 rounded-3xl shadow-sm">
-            <h3 className="text-xl font-bold text-secondary-dark mb-4">
-              Rescue & Clinical
-            </h3>
-            <ul className="space-y-3 text-secondary text-sm">
-              <li className="flex items-start">
-                <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                24-hour emergency response services
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                Veterinary care and spay/neuter programs
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                Adoption and rehabilitation services
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                Hospice care and specialized medical support
-              </li>
-            </ul>
-          </div>
-
-          <div className="p-8 bg-primary border border-gray-100 rounded-3xl shadow-sm">
-            <h3 className="text-xl font-bold text-secondary-dark mb-4">
-              Sanctuary & Wellness
-            </h3>
-            <ul className="space-y-3 text-secondary text-sm">
-              <li className="flex items-start">
-                <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                Farm sanctuary and animal shelter
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                Pet hotel, eco camping, and lodging
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                Animal-assisted therapy center
-              </li>
-            </ul>
-          </div>
-
-          <div className="p-8 bg-primary border border-gray-100 rounded-3xl shadow-sm">
-            <h3 className="text-xl font-bold text-secondary-dark mb-4">
-              Advocacy & Outreach
-            </h3>
-            <ul className="space-y-3 text-secondary text-sm">
-              <li className="flex items-start">
-                <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                Dog training and behavioral programs
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                Permaculture and sustainable living workshops
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                Community consulting and animal advocacy
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24 px-6 lg:px-20 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="relative aspect-4/5 rounded-3xl overflow-hidden shadow-xl order-last lg:order-first">
+          <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl order-last lg:order-first">
             <Image
               src="/owner-dog-30.webp"
               alt="Founder of Animal Shepherd with a rescue animal"
@@ -204,14 +203,14 @@ export default function AboutPage() {
             />
           </div>
 
-          <div className="space-y-6">
-            <h3 className="text-sm font-bold text-secondary tracking-widest uppercase">
+          <div className="space-y-6 text-center lg:text-left">
+            <h3 className="text-xs font-bold text-secondary tracking-widest uppercase">
               LAND RESTORATION
             </h3>
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark">
-              Restoring Ecosystems for the Future
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark uppercase tracking-tight">
+              Restoring Ecosystems
             </h2>
-            <div className="h-1 w-20 bg-secondary rounded-full" />
+            <div className="h-1 w-20 bg-secondary mx-auto lg:mx-0 rounded-full" />
 
             <div className="text-secondary text-lg leading-relaxed space-y-4">
               <p>
@@ -227,7 +226,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <blockquote className="border-l-4 border-secondary pl-6 italic text-secondary-dark font-medium py-2">
+            <blockquote className="border-l-4 border-secondary pl-6 italic text-secondary-dark font-medium py-2 text-left">
               &quot;We promote a deep respect for life and the world we share,
               fostering an ethic of coexistence and shared responsibility.&quot;
             </blockquote>
@@ -235,55 +234,49 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-secondary py-24 px-6 lg:px-20 text-white">
-        <div className="max-w-4xl mx-auto text-center space-y-10">
+      <section className="py-16 bg-secondary text-primary/90 border-t border-white/5">
+        <div className="max-w-2xl mx-auto text-center px-6">
+          <h2 className="text-xs font-bold tracking-widest text-primary/40 uppercase mb-6">
+            Dedication
+          </h2>
           <div className="space-y-4">
-            <h2 className="text-xs font-bold tracking-[0.3em] uppercase opacity-70">
-              DEDICATION
-            </h2>
-            <h3 className="text-2xl md:text-3xl font-bold italic leading-tight">
+            <p className="text-xs italic leading-loose">
               This project is dedicated to the memory of Cioli, &quot;Savior of
-              100 lives.&quot;
-            </h3>
-            <div className="h-1 w-20 bg-primary mx-auto rounded-full" />
-          </div>
-
-          <div className="space-y-6 text-lg md:text-xl font-light leading-relaxed max-w-3xl mx-auto">
-            <p>
-              On the shores of Santander, forged by the freezing waters of the
-              Bay of Biscay, a young kid born in The Netherlands named Ryan
-              learned from this man that duty is non-negotiable and that life is
-              defended in silence.
+              100 lives.&quot; On the shores of Santander, forged by the
+              freezing waters of the Bay of Biscay, a young kid born in The
+              Netherlands named Ryan learned from this man that duty is
+              non-negotiable and that life is defended in silence.
             </p>
-            <p>
+            <p className="text-xs italic leading-loose">
               That boy was his best disciple. Today, under the Mexican sky, that
               same will has saved over 1,000 lives.
             </p>
-          </div>
-
-          <div className="pt-6">
-            <p className="text-xl font-bold uppercase tracking-widest">
+            <p className="pt-2 text-xs font-bold uppercase tracking-widest text-primary">
               Thank you Cioli. The watch continues.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-24 bg-primary border-t border-gray-100">
+      <section className="py-16 md:py-24 bg-primary border-t border-secondary/5">
         <div className="max-w-4xl mx-auto text-center px-6">
-          <h2 className="text-3xl font-bold text-secondary-dark mb-6">
+          <h2 className="text-3xl font-bold text-secondary-dark mb-6 uppercase tracking-wide">
             Join Our Mission
           </h2>
-          <p className="text-secondary mb-10 text-lg">
+          <p className="text-secondary mb-12 text-lg">
             There are many ways to support our residents. Whether through
             adoption, volunteering, or donating, you can help us continue our
             commitment to rescue.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button variant="primary" href="/getinvolved" className="px-10">
+          <div className="flex flex-col sm:flex-row justify-center gap-6">
+            <Button
+              variant="primary"
+              href="/getinvolved"
+              className="px-12 py-4"
+            >
               Get Involved
             </Button>
-            <Button variant="secondary" href="/adopt" className="px-10">
+            <Button variant="secondary" href="/adopt" className="px-12 py-4">
               Learn About Adopting
             </Button>
           </div>
