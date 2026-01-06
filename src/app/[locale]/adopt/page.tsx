@@ -91,7 +91,7 @@ export default function AdoptPage() {
             <div className="grid grid-cols-1 gap-10">
               <div className="flex flex-col gap-3">
                 <label className="text-[11px] font-bold text-secondary-dark uppercase tracking-widest ml-1">
-                  1. Who do you want to adopt and why? *
+                  1. What animal do you want to adopt and why? *
                 </label>
                 <textarea
                   required
