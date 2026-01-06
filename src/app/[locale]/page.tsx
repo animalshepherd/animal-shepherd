@@ -118,11 +118,15 @@ export default function HomePage() {
             <div className="text-secondary text-base md:text-lg space-y-6 leading-relaxed">
               <p>
                 Animal Shepherd is a non-profit, no-kill organization founded on
-                the belief that every life is precious.
+                the belief that every life is precious. We provide a permanent
+                no-cage sanctuary for animals living with challenges that leave
+                them without other options.
               </p>
               <p>
-                Our mission is to build a world where every creature is valued
-                through sanctuary care and education.
+                From intensive clinical rehabilitation to the restoration of
+                over 80 hectares of local ecosystems, our work ensures that
+                every creature is valued through professional sanctuary care and
+                environmental stewardship.
               </p>
             </div>
             <div className="pt-2">
