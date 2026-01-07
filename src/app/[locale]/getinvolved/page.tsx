@@ -115,63 +115,12 @@ export default function GetInvolvedPage() {
                 <p className="text-secondary text-base leading-relaxed italic">
                   We specialize in those who need it most: seniors, mixed
                   breeds, pitbulls, and the sick. Don’t shop for a breed, adopt
-                  a soul in need. Adopt with your 🤍
+                  a soul in need. Adopt with your ❤️
                 </p>
               </div>
               <div className="pt-8">
                 <Button variant="primary" size="lg" href="/adopt">
-                  View Our Community
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-secondary/5 py-24 px-6 lg:px-20">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-primary p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100">
-            <header className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-secondary-dark mb-4">
-                Adoption Fees
-              </h2>
-              <p className="text-secondary text-sm max-w-md mx-auto">
-                These fees help cover testing (FIV/Leukemia), vaccines, parasite
-                treatment, spay/neuter, and microchipping.
-              </p>
-            </header>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mb-12">
-              <div className="p-6 bg-secondary/5 rounded-2xl border border-secondary/10">
-                <p className="text-xs uppercase font-bold text-secondary/60 mb-1">
-                  Cat / Kitten
-                </p>
-                <p className="text-3xl font-bold text-secondary-dark">$150</p>
-              </div>
-              <div className="p-6 bg-secondary/5 rounded-2xl border border-secondary/10">
-                <p className="text-xs uppercase font-bold text-secondary/60 mb-1">
-                  Dog / Puppy
-                </p>
-                <p className="text-3xl font-bold text-secondary-dark">$200</p>
-              </div>
-              <div className="p-6 bg-secondary/5 rounded-2xl border border-secondary/10">
-                <p className="text-xs uppercase font-bold text-secondary/60 mb-1">
-                  Pair of Cats/Dogs
-                </p>
-                <p className="text-3xl font-bold text-secondary-dark">$250</p>
-              </div>
-            </div>
-
-            <div className="text-center space-y-8">
-              <p className="text-sm text-secondary italic">
-                * Fees may vary based on special medical requirements.
-              </p>
-              <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Button variant="primary" href="mailto:info@animalshepherd.org">
-                  Email Adoption Inquiry
-                </Button>
-                <Button variant="primary" href="/forms/application.pdf">
-                  Download Inquiry Form
+                  Learn More About Adopting
                 </Button>
               </div>
             </div>
