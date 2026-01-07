@@ -44,7 +44,7 @@ export const NavBar = ({ links }: NavBarProps) => {
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="text-primary text-sm font-bold uppercase tracking-widest transition-opacity hover:opacity-70 whitespace-nowrap"
+                  className="text-primary text-sm font-bold transition-opacity hover:opacity-70 whitespace-nowrap"
                 >
                   {link.label}
                 </Link>
