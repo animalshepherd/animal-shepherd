@@ -18,7 +18,7 @@ export const Footer = ({ links }: FooterProps) => {
               href="/"
               className="inline-block transition-transform hover:scale-105"
             >
-              <div className="relative h-20 w-20">
+              <div className="relative h-16 w-16">
                 <Image
                   src="/animal-shepherd-logo.jpg"
                   fill

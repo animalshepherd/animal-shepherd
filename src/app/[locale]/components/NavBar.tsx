@@ -26,13 +26,13 @@ export const NavBar = ({ links }: NavBarProps) => {
             className="flex items-center transition-transform hover:scale-105"
             onClick={closeMenu}
           >
-            <div className="relative h-10 w-10">
+            <div className="relative h-12 w-12">
               <Image
                 src="/animal-shepherd-logo.jpg"
                 fill
                 priority
                 alt="Logo Nav"
-                className="rounded-sm"
+                className="rounded-full object-cover border-2 border-primary/20"
               />
             </div>
           </Link>
