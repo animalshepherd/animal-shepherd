@@ -133,7 +133,7 @@ export default function PartnershipsPage() {
           </div>
 
           <div className="relative aspect-square bg-primary/5 rounded-[60px] flex items-center justify-center p-12 border border-white/10">
-            <div className="relative w-full h-full grayscale brightness-200 contrast-125">
+            <div className="relative w-full h-full">
               <Image
                 src="/animal-shepherd-logo.jpg"
                 alt="Animal Shepherd Emblem by Alejandro Magallanes"
