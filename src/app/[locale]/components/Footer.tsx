@@ -65,7 +65,7 @@ export const Footer = ({ links }: FooterProps) => {
               >
                 info@animalshepherd.org
               </a>
-              <div className="flex items-center justify-center gap-8 md:justify-start">
+              <div className="flex items-center justify-center gap-4 md:justify-start">
                 <Link
                   href="https://instagram.com/animal.shepherd"
                   target="_blank"
