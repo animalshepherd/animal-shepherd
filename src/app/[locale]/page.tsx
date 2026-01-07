@@ -165,7 +165,7 @@ export default function HomePage() {
         </div>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 px-4">
-          <Button variant="primary" href="/adopt">
+          <Button variant="secondary" href="/adopt">
             Meet the Residents
           </Button>
         </div>
