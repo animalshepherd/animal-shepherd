@@ -160,5 +160,69 @@
       "title": "Join Our Mission",
       "description": "There are many ways to support our residents. Whether through adoption, volunteering, or donating, you can help us continue our commitment to rescue."
     }
+  },
+  "AdoptPage": {
+    "Hero": {
+      "title": "Adopt and Change a Life",
+      "paragraph": "Every animal deserves security, compassion, and a place to thrive. Find your new companion and help us make room for another rescue."
+    },
+    "HeroAction": {
+      "title": "A Lifelong Commitment",
+      "description": "Our adoption process is thoughtful and focused on the long-term well-being of each animal. We work closely with you to ensure a responsible match for your lifestyle and their specific needs.",
+      "button": "Start Application"
+    },
+    "Family": {
+      "title": "Meet the Family: Past & Present",
+      "description": "Each face below represents a life protected by our community. These are the individuals who have called Animal Shepherd home, from those currently seeking families to our cherished success stories."
+    },
+    "HowToAdopt": {
+      "title": "How to Adopt",
+      "steps": {
+        "1": {
+          "title": "Search",
+          "description": "Browse our current residents and find a companion that matches your lifestyle."
+        },
+        "2": {
+          "title": "Application",
+          "description": "Fill out our adoption application to help us understand your home environment."
+        },
+        "3": {
+          "title": "Meet & Greet",
+          "description": "Schedule an encounter at the sanctuary to see if the connection is right."
+        },
+        "4": {
+          "title": "Welcome Home",
+          "description": "Finalize the adoption and welcome your new family member home."
+        }
+      }
+    },
+    "Fees": {
+      "title": "Adoption Fees",
+      "description": "These fees help cover testing (FIV/Leukemia), vaccines, parasite treatment, spay/neuter, and microchipping.",
+      "cat": "Cat / Kitten",
+      "dog": "Dog / Puppy",
+      "pair": "Pair of Cats/Dogs",
+      "note": "* Fees may vary based on special medical requirements."
+    },
+    "Form": {
+      "title": "Animal Adoption Application",
+      "description": "Thank you for choosing to save a life. This form is the first step. If your profile is a match, we will contact you for a detailed interview and a virtual home visit.",
+      "labels": {
+        "q1": "1. What animal do you want to adopt and why? *",
+        "q1_placeholder": "Cat or Dog and your main reason for adopting",
+        "q2": "2. Full Name *",
+        "q2_placeholder": "First and last name",
+        "q3": "3. Contact Information *",
+        "q3_placeholder": "Phone, Email, and @Instagram",
+        "q4": "4. Location *",
+        "q4_placeholder": "City, Borough/Area, and Neighborhood",
+        "q5": "5. Housing & Household *",
+        "q5_placeholder": "House or apartment? / Owned or rented? / Do you live with children or other pets?",
+        "q6": "6. Lifestyle & Routine *",
+        "q6_placeholder": "How many hours will the pet be alone daily and where will they sleep?",
+        "submit": "Submit Application",
+        "privacy": "By clicking submit, I accept the privacy terms and conditions of Animal Shepherd AC."
+      }
+    }
   }
 }

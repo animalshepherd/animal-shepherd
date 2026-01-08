@@ -1,14 +1,18 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { AnimalCard } from "../components/ui/AnimalCard";
 import { HeroActionBox } from "../components/ui/HeroActionBox";
 import { Button } from "../components/ui/Button";
 
 import { animals } from "@/data/animals";
-import { adoptionSteps } from "@/data/steps";
 
 export default function AdoptPage() {
+  const t = useTranslations("AdoptPage");
+
+  const stepsKeys = ["1", "2", "3", "4"] as const;
+
   return (
     <div className="flex flex-col w-full bg-primary antialiased">
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
@@ -25,19 +29,18 @@ export default function AdoptPage() {
 
         <div className="relative z-10 w-full max-w-4xl px-6 text-center text-white">
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
-            Adopt and Change a Life
+            {t("Hero.title")}
           </h1>
           <p className="text-lg md:text-xl font-medium text-white/90 max-w-2xl mx-auto">
-            Every animal deserves security, compassion, and a place to thrive.
-            Find your new companion and help us make room for another rescue.
+            {t("Hero.paragraph")}
           </p>
         </div>
       </section>
 
       <HeroActionBox
-        title="A Lifelong Commitment"
-        description="Our adoption process is thoughtful and focused on the long-term well-being of each animal. We work closely with you to ensure a responsible match for your lifestyle and their specific needs."
-        buttonLabel="Start Application"
+        title={t("HeroAction.title")}
+        description={t("HeroAction.description")}
+        buttonLabel={t("HeroAction.button")}
         buttonHref="#adoption-form"
         buttonVariant="primary"
       />
@@ -48,13 +51,11 @@ export default function AdoptPage() {
       >
         <header className="text-center mb-16 space-y-4">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark">
-            Meet the Family: Past & Present
+            {t("Family.title")}
           </h2>
           <div className="h-1 w-20 bg-secondary mx-auto rounded-full" />
           <p className="text-secondary max-w-2xl mx-auto text-lg leading-relaxed">
-            Each face below represents a life protected by our community. These
-            are the individuals who have called Animal Shepherd home, from those
-            currently seeking families to our cherished success stories.
+            {t("Family.description")}
           </p>
         </header>
 
@@ -69,25 +70,25 @@ export default function AdoptPage() {
         <div className="max-w-7xl mx-auto">
           <header className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
-              How to Adopt
+              {t("HowToAdopt.title")}
             </h2>
             <div className="h-1.5 w-20 bg-secondary mx-auto rounded-full" />
           </header>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {adoptionSteps.map((step) => (
+            {stepsKeys.map((key) => (
               <div
-                key={step.number}
+                key={key}
                 className="relative p-8 bg-primary border border-secondary/10 rounded-3xl shadow-sm transition-all hover:shadow-md"
               >
                 <span className="absolute -top-4 left-8 bg-secondary text-primary font-bold px-4 py-1 rounded-full text-xs">
-                  Step {step.number}
+                  Step {key}
                 </span>
                 <h3 className="text-lg font-bold text-secondary-dark mt-4 mb-3">
-                  {step.title}
+                  {t(`HowToAdopt.steps.${key}.title`)}
                 </h3>
                 <p className="text-secondary leading-relaxed text-sm opacity-80">
-                  {step.description}
+                  {t(`HowToAdopt.steps.${key}.description`)}
                 </p>
               </div>
             ))}
@@ -100,30 +101,29 @@ export default function AdoptPage() {
           <div className="bg-primary p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100">
             <header className="text-center mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-secondary-dark mb-4">
-                Adoption Fees
+                {t("Fees.title")}
               </h2>
               <p className="text-secondary text-sm max-w-md mx-auto">
-                These fees help cover testing (FIV/Leukemia), vaccines, parasite
-                treatment, spay/neuter, and microchipping.
+                {t("Fees.description")}
               </p>
             </header>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mb-12">
               <div className="p-6 bg-secondary/5 rounded-2xl border border-secondary/10">
                 <p className="text-xs uppercase font-bold text-secondary/60 mb-1">
-                  Cat / Kitten
+                  {t("Fees.cat")}
                 </p>
                 <p className="text-3xl font-bold text-secondary-dark">$150</p>
               </div>
               <div className="p-6 bg-secondary/5 rounded-2xl border border-secondary/10">
                 <p className="text-xs uppercase font-bold text-secondary/60 mb-1">
-                  Dog / Puppy
+                  {t("Fees.dog")}
                 </p>
                 <p className="text-3xl font-bold text-secondary-dark">$200</p>
               </div>
               <div className="p-6 bg-secondary/5 rounded-2xl border border-secondary/10">
                 <p className="text-xs uppercase font-bold text-secondary/60 mb-1">
-                  Pair of Cats/Dogs
+                  {t("Fees.pair")}
                 </p>
                 <p className="text-3xl font-bold text-secondary-dark">$250</p>
               </div>
@@ -131,7 +131,7 @@ export default function AdoptPage() {
 
             <div className="text-center space-y-8">
               <p className="text-sm text-secondary italic opacity-70">
-                * Fees may vary based on special medical requirements.
+                {t("Fees.note")}
               </p>
             </div>
           </div>
@@ -145,12 +145,10 @@ export default function AdoptPage() {
         <div className="max-w-4xl mx-auto w-full">
           <header className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-6">
-              Animal Adoption Application
+              {t("Form.title")}
             </h2>
             <p className="text-secondary text-lg leading-relaxed max-w-2xl mx-auto">
-              Thank you for choosing to save a life. This form is the first
-              step. If your profile is a match, we will contact you for a
-              detailed interview and a virtual home visit.
+              {t("Form.description")}
             </p>
           </header>
 
@@ -158,89 +156,87 @@ export default function AdoptPage() {
             <div className="grid grid-cols-1 gap-10">
               <div className="flex flex-col gap-3">
                 <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1">
-                  1. What animal do you want to adopt and why? *
+                  {t("Form.labels.q1")}
                 </label>
                 <textarea
                   required
                   rows={3}
-                  placeholder="Cat or Dog and your main reason for adopting"
+                  placeholder={t("Form.labels.q1_placeholder")}
                   className="w-full p-4 rounded-2xl bg-primary border border-secondary/10 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all resize-none text-secondary"
                 />
               </div>
 
               <div className="flex flex-col gap-3">
                 <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1">
-                  2. Full Name *
+                  {t("Form.labels.q2")}
                 </label>
                 <input
                   required
                   type="text"
-                  placeholder="First and last name"
+                  placeholder={t("Form.labels.q2_placeholder")}
                   className="w-full p-4 rounded-2xl bg-primary border border-secondary/10 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all text-secondary"
                 />
               </div>
 
               <div className="flex flex-col gap-3">
                 <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1">
-                  3. Contact Information *
+                  {t("Form.labels.q3")}
                 </label>
                 <input
                   required
                   type="text"
-                  placeholder="Phone, Email, and @Instagram"
+                  placeholder={t("Form.labels.q3_placeholder")}
                   className="w-full p-4 rounded-2xl bg-primary border border-secondary/10 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all text-secondary"
                 />
               </div>
 
               <div className="flex flex-col gap-3">
                 <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1">
-                  4. Location *
+                  {t("Form.labels.q4")}
                 </label>
                 <input
                   required
                   type="text"
-                  placeholder="City, Borough/Area, and Neighborhood"
+                  placeholder={t("Form.labels.q4_placeholder")}
                   className="w-full p-4 rounded-2xl bg-primary border border-secondary/10 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all text-secondary"
                 />
               </div>
 
               <div className="flex flex-col gap-3">
                 <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1">
-                  5. Housing & Household *
+                  {t("Form.labels.q5")}
                 </label>
                 <textarea
                   required
                   rows={3}
-                  placeholder="House or apartment? / Owned or rented? / Do you live with children or other pets?"
+                  placeholder={t("Form.labels.q5_placeholder")}
                   className="w-full p-4 rounded-2xl bg-primary border border-secondary/10 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all resize-none text-secondary"
                 />
               </div>
 
               <div className="flex flex-col gap-3">
                 <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1">
-                  6. Lifestyle & Routine *
+                  {t("Form.labels.q6")}
                 </label>
                 <textarea
                   required
                   rows={3}
-                  placeholder="How many hours will the pet be alone daily and where will they sleep?"
+                  placeholder={t("Form.labels.q6_placeholder")}
                   className="w-full p-4 rounded-2xl bg-primary border border-secondary/10 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all resize-none text-secondary"
                 />
               </div>
 
               <div className="flex flex-col items-center gap-6 pt-10 border-t border-secondary/10">
-                {/* update button for the on submit */}
                 <Button
                   variant="secondary"
                   size="lg"
                   className="px-16"
                   href="/getinvolved"
                 >
-                  Submit Application
+                  {t("Form.labels.submit")}
                 </Button>
                 <p className="text-xs text-secondary/50 uppercase tracking-widest text-center leading-relaxed">
-                  By clicking submit, I accept the privacy terms and conditions
-                  of Animal Shepherd AC.
+                  {t("Form.labels.privacy")}
                 </p>
               </div>
             </div>

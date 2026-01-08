@@ -160,5 +160,69 @@
       "title": "Únete a Nuestra Misión",
       "description": "Hay muchas formas de apoyar a nuestros residentes. Ya sea mediante la adopción, el voluntariado o la donación, puedes ayudarnos a continuar."
     }
+  },
+  "AdoptPage": {
+    "Hero": {
+      "title": "Adopta y Cambia una Vida",
+      "paragraph": "Cada animal merece seguridad, compasión y un lugar para prosperar. Encuentra a tu nuevo compañero y ayúdanos a hacer espacio para otro rescate."
+    },
+    "HeroAction": {
+      "title": "Un Compromiso de por Vida",
+      "description": "Nuestro proceso de adopción es reflexivo y se centra en el bienestar a largo plazo de cada animal. Trabajamos estrechamente contigo para asegurar una pareja responsable.",
+      "button": "Iniciar Solicitud"
+    },
+    "Family": {
+      "title": "Conoce a la Familia: Pasado y Presente",
+      "description": "Cada rostro a continuación representa una vida protegida por nuestra comunidad. Estos son los individuos que han llamado hogar a Animal Shepherd."
+    },
+    "HowToAdopt": {
+      "title": "Cómo Adoptar",
+      "steps": {
+        "1": {
+          "title": "Buscar",
+          "description": "Explora nuestros residentes actuales y encuentra un compañero que se adapte a tu estilo de vida."
+        },
+        "2": {
+          "title": "Solicitud",
+          "description": "Completa nuestra solicitud de adopción para ayudarnos a entender tu entorno hogareño."
+        },
+        "3": {
+          "title": "Encuentro",
+          "description": "Agenda una visita en el santuario para ver si la conexión es la adecuada."
+        },
+        "4": {
+          "title": "Bienvenido a Casa",
+          "description": "Finaliza la adopción y dale la bienvenida a casa a tu nuevo familiar."
+        }
+      }
+    },
+    "Fees": {
+      "title": "Cuotas de Adopción",
+      "description": "Estas cuotas ayudan a cubrir pruebas (SIDA/Leucemia), vacunas, desparasitación, esterilización y microchip.",
+      "cat": "Gato / Gatito",
+      "dog": "Perro / Cachorro",
+      "pair": "Pareja de Gatos/Perros",
+      "note": "* Las cuotas pueden variar según requerimientos médicos especiales."
+    },
+    "Form": {
+      "title": "Solicitud de Adopción Animal",
+      "description": "Gracias por elegir salvar una vida. Este formulario es el primer paso. Si tu perfil coincide, te contactaremos para una entrevista detallada.",
+      "labels": {
+        "q1": "1. ¿Qué animal quieres adoptar y por qué? *",
+        "q1_placeholder": "Gato o Perro y tu motivo principal para adoptar",
+        "q2": "2. Nombre Completo *",
+        "q2_placeholder": "Nombre y apellidos",
+        "q3": "3. Información de Contacto *",
+        "q3_placeholder": "Teléfono, Correo y @Instagram",
+        "q4": "4. Ubicación *",
+        "q4_placeholder": "Ciudad, Delegación/Municipio y Colonia",
+        "q5": "5. Vivienda y Hogar *",
+        "q5_placeholder": "¿Casa o departamento? / ¿Propio o rentado? / ¿Vives con niños u otras mascotas?",
+        "q6": "6. Estilo de Vida y Rutina *",
+        "q6_placeholder": "¿Cuántas horas estará sola la mascota al día y dónde dormirá?",
+        "submit": "Enviar Solicitud",
+        "privacy": "Al hacer clic en enviar, acepto los términos de privacidad y condiciones de Animal Shepherd AC."
+      }
+    }
   }
 }
