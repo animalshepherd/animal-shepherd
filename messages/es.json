@@ -224,5 +224,54 @@
         "privacy": "Al hacer clic en enviar, acepto los términos de privacidad y condiciones de Animal Shepherd AC."
       }
     }
+  },
+  "PartnershipsPage": {
+    "Hero": {
+      "title": "Alianzas Estratégicas",
+      "paragraph": "Fomentando una visión de responsabilidad compartida a través de la excelencia profesional y la coexistencia."
+    },
+    "HeroAction": {
+      "title": "Una Visión de Impacto",
+      "description": "Animal Shepherd es una organización sin fines de lucro dedicada a la protección de los animales y la naturaleza. Rescatamos y rehabilitamos la vida mientras ofrecemos consultoría de alto nivel, talleres y proyectos culturales.",
+      "button": "Contactar Alianzas"
+    },
+    "Pillars": {
+      "corporate": {
+        "title": "Bienestar Corporativo",
+        "description": "Transforma tu cultura corporativa en la mejor oficina del mundo: el campo abierto. Ofrecemos experiencias personalizadas en mindfulness, reducción del estrés y terapia asistida por animales."
+      },
+      "esg": {
+        "title": "ESG y Sostenibilidad",
+        "description": "Invierte en resultados medibles para los objetivos ambientales de tu marca. A través de la reforestación corporativa y la restauración de tierras, ofrecemos formas tangibles de cumplir con las metas de sostenibilidad."
+      },
+      "education": {
+        "title": "Educación e Intercambio",
+        "description": "Construimos puentes con universidades a través de talleres especializados. Desde permacultura hasta comportamiento animal, nuestro santuario sirve como un laboratorio vivo."
+      }
+    },
+    "Art": {
+      "tag": "Arte, Cultura y Legado",
+      "title": "Curando Arte para Salvar Vidas",
+      "description": "Integramos el Arte como motor de cambio, comenzando con una retrospectiva internacional de Alejandro Magallanes, creador de nuestra identidad visual.",
+      "impact": {
+        "label": "Impacto:",
+        "text": "Artistas internacionales de renombre que donan obras originales para financiar unidades quirúrgicas de alto impacto."
+      },
+      "mandate": {
+        "label": "Mandato Global:",
+        "text": "Mandato exclusivo para gestionar exposiciones y derivados benéficos para galerías de todo el mundo."
+      },
+      "integrity": {
+        "label": "Integridad:",
+        "text": "Gestionado bajo el marco de Google para Organizaciones sin Fines de Lucro."
+      },
+      "quote": "Diseñé este emblema para Animal Shepherd.",
+      "button": "Ver Publicación Original"
+    },
+    "CTA": {
+      "title": "Colabora con los Guardianes",
+      "description": "Únete a una red de instituciones globales dedicadas al bienestar animal profesional y la restauración ecológica. Construyamos juntos un legado de coexistencia.",
+      "button": "Consultar Sobre Alianzas Estratégicas"
+    }
   }
 }

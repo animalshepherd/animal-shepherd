@@ -224,5 +224,54 @@
         "privacy": "By clicking submit, I accept the privacy terms and conditions of Animal Shepherd AC."
       }
     }
+  },
+  "PartnershipsPage": {
+    "Hero": {
+      "title": "Strategic Alliances",
+      "paragraph": "Fostering a vision for shared responsibility through professional excellence and coexistence."
+    },
+    "HeroAction": {
+      "title": "A Vision for Impact",
+      "description": "Animal Shepherd is a non-profit organization dedicated to the protection of animals and nature. We rescue and rehabilitate life while offering high-level consultancy, workshops, and cultural projects.",
+      "button": "Contact Partnerships"
+    },
+    "Pillars": {
+      "corporate": {
+        "title": "Corporate Wellness",
+        "description": "Transform your corporate culture in the world’s best office: the open field. We offer tailored experiences in mindfulness, stress reduction, and animal-assisted therapy that fosters emotional support and authentic connection."
+      },
+      "esg": {
+        "title": "ESG & Sustainability",
+        "description": "Invest in measurable results for your brand’s environmental goals. Through corporate reforestation and land restoration, we provide tangible ways to meet sustainability targets with full transparency for your Social Investment (ESG) reports."
+      },
+      "education": {
+        "title": "Education & Exchange",
+        "description": "We build bridges with universities through specialized workshops. From permaculture to animal behavior, our sanctuary serves as a living laboratory for environmental management and ethical innovation."
+      }
+    },
+    "Art": {
+      "tag": "Art, Culture & Legacy",
+      "title": "Curating Art to Save Lives",
+      "description": "We integrate Art as a driver for change, starting with an international retrospective of Alejandro Magallanes, creator of our visual identity.",
+      "impact": {
+        "label": "Impact:",
+        "text": "Renowned international artists donating original artwork to fund high-impact surgical units."
+      },
+      "mandate": {
+        "label": "Global Mandate:",
+        "text": "Exclusive mandate to manage exhibitions and charitable derivatives for galleries worldwide."
+      },
+      "integrity": {
+        "label": "Integrity:",
+        "text": "Managed via Google for Nonprofits framework."
+      },
+      "quote": "I designed this emblem for Animal Shepherd.",
+      "button": "View Original Post"
+    },
+    "CTA": {
+      "title": "Partner with the Guardians",
+      "description": "Join a network of global institutions dedicated to professional animal welfare and ecological restoration. Let’s build a legacy of coexistence together.",
+      "button": "Inquire About Strategic Alliances"
+    }
   }
 }
