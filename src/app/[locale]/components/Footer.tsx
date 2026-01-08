@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link as IntlLink } from "../../../i18n/navigation";
 import { Button } from "../components/ui/Button";
 
 interface FooterProps {
@@ -9,12 +13,14 @@ interface FooterProps {
 export const Footer = ({ links }: FooterProps) => {
   const currentYear = new Date().getFullYear();
 
+  const t = useTranslations("Navigation");
+
   return (
     <footer className="w-full bg-secondary py-12 text-primary">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
           <div className="flex flex-col items-center text-center md:items-start md:text-left lg:col-span-4">
-            <Link
+            <IntlLink
               href="/"
               className="inline-block transition-transform hover:scale-105"
             >
@@ -26,7 +32,7 @@ export const Footer = ({ links }: FooterProps) => {
                   alt="Animal Shepherd Logo"
                 />
               </div>
-            </Link>
+            </IntlLink>
             <p className="mt-8 max-w-xs text-base leading-relaxed text-primary/80">
               Dedicated to the rescue, rehabilitation, and rehoming of animals
               in need. Every life deserves a second chance.
@@ -41,12 +47,12 @@ export const Footer = ({ links }: FooterProps) => {
               <ul className="space-y-4">
                 {links.map((link) => (
                   <li key={link.label}>
-                    <Link
+                    <IntlLink
                       href={link.href}
                       className="block text-sm font-medium text-primary/70 transition-colors hover:text-primary py-1"
                     >
-                      {link.label}
-                    </Link>
+                      {t(link.label)}
+                    </IntlLink>
                   </li>
                 ))}
               </ul>

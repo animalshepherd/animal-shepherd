@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+
+import { Link } from "../../../i18n/navigation";
+import { useTranslations } from "next-intl";
 
 import { Button } from "./ui/Button";
 import { LanguageSwitcher } from "../components/LangToggle";
@@ -16,6 +18,8 @@ export const NavBar = ({ links }: NavBarProps) => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
+
+  const t = useTranslations("Navigation");
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full h-16 border-b border-secondary-dark bg-secondary">
@@ -45,7 +49,7 @@ export const NavBar = ({ links }: NavBarProps) => {
                   href={link.href}
                   className="text-primary text-sm font-bold transition-opacity hover:opacity-70 whitespace-nowrap"
                 >
-                  {link.label}
+                  {t(link.label)}
                 </Link>
               </li>
             ))}
