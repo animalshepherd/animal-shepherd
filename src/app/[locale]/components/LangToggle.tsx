@@ -1,14 +1,13 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { useRouter, usePathname } from "../../../i18n/routing";
+import { useRouter, usePathname } from "../../../i18n/navigation";
+import { routing } from "../../../i18n/routing";
 
 export const LanguageSwitcher = () => {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
-
-  const locales = ["en", "es"];
 
   function handleSwitch(nextLocale: string) {
     if (nextLocale === locale) return;
@@ -17,7 +16,7 @@ export const LanguageSwitcher = () => {
 
   return (
     <div className="flex items-center gap-2">
-      {locales.map((lng) => (
+      {routing.locales.map((lng) => (
         <button
           key={lng}
           type="button"
