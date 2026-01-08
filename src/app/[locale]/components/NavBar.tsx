@@ -15,7 +15,9 @@ export const NavBar = ({ links }: NavBarProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
+
   const t = useTranslations("Navigation");
+  const b = useTranslations("Buttons");
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full h-16 border-b border-secondary-dark bg-secondary">
@@ -64,7 +66,7 @@ export const NavBar = ({ links }: NavBarProps) => {
               size="sm"
               className="uppercase tracking-widest whitespace-nowrap"
             >
-              Donate
+              {b("donate")}
             </Button>
           </div>
 
@@ -75,7 +77,7 @@ export const NavBar = ({ links }: NavBarProps) => {
             aria-expanded={isOpen}
           >
             <span className="sr-only">
-              {isOpen ? "Close menu" : "Open menu"}
+              {isOpen ? t("closeMenu") : t("openMenu")}
             </span>
             <svg
               className="h-6 w-6"
@@ -133,7 +135,7 @@ export const NavBar = ({ links }: NavBarProps) => {
               className="w-full py-5 uppercase tracking-widest"
               onClick={closeMenu}
             >
-              Donate Now
+              {b("donate")}
             </Button>
           </div>
         </nav>

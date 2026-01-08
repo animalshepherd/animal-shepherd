@@ -6,10 +6,12 @@
     "partnerships": "Partnerships",
     "getinvolved": "Get Involved",
     "donate": "Donate",
-    "contact": "Contact"
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "Buttons": {
-    "donate": "Donate Now",
+    "donate": "Donate",
     "getInvolved": "Get Involved",
     "readStory": "Read Our Story",
     "meetResidents": "Meet the Residents",
