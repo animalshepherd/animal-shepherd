@@ -28,11 +28,10 @@ export const NavBar = ({ links }: NavBarProps) => {
           >
             <div className="relative h-12 w-12">
               <Image
-                src="/animal-shepherd-logo.jpg"
+                src="/animal-shepherd-logo-no-text-transparent.png"
                 fill
                 priority
                 alt="Logo Nav"
-                className="rounded-full object-cover border-2 border-primary/20"
               />
             </div>
           </Link>
