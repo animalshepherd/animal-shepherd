@@ -1,10 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Button } from "../components/ui/Button";
 import { HeroActionBox } from "../components/ui/HeroActionBox";
 
 export default function AboutPage() {
+  const t = useTranslations("AboutPage");
+  const b = useTranslations("Buttons");
+
   return (
     <div className="flex flex-col w-full bg-primary antialiased">
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
@@ -21,40 +25,29 @@ export default function AboutPage() {
 
         <div className="relative z-10 w-full max-w-4xl px-6 text-center text-white">
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
-            Our Mission
+            {t("Hero.title")}
           </h1>
           <p className="text-lg md:text-xl font-medium text-white/90 max-w-2xl mx-auto">
-            Fighting for the abandoned, neglected, and injured. We believe every
-            life is precious and deserves a chance to thrive.
+            {t("Hero.paragraph")}
           </p>
         </div>
       </section>
 
       <HeroActionBox
-        title="Who We Are"
-        description="Animal Shepherd is a non-profit, no-kill animal rescue organization committed to animals living with challenges that would otherwise leave them without a chance. From rescue to rehabilitation, we provide a no-cage sanctuary where they can live safely and free from harm."
-        buttonLabel="Get Involved"
+        title={t("WhoWeAre.title")}
+        description={t("WhoWeAre.description")}
+        buttonLabel={b("getInvolved")}
         buttonHref="/getinvolved"
       />
 
       <section className="bg-primary py-16 md:py-20 px-6 lg:px-20 border-b border-secondary/5">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
-            Our Impact & Responsibility
+            {t("Impact.title")}
           </h2>
           <div className="text-secondary text-lg leading-relaxed space-y-6">
-            <p>
-              Each year, we save the lives of more than 200 homeless animals and
-              provide daily care for approximately 60 dogs, 40 cats, and
-              additional farm residents. Every life is treated with dignity,
-              patience, and long-term commitment.
-            </p>
-            <p className="text-base opacity-80 italic">
-              Beyond rescue, we are responsible for investigating cases of
-              neglect and abuse. Our work extends to managing feral populations
-              and providing alternatives for animals facing euthanasia, focusing
-              on prevention and long-term education.
-            </p>
+            <p>{t("Impact.p1")}</p>
+            <p className="text-base opacity-80 italic">{t("Impact.p2")}</p>
           </div>
         </div>
       </section>
@@ -63,77 +56,75 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <header className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
-              Our Pillars of Care
+              {t("Pillars.title")}
             </h2>
             <div className="h-1 w-20 bg-secondary mx-auto rounded-full" />
             <p className="text-secondary max-w-2xl mx-auto mt-6 text-sm md:text-base">
-              Our work is structured across three strategic areas to ensure a
-              comprehensive approach to animal welfare and community
-              sustainability.
+              {t("Pillars.description")}
             </p>
           </header>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-8 bg-primary-dark/20 border border-secondary-dark/10 rounded-3xl shadow-sm">
               <h3 className="text-xl font-bold text-secondary-dark mb-4">
-                Rescue & Clinical
+                {t("Pillars.rescue.title")}
               </h3>
               <ul className="space-y-3 text-secondary-dark text-sm">
                 <li className="flex items-start">
                   <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                  24-hour emergency response services
+                  {t("Pillars.rescue.item1")}
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                  Veterinary care and spay/neuter programs
+                  {t("Pillars.rescue.item2")}
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                  Adoption and rehabilitation services
+                  {t("Pillars.rescue.item3")}
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                  Hospice care and specialized medical support
+                  {t("Pillars.rescue.item4")}
                 </li>
               </ul>
             </div>
 
             <div className="p-8 bg-primary-dark/20 border border-secondary-dark/10 rounded-3xl shadow-sm">
               <h3 className="text-xl font-bold text-secondary-dark mb-4">
-                Sanctuary & Wellness
+                {t("Pillars.wellness.title")}
               </h3>
               <ul className="space-y-3 text-secondary-dark text-sm">
                 <li className="flex items-start">
                   <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                  Farm sanctuary and animal shelter
+                  {t("Pillars.wellness.item1")}
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                  Pet hotel, eco camping, and lodging
+                  {t("Pillars.wellness.item2")}
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                  Animal-assisted therapy center
+                  {t("Pillars.wellness.item3")}
                 </li>
               </ul>
             </div>
 
             <div className="p-8 bg-primary-dark/20 border border-secondary-dark/10 rounded-3xl shadow-sm">
               <h3 className="text-xl font-bold text-secondary-dark mb-4">
-                Advocacy & Outreach
+                {t("Pillars.outreach.title")}
               </h3>
               <ul className="space-y-3 text-secondary-dark text-sm">
                 <li className="flex items-start">
                   <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                  Dog training and behavioral programs
+                  {t("Pillars.outreach.item1")}
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                  Permaculture and sustainable living workshops
+                  {t("Pillars.outreach.item2")}
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-secondary shrink-0" />
-                  Community consulting and animal advocacy
+                  {t("Pillars.outreach.item3")}
                 </li>
               </ul>
             </div>
@@ -143,21 +134,12 @@ export default function AboutPage() {
 
       <section className="bg-secondary py-16 md:py-20 px-6 lg:px-20 text-primary">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="text-3xl font-bold">Our Sanctuary</h2>
+          <h2 className="text-3xl font-bold">{t("Sanctuary.title")}</h2>
           <div className="h-1 w-16 bg-primary mx-auto rounded-full" />
           <div className="text-lg leading-relaxed space-y-6 opacity-95">
-            <p>
-              What began as a mission to help cats, dogs, and farm animals has
-              grown into a multifaceted sanctuary. Today, Animal Shepherd
-              operates a no-cage shelter, pet-assisted therapy center, and
-              eco-friendly retreat. Our facilities consist of three main
-              buildings and smaller structures designed for comfort, healing,
-              and fresh-air access.
-            </p>
+            <p>{t("Sanctuary.p1")}</p>
             <p className="italic opacity-80 text-base text-primary/80">
-              &quot;Visitors often describe our space as a place of calm. It is
-              a refuge where compassion, care, and respect for life are felt
-              immediately upon arrival.&quot;
+              &quot;{t("Sanctuary.quote")}&quot;
             </p>
           </div>
         </div>
@@ -167,18 +149,14 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24 lg:mb-32">
           <div className="space-y-6 text-center lg:text-left">
             <h3 className="text-xs font-bold text-secondary tracking-widest uppercase">
-              NATURE & HABITAT
+              {t("Conservation.tag")}
             </h3>
             <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark">
-              A Legacy of Conservation
+              {t("Conservation.title")}
             </h2>
             <div className="h-1 w-20 bg-secondary mx-auto lg:mx-0 rounded-full" />
             <p className="text-secondary text-lg leading-relaxed">
-              Beyond our sanctuary walls, we are dedicated to the protection of
-              the ecosystems that sustain all life. Our commitment to the planet
-              is as deep as our commitment to its animals. We manage an
-              ecological reserve where biodiversity is protected and the natural
-              landscape is allowed to flourish.
+              {t("Conservation.description")}
             </p>
           </div>
           <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl">
@@ -203,30 +181,20 @@ export default function AboutPage() {
 
           <div className="space-y-6 text-center lg:text-left">
             <h3 className="text-xs font-bold text-secondary tracking-widest uppercase">
-              LAND RESTORATION
+              {t("Restoration.tag")}
             </h3>
             <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark">
-              Restoring Ecosystems
+              {t("Restoration.title")}
             </h2>
             <div className="h-1 w-20 bg-secondary mx-auto lg:mx-0 rounded-full" />
 
             <div className="text-secondary text-lg leading-relaxed space-y-4">
-              <p>
-                Since 2015, we have been actively restoring over 80 hectares of
-                local ecosystems. Through strategic reforestation, we have
-                planted approximately 5,000 trees, creating a
-                carbon-sequestering landscape that serves as a permanent refuge
-                for both rescued and wild species.
-              </p>
-              <p>
-                Our approach combines permaculture with environmental management
-                to ensure a sustainable future.
-              </p>
+              <p>{t("Restoration.p1")}</p>
+              <p>{t("Restoration.p2")}</p>
             </div>
 
             <blockquote className="border-l-4 border-secondary pl-6 italic text-secondary-dark font-medium py-2 text-left">
-              &quot;We promote a deep respect for life and the world we share,
-              fostering an ethic of coexistence and shared responsibility.&quot;
+              &quot;{t("Restoration.quote")}&quot;
             </blockquote>
           </div>
         </div>
@@ -235,22 +203,13 @@ export default function AboutPage() {
       <section className="py-16 bg-secondary text-primary/90 border-t border-white/5">
         <div className="max-w-2xl mx-auto text-center px-6">
           <h2 className="text-xs font-bold tracking-widest text-primary/40 uppercase mb-6">
-            Dedication
+            {t("Dedication.title")}
           </h2>
           <div className="space-y-4">
-            <p className="text-xs italic leading-loose">
-              This project is dedicated to the memory of Cioli, &quot;Savior of
-              100 lives.&quot; On the shores of Santander, forged by the
-              freezing waters of the Bay of Biscay, a young kid born in The
-              Netherlands named Ryan learned from this man that duty is
-              non-negotiable and that life is defended in silence.
-            </p>
-            <p className="text-xs italic leading-loose">
-              That boy was his best disciple. Today, under the Mexican sky, that
-              same will has saved over 1,000 lives.
-            </p>
+            <p className="text-xs italic leading-loose">{t("Dedication.p1")}</p>
+            <p className="text-xs italic leading-loose">{t("Dedication.p2")}</p>
             <p className="pt-2 text-xs font-bold uppercase tracking-widest text-primary">
-              Thank you Cioli. The watch continues.
+              {t("Dedication.closing")}
             </p>
           </div>
         </div>
@@ -259,12 +218,10 @@ export default function AboutPage() {
       <section className="py-16 md:py-20 bg-primary border-t border-secondary/5">
         <div className="max-w-4xl mx-auto text-center px-6">
           <h2 className="text-3xl font-bold text-secondary-dark mb-6">
-            Join Our Mission
+            {t("Join.title")}
           </h2>
           <p className="text-secondary mb-12 text-lg">
-            There are many ways to support our residents. Whether through
-            adoption, volunteering, or donating, you can help us continue our
-            commitment to rescue.
+            {t("Join.description")}
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <Button
@@ -272,10 +229,10 @@ export default function AboutPage() {
               href="/getinvolved"
               className="px-12 py-4"
             >
-              Get Involved
+              {b("getInvolved")}
             </Button>
             <Button variant="secondary" href="/adopt" className="px-12 py-4">
-              Learn About Adopting
+              {b("learnAdopting")}
             </Button>
           </div>
         </div>

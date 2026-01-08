@@ -12,7 +12,8 @@
     "donate": "Donate Now",
     "getInvolved": "Get Involved",
     "readStory": "Read Our Story",
-    "meetResidents": "Meet the Residents"
+    "meetResidents": "Meet the Residents",
+    "learnAdopting": "Learn About Adopting"
   },
   "HomePage": {
     "Hero": {
@@ -93,6 +94,71 @@
         "title": "Tip #11",
         "body": "Spend quality time with your pet through daily walks and shared outdoor experiences."
       }
+    }
+  },
+  "AboutPage": {
+    "Hero": {
+      "title": "Our Mission",
+      "paragraph": "Fighting for the abandoned, neglected, and injured. We believe every life is precious and deserves a chance to thrive."
+    },
+    "WhoWeAre": {
+      "title": "Who We Are",
+      "description": "Animal Shepherd is a non-profit, no-kill animal rescue organization committed to animals living with challenges that would otherwise leave them without a chance. From rescue to rehabilitation, we provide a no-cage sanctuary where they can live safely and free from harm."
+    },
+    "Impact": {
+      "title": "Our Impact & Responsibility",
+      "p1": "Each year, we save the lives of more than 200 homeless animals and provide daily care for approximately 60 dogs, 40 cats, and additional farm residents. Every life is treated with dignity, patience, and long-term commitment.",
+      "p2": "Beyond rescue, we are responsible for investigating cases of neglect and abuse. Our work extends to managing feral populations and providing alternatives for animals facing euthanasia, focusing on prevention and long-term education."
+    },
+    "Pillars": {
+      "title": "Our Pillars of Care",
+      "description": "Our work is structured across three strategic areas to ensure a comprehensive approach to animal welfare and community sustainability.",
+      "rescue": {
+        "title": "Rescue & Clinical",
+        "item1": "24-hour emergency response services",
+        "item2": "Veterinary care and spay/neuter programs",
+        "item3": "Adoption and rehabilitation services",
+        "item4": "Hospice care and specialized medical support"
+      },
+      "wellness": {
+        "title": "Sanctuary & Wellness",
+        "item1": "Farm sanctuary and animal shelter",
+        "item2": "Pet hotel, eco camping, and lodging",
+        "item3": "Animal-assisted therapy center"
+      },
+      "outreach": {
+        "title": "Advocacy & Outreach",
+        "item1": "Dog training and behavioral programs",
+        "item2": "Permaculture and sustainable living workshops",
+        "item3": "Community consulting and animal advocacy"
+      }
+    },
+    "Sanctuary": {
+      "title": "Our Sanctuary",
+      "p1": "What began as a mission to help cats, dogs, and farm animals has grown into a multifaceted sanctuary. Today, Animal Shepherd operates a no-cage shelter, pet-assisted therapy center, and eco-friendly retreat. Our facilities consist of three main buildings and smaller structures designed for comfort, healing, and fresh-air access.",
+      "quote": "Visitors often describe our space as a place of calm. It is a refuge where compassion, care, and respect for life are felt immediately upon arrival."
+    },
+    "Conservation": {
+      "tag": "NATURE & HABITAT",
+      "title": "A Legacy of Conservation",
+      "description": "Beyond our sanctuary walls, we are dedicated to the protection of the ecosystems that sustain all life. Our commitment to the planet is as deep as our commitment to its animals. We manage an ecological reserve where biodiversity is protected and the natural landscape is allowed to flourish."
+    },
+    "Restoration": {
+      "tag": "LAND RESTORATION",
+      "title": "Restoring Ecosystems",
+      "p1": "Since 2015, we have been actively restoring over 80 hectares of local ecosystems. Through strategic reforestation, we have planted approximately 5,000 trees, creating a carbon-sequestering landscape that serves as a permanent refuge for both rescued and wild species.",
+      "p2": "Our approach combines permaculture with environmental management to ensure a sustainable future.",
+      "quote": "We promote a deep respect for life and the world we share, fostering an ethic of coexistence and shared responsibility."
+    },
+    "Dedication": {
+      "title": "Dedication",
+      "p1": "This project is dedicated to the memory of Cioli, 'Savior of 100 lives.' On the shores of Santander, forged by the freezing waters of the Bay of Biscay, a young kid born in The Netherlands named Ryan learned from this man that duty is non-negotiable and that life is defended in silence.",
+      "p2": "That boy was his best disciple. Today, under the Mexican sky, that same will has saved over 1,000 lives.",
+      "closing": "Thank you Cioli. The watch continues."
+    },
+    "Join": {
+      "title": "Join Our Mission",
+      "description": "There are many ways to support our residents. Whether through adoption, volunteering, or donating, you can help us continue our commitment to rescue."
     }
   }
 }

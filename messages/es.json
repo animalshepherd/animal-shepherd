@@ -12,7 +12,8 @@
     "donate": "Donar Ahora",
     "getInvolved": "Involúcrate",
     "readStory": "Nuestra Historia",
-    "meetResidents": "Conoce a los Residentes"
+    "meetResidents": "Conoce a los Residentes",
+    "learnAdopting": "Aprende Sobre la Adopción"
   },
   "HomePage": {
     "Hero": {
@@ -93,6 +94,71 @@
         "title": "Tip #11",
         "body": "Comparte tiempo de calidad con tu mascota en paseos diarios y actividades al aire libre."
       }
+    }
+  },
+  "AboutPage": {
+    "Hero": {
+      "title": "Nuestra Misión",
+      "paragraph": "Luchando por los abandonados, descuidados y heridos. Creemos que cada vida es preciosa y merece la oportunidad de prosperar."
+    },
+    "WhoWeAre": {
+      "title": "Quiénes Somos",
+      "description": "Animal Shepherd es una organización de rescate de animales sin fines de lucro y sin sacrificio, comprometida con los animales que viven con desafíos que de otro modo los dejarían sin una oportunidad. Brindamos un santuario sin jaulas donde pueden vivir seguros y libres de daño."
+    },
+    "Impact": {
+      "title": "Nuestro Impacto y Responsabilidad",
+      "p1": "Cada año, salvamos la vida de más de 200 animales sin hogar y brindamos cuidados diarios a aproximadamente 60 perros, 40 gatos y otros residentes de granja. Cada vida es tratada con dignidad, paciencia y compromiso a largo plazo.",
+      "p2": "Más allá del rescate, somos responsables de investigar casos de negligencia y abuso. Nuestro trabajo se extiende a la gestión de poblaciones silvestres y la provisión de alternativas para animales que enfrentan la eutanasia."
+    },
+    "Pillars": {
+      "title": "Nuestros Pilares de Cuidado",
+      "description": "Nuestro trabajo se estructura en tres áreas estratégicas para asegurar un enfoque integral del bienestar animal y la sostenibilidad comunitaria.",
+      "rescue": {
+        "title": "Rescate y Clínica",
+        "item1": "Servicios de respuesta a emergencias las 24 horas",
+        "item2": "Atención veterinaria y programas de esterilización",
+        "item3": "Servicios de adopción y rehabilitación",
+        "item4": "Cuidados paliativos y apoyo médico especializado"
+      },
+      "wellness": {
+        "title": "Santuario y Bienestar",
+        "item1": "Santuario de granja y refugio de animales",
+        "item2": "Hotel para mascotas, eco camping y hospedaje",
+        "item3": "Centro de terapia asistida por animales"
+      },
+      "outreach": {
+        "title": "Defensa y Alcance",
+        "item1": "Programas de entrenamiento y comportamiento canino",
+        "item2": "Talleres de permacultura y vida sostenible",
+        "item3": "Consultoría comunitaria y defensa animal"
+      }
+    },
+    "Sanctuary": {
+      "title": "Nuestro Santuario",
+      "p1": "Lo que comenzó como una misión para ayudar a gatos, perros y animales de granja se ha convertido en un santuario multifacético. Nuestras instalaciones constan de tres edificios principales diseñados para la comodidad y la curación.",
+      "quote": "Los visitantes suelen describir nuestro espacio como un lugar de calma. Es un refugio donde la compasión y el respeto por la vida se sienten inmediatamente."
+    },
+    "Conservation": {
+      "tag": "NATURALEZA Y HÁBITAT",
+      "title": "Un Legado de Conservación",
+      "description": "Más allá de los muros de nuestro santuario, nos dedicamos a la protección de los ecosistemas. Gestionamos una reserva ecológica donde se protege la biodiversidad."
+    },
+    "Restoration": {
+      "tag": "RESTAURACIÓN DE TIERRAS",
+      "title": "Restaurando Ecosistemas",
+      "p1": "Desde 2015, hemos restaurado activamente más de 80 hectáreas de ecosistemas locales. Mediante la reforestación estratégica, hemos plantado aproximadamente 5,000 árboles.",
+      "p2": "Nuestro enfoque combina la permacultura con la gestión ambiental para asegurar un futuro sostenible.",
+      "quote": "Promovemos un profundo respeto por la vida y el mundo que compartimos, fomentando una ética de coexistencia."
+    },
+    "Dedication": {
+      "title": "Dedicatoria",
+      "p1": "Este proyecto está dedicado a la memoria de Cioli, 'Salvador de 100 vidas'. Ryan aprendió de este hombre que el deber es innegociable y que la vida se defiende en silencio.",
+      "p2": "Ese niño fue su mejor discípulo. Hoy, bajo el cielo mexicano, esa misma voluntad ha salvado más de 1,000 vidas.",
+      "closing": "Gracias Cioli. La guardia continúa."
+    },
+    "Join": {
+      "title": "Únete a Nuestra Misión",
+      "description": "Hay muchas formas de apoyar a nuestros residentes. Ya sea mediante la adopción, el voluntariado o la donación, puedes ayudarnos a continuar."
     }
   }
 }
