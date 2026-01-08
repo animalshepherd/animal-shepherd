@@ -115,10 +115,10 @@ export const Footer = ({ links }: FooterProps) => {
           </div>
 
           <div className="rounded-2xl bg-white/5 p-8 border border-white/10 lg:col-span-3">
-            <h3 className="text-sm font-bold uppercase tracking-widest text-primary text-center md:text-left">
+            <h3 className="text-sm font-bold uppercase tracking-widest text-primary text-center">
               Support Our Mission
             </h3>
-            <p className="mt-4 text-xs italic leading-loose text-primary/60 text-center md:text-left">
+            <p className="mt-4 text-xs italic leading-loose text-primary/60 text-center">
               Animal Shepherd is a Verified Member of the Google for Nonprofits
               Program.
             </p>
