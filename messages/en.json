@@ -273,5 +273,31 @@
       "description": "Join a network of global institutions dedicated to professional animal welfare and ecological restoration. Let’s build a legacy of coexistence together.",
       "button": "Inquire About Strategic Alliances"
     }
+  },
+  "GetInvolvedPage": {
+    "Hero": {
+      "title": "Join Our Sanctuary Team",
+      "paragraph": "Animal Shepherd operates as one of the largest independent farm sanctuaries in Mexico. Together, we can change the lives of those who have no voice."
+    },
+    "Philosophy": {
+      "title": "Our No-Kill Philosophy",
+      "description": "We believe that every life is precious and that every animal deserves a chance to be safe, healthy, and loved. We never euthanize an animal in our care simply because they are old, require expensive medical care, or because of insufficient space in our facilities. Every resident deserves safety, health, and love.",
+      "button": "Support Our Mission"
+    },
+    "Volunteer": {
+      "title": "Volunteer",
+      "description": "We are an all-volunteer non-profit that receives no state or federal funding. In our first 10 years, we have rescued and fostered over 1,000 animals. Join our sanctuary team and help us provide the hands-on care our residents deserve.",
+      "programTitle": "Volunteer Program",
+      "programDescription": "We hold agreements with universities and corporations for social projects and professional internships. Gain field experience and direct connection with nature. Volunteer at our sanctuary. Help rescued animals through walking, bathing, playing, and feeding them. Register and participate!",
+      "button": "Become a Volunteer"
+    },
+    "Adopt": {
+      "title": "Adopt",
+      "description": "Our adoption process focuses on the long-term well-being of our residents. View our gallery of past and present family members to see the lives protected by our community. We work closely with you to ensure a responsible match for your lifestyle.",
+      "responsibleTitle": "Responsible Adoptions",
+      "responsibleDescription": "Since 2023, we have teamed up with the Pedigree Adoptme program by MARS, becoming one of the shelters with the highest adoption rates in Mexico. Our process focuses on the 'ideal match,' applying a rigorous protocol to ensure every animal finds the right home, regardless of color, size, breed, or appearance.",
+      "quote": "We specialize in those who need it most: seniors, mixed breeds, pitbulls, and the sick. Don’t shop for a breed, adopt a soul in need. Adopt with your ❤️",
+      "button": "Learn More About Adopting"
+    }
   }
 }

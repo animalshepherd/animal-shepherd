@@ -273,5 +273,31 @@
       "description": "Únete a una red de instituciones globales dedicadas al bienestar animal profesional y la restauración ecológica. Construyamos juntos un legado de coexistencia.",
       "button": "Consultar Sobre Alianzas Estratégicas"
     }
+  },
+  "GetInvolvedPage": {
+    "Hero": {
+      "title": "Únete al Equipo del Santuario",
+      "paragraph": "Animal Shepherd opera como uno de los santuarios independientes más grandes de México. Juntos, podemos cambiar la vida de quienes no tienen voz."
+    },
+    "Philosophy": {
+      "title": "Nuestra Filosofía de No Sacrificio",
+      "description": "Creemos que cada vida es preciosa y que cada animal merece una oportunidad de estar seguro, sano y amado. Nunca sacrificamos a un animal bajo nuestro cuidado simplemente por ser viejo, requerir atención médica costosa o por falta de espacio. Cada residente merece seguridad, salud y amor.",
+      "button": "Apoya Nuestra Misión"
+    },
+    "Volunteer": {
+      "title": "Voluntariado",
+      "description": "Somos una organización sin fines de lucro compuesta en su totalidad por voluntarios que no recibe financiamiento estatal ni federal. En nuestros primeros 10 años, hemos rescatado a más de 1,000 animales. ¡Únete a nuestro equipo!",
+      "programTitle": "Programa de Voluntariado",
+      "programDescription": "Contamos con convenios con universidades y empresas para proyectos sociales y prácticas profesionales. Obtén experiencia de campo y conexión directa con la naturaleza. ¡Ayuda a los animales rescatados paseando, bañando, jugando y alimentándolos!",
+      "button": "Conviértete en Voluntario"
+    },
+    "Adopt": {
+      "title": "Adoptar",
+      "description": "Nuestro proceso de adopción se centra en el bienestar a largo plazo de nuestros residentes. Trabajamos estrechamente contigo para asegurar una compatibilidad responsable con tu estilo de vida.",
+      "responsibleTitle": "Adopciones Responsables",
+      "responsibleDescription": "Desde 2023, formamos parte del programa Pedigree Adóptame de MARS, siendo uno de los refugios con mayores tasas de adopción en México. Nuestro proceso se enfoca en el 'match ideal', aplicando un protocolo riguroso para cada animal.",
+      "quote": "Nos especializamos en quienes más lo necesitan: adultos mayores, mestizos, pitbulls y enfermos. No compres una raza, adopta un alma necesitada. Adopta con el ❤️",
+      "button": "Saber Más Sobre Adopciones"
+    }
   }
 }
