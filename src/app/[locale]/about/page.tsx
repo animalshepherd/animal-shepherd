@@ -155,9 +155,9 @@ export default function AboutPage() {
               and fresh-air access.
             </p>
             <p className="italic opacity-80 text-base text-primary/80">
-              Visitors often describe our space as a place of calm. It is a
-              refuge where compassion, care, and respect for life are felt
-              immediately upon arrival.
+              &quot;Visitors often describe our space as a place of calm. It is
+              a refuge where compassion, care, and respect for life are felt
+              immediately upon arrival.&quot;
             </p>
           </div>
         </div>

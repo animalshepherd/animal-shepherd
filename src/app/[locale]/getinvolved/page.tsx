@@ -45,8 +45,8 @@ export default function GetInvolvedPage() {
           <div className="flex flex-col h-full space-y-8">
             <div className="space-y-6">
               <div className="space-y-4">
-                <h3 className="text-3xl font-bold text-secondary-dark uppercase tracking-tight">
-                  VOLUNTEER
+                <h3 className="text-3xl font-bold text-secondary-dark">
+                  Volunteer
                 </h3>
                 <div className="h-1 w-16 bg-secondary rounded-sm" />
               </div>
@@ -86,8 +86,8 @@ export default function GetInvolvedPage() {
           <div className="flex flex-col h-full space-y-8">
             <div className="space-y-6">
               <div className="space-y-4">
-                <h3 className="text-3xl font-bold text-secondary-dark uppercase tracking-tight">
-                  ADOPT
+                <h3 className="text-3xl font-bold text-secondary-dark">
+                  Adopt
                 </h3>
                 <div className="h-1 w-16 bg-secondary rounded-sm" />
               </div>
@@ -113,9 +113,9 @@ export default function GetInvolvedPage() {
                   size, breed, or appearance.
                 </p>
                 <p className="text-secondary text-base leading-relaxed italic">
-                  We specialize in those who need it most: seniors, mixed
+                  &quot;We specialize in those who need it most: seniors, mixed
                   breeds, pitbulls, and the sick. Don’t shop for a breed, adopt
-                  a soul in need. Adopt with your ❤️
+                  a soul in need. Adopt with your ❤️&quot;
                 </p>
               </div>
               <div className="pt-8">

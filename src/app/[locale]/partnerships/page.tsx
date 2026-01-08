@@ -163,12 +163,7 @@ export default function PartnershipsPage() {
           welfare and ecological restoration. Let’s build a legacy of
           coexistence together.
         </p>
-        <Button
-          variant="secondary"
-          size="lg"
-          href="mailto:project@animalshepherd.org"
-          className="px-12"
-        >
+        <Button variant="secondary" size="lg" href="/contact" className="px-12">
           Inquire About Strategic Alliances
         </Button>
       </section>

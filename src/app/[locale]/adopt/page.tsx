@@ -47,7 +47,7 @@ export default function AdoptPage() {
         className="py-24 px-6 lg:px-20 max-w-screen-2xl mx-auto w-full scroll-mt-20"
       >
         <header className="text-center mb-16 space-y-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark uppercase tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark">
             Meet the Family: Past & Present
           </h2>
           <div className="h-1 w-20 bg-secondary mx-auto rounded-full" />
@@ -68,7 +68,7 @@ export default function AdoptPage() {
       <section className="bg-parchment py-24 px-6 lg:px-20 border-y border-secondary/5">
         <div className="max-w-7xl mx-auto">
           <header className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4 uppercase tracking-wide">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
               How to Adopt
             </h2>
             <div className="h-1.5 w-20 bg-secondary mx-auto rounded-full" />
@@ -80,10 +80,10 @@ export default function AdoptPage() {
                 key={step.number}
                 className="relative p-8 bg-primary border border-secondary/10 rounded-3xl shadow-sm transition-all hover:shadow-md"
               >
-                <span className="absolute -top-4 left-8 bg-secondary text-primary font-bold px-4 py-1 rounded-full text-xs uppercase tracking-widest">
+                <span className="absolute -top-4 left-8 bg-secondary text-primary font-bold px-4 py-1 rounded-full text-xs">
                   Step {step.number}
                 </span>
-                <h3 className="text-lg font-bold text-secondary-dark mt-4 mb-3 uppercase tracking-tight">
+                <h3 className="text-lg font-bold text-secondary-dark mt-4 mb-3">
                   {step.title}
                 </h3>
                 <p className="text-secondary leading-relaxed text-sm opacity-80">
@@ -144,7 +144,7 @@ export default function AdoptPage() {
       >
         <div className="max-w-4xl mx-auto w-full">
           <header className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-6 uppercase tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-6">
               Animal Adoption Application
             </h2>
             <p className="text-secondary text-lg leading-relaxed max-w-2xl mx-auto">
@@ -233,7 +233,7 @@ export default function AdoptPage() {
                 <Button
                   variant="secondary"
                   size="lg"
-                  className="px-16 uppercase tracking-widest"
+                  className="px-16"
                   href="/getinvolved"
                 >
                   Submit Application
