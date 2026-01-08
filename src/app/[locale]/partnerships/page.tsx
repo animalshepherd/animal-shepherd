@@ -122,17 +122,26 @@ export default function PartnershipsPage() {
               </ul>
             </div>
 
-            <div className="pt-4">
-              <p className="text-sm font-bold uppercase tracking-widest text-primary italic">
-                &quot;I designed this emblem for Animal Shepherd.&quot;
-              </p>
-              <p className="text-xs uppercase tracking-widest opacity-50 mt-1">
-                — Alejandro Magallanes
-              </p>
+            <div className="pt-4 space-y-4">
+              <div>
+                <p className="text-sm font-bold uppercase tracking-widest text-primary italic">
+                  &quot;I designed this emblem for Animal Shepherd.&quot;
+                </p>
+                <p className="text-xs uppercase tracking-widest opacity-50 mt-1">
+                  — Alejandro Magallanes
+                </p>
+              </div>
+              <Button
+                size="sm"
+                href="https://www.instagram.com/p/CGK7p-un-R-/"
+                className="text-white border-white/20 hover:bg-white/10"
+              >
+                View Original Post
+              </Button>
             </div>
           </div>
 
-          <div className="relative aspect-square bg-primary/5 rounded-[60px] flex items-center justify-center p-12 border border-white/10">
+          <div className="relative aspect-square bg-white/5 rounded-3xl flex items-center justify-center p-12 border border-white/10">
             <div className="relative w-full h-full">
               <Image
                 src="/animal-shepherd-logo.jpg"
