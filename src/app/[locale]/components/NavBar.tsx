@@ -2,10 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-
 import { Link } from "../../../i18n/navigation";
 import { useTranslations } from "next-intl";
-
 import { Button } from "./ui/Button";
 import { LanguageSwitcher } from "../components/LangToggle";
 
@@ -15,10 +13,8 @@ interface NavBarProps {
 
 export const NavBar = ({ links }: NavBarProps) => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
-
   const t = useTranslations("Navigation");
 
   return (
@@ -125,7 +121,7 @@ export const NavBar = ({ links }: NavBarProps) => {
                   onClick={closeMenu}
                   className="block w-full text-2xl font-bold tracking-tight text-primary"
                 >
-                  {link.label}
+                  {t(link.label)}
                 </Link>
               </li>
             ))}
