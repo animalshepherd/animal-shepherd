@@ -10,6 +10,16 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
+  "Footer": {
+    "description": "Dedicated to the rescue, rehabilitation, and rehoming of animals in need. Every life deserves a second chance.",
+    "quickLinks": "Quick Links",
+    "connect": "Connect",
+    "support": "Support Our Mission",
+    "googleMember": "Animal Shepherd is a Verified Member of the Google for Nonprofits Program.",
+    "paypal": "Donate via PayPal",
+    "partner": "Proud Partners of Pedigree Adóptame",
+    "designBy": "Greenhouse Web Designs"
+  },
   "Buttons": {
     "donate": "Donate",
     "getInvolved": "Get Involved",

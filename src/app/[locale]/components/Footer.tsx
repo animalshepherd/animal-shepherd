@@ -12,8 +12,8 @@ interface FooterProps {
 
 export const Footer = ({ links }: FooterProps) => {
   const currentYear = new Date().getFullYear();
-
   const t = useTranslations("Navigation");
+  const tf = useTranslations("Footer");
 
   return (
     <footer className="w-full bg-secondary py-12 text-primary">
@@ -34,14 +34,13 @@ export const Footer = ({ links }: FooterProps) => {
               </div>
             </IntlLink>
             <p className="mt-8 max-w-xs text-base leading-relaxed text-primary/80">
-              Dedicated to the rescue, rehabilitation, and rehoming of animals
-              in need. Every life deserves a second chance.
+              {tf("description")}
             </p>
           </div>
 
           <div className="text-center md:text-left lg:col-span-2">
             <h3 className="text-sm font-bold uppercase tracking-widest text-primary">
-              Quick Links
+              {tf("quickLinks")}
             </h3>
             <nav aria-label="Footer navigation" className="mt-8">
               <ul className="space-y-4">
@@ -61,7 +60,7 @@ export const Footer = ({ links }: FooterProps) => {
 
           <div className="text-center md:text-left lg:col-span-3">
             <h3 className="text-sm font-bold uppercase tracking-widest text-primary">
-              Connect
+              {tf("connect")}
             </h3>
             <div className="mt-8 space-y-8">
               <a
@@ -122,11 +121,10 @@ export const Footer = ({ links }: FooterProps) => {
 
           <div className="rounded-2xl bg-white/5 p-8 border border-white/10 lg:col-span-3">
             <h3 className="text-sm font-bold uppercase tracking-widest text-primary text-center">
-              Support Our Mission
+              {tf("support")}
             </h3>
             <p className="mt-4 text-xs italic leading-loose text-primary/60 text-center">
-              Animal Shepherd is a Verified Member of the Google for Nonprofits
-              Program.
+              {tf("googleMember")}
             </p>
             <Button
               href="https://www.paypal.com/paypalme/animalshepherd"
@@ -134,7 +132,7 @@ export const Footer = ({ links }: FooterProps) => {
               size="md"
               className="mt-8 w-full text-xs py-4"
             >
-              Donate via PayPal
+              {tf("paypal")}
             </Button>
           </div>
         </div>
@@ -150,7 +148,7 @@ export const Footer = ({ links }: FooterProps) => {
                 className="opacity-80 brightness-0 invert object-contain"
               />
               <span className="text-xs font-bold uppercase tracking-widest text-primary/40">
-                Proud Partners of Pedigree Adóptame
+                {tf("partner")}
               </span>
             </div>
 
@@ -162,7 +160,7 @@ export const Footer = ({ links }: FooterProps) => {
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors underline decoration-primary/10 underline-offset-8"
               >
-                Greenhouse Web Designs
+                {tf("designBy")}
               </Link>
             </p>
           </div>

@@ -10,6 +10,16 @@
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú"
   },
+  "Footer": {
+    "description": "Dedicados al rescate, rehabilitación y reubicación de animales necesitados. Cada vida merece una segunda oportunidad.",
+    "quickLinks": "Enlaces Rápidos",
+    "connect": "Conectar",
+    "support": "Apoya Nuestra Misión",
+    "googleMember": "Animal Shepherd es un Miembro Verificado del Programa de Google para Organizaciones sin Fines de Lucro.",
+    "paypal": "Donar vía PayPal",
+    "partner": "Orgullosos Socios de Pedigree Adóptame",
+    "designBy": "Greenhouse Web Designs"
+  },
   "Buttons": {
     "donate": "Donar",
     "getInvolved": "Involúcrate",
