@@ -12,13 +12,13 @@ type Props = {
 };
 
 const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Adopt", href: "/adopt" },
-  { label: "Partnerships", href: "/partnerships" },
-  { label: "Get Involved", href: "/getinvolved" },
-  { label: "Donate", href: "/donate" },
-  { label: "Contact", href: "/contact" },
+  { label: "home", href: "/" },
+  { label: "about", href: "/about" },
+  { label: "adopt", href: "/adopt" },
+  { label: "partnerships", href: "/partnerships" },
+  { label: "getinvolved", href: "/getinvolved" },
+  { label: "donate", href: "/donate" },
+  { label: "contact", href: "/contact" },
 ];
 
 export default async function LocaleLayout({ children, params }: Props) {
