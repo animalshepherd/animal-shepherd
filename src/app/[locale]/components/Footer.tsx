@@ -126,7 +126,7 @@ export const Footer = ({ links }: FooterProps) => {
               href="https://www.paypal.com/paypalme/animalshepherd"
               variant="primary"
               size="md"
-              className="mt-8 w-full uppercase tracking-widest text-xs py-4"
+              className="mt-8 w-full text-xs py-4"
             >
               Donate via PayPal
             </Button>
