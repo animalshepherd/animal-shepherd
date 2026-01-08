@@ -62,7 +62,7 @@ export default function AboutPage() {
       <section className="bg-parchment py-16 md:py-20 px-6 lg:px-20 border-b border-secondary/5">
         <div className="max-w-7xl mx-auto">
           <header className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4 uppercase tracking-wide">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
               Our Pillars of Care
             </h2>
             <div className="h-1 w-20 bg-secondary mx-auto rounded-full" />
@@ -75,7 +75,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-8 bg-primary-dark/20 border border-secondary-dark/10 rounded-3xl shadow-sm">
-              <h3 className="text-xl font-bold text-secondary-dark mb-4 uppercase tracking-wider">
+              <h3 className="text-xl font-bold text-secondary-dark mb-4">
                 Rescue & Clinical
               </h3>
               <ul className="space-y-3 text-secondary-dark text-sm">
@@ -99,7 +99,7 @@ export default function AboutPage() {
             </div>
 
             <div className="p-8 bg-primary-dark/20 border border-secondary-dark/10 rounded-3xl shadow-sm">
-              <h3 className="text-xl font-bold text-secondary-dark mb-4 uppercase tracking-wider">
+              <h3 className="text-xl font-bold text-secondary-dark mb-4">
                 Sanctuary & Wellness
               </h3>
               <ul className="space-y-3 text-secondary-dark text-sm">
@@ -119,7 +119,7 @@ export default function AboutPage() {
             </div>
 
             <div className="p-8 bg-primary-dark/20 border border-secondary-dark/10 rounded-3xl shadow-sm">
-              <h3 className="text-xl font-bold text-secondary-dark mb-4 uppercase tracking-wider">
+              <h3 className="text-xl font-bold text-secondary-dark mb-4">
                 Advocacy & Outreach
               </h3>
               <ul className="space-y-3 text-secondary-dark text-sm">
@@ -143,9 +143,7 @@ export default function AboutPage() {
 
       <section className="bg-secondary py-16 md:py-20 px-6 lg:px-20 text-primary">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="text-3xl font-bold uppercase tracking-widest">
-            Our Sanctuary
-          </h2>
+          <h2 className="text-3xl font-bold">Our Sanctuary</h2>
           <div className="h-1 w-16 bg-primary mx-auto rounded-full" />
           <div className="text-lg leading-relaxed space-y-6 opacity-95">
             <p>
@@ -171,7 +169,7 @@ export default function AboutPage() {
             <h3 className="text-xs font-bold text-secondary tracking-widest uppercase">
               NATURE & HABITAT
             </h3>
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark uppercase tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark">
               A Legacy of Conservation
             </h2>
             <div className="h-1 w-20 bg-secondary mx-auto lg:mx-0 rounded-full" />
@@ -207,7 +205,7 @@ export default function AboutPage() {
             <h3 className="text-xs font-bold text-secondary tracking-widest uppercase">
               LAND RESTORATION
             </h3>
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark uppercase tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark">
               Restoring Ecosystems
             </h2>
             <div className="h-1 w-20 bg-secondary mx-auto lg:mx-0 rounded-full" />
@@ -260,7 +258,7 @@ export default function AboutPage() {
 
       <section className="py-16 md:py-20 bg-primary border-t border-secondary/5">
         <div className="max-w-4xl mx-auto text-center px-6">
-          <h2 className="text-3xl font-bold text-secondary-dark mb-6 uppercase tracking-wide">
+          <h2 className="text-3xl font-bold text-secondary-dark mb-6">
             Join Our Mission
           </h2>
           <p className="text-secondary mb-12 text-lg">
