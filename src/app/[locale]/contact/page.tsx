@@ -1,11 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { teamMembers } from "@/data/team";
 import { Button } from "../components/ui/Button";
 import { HeroActionBox } from "../components/ui/HeroActionBox";
 
 export default function ContactPage() {
+  const t = useTranslations("ContactPage");
+
   return (
     <div className="flex flex-col w-full bg-primary antialiased">
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
@@ -22,18 +25,17 @@ export default function ContactPage() {
 
         <div className="relative z-10 w-full max-w-4xl px-6 text-center text-white">
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
-            Get in Touch
+            {t("Hero.title")}
           </h1>
           <p className="text-lg md:text-xl font-medium text-white/90 max-w-2xl mx-auto">
-            We are always open to new ideas, strategic partnerships, and
-            professional feedback. Feel free to send us a message.
+            {t("Hero.paragraph")}
           </p>
         </div>
       </section>
 
       <HeroActionBox
-        title="Direct Communication"
-        description="If you are interested in the things we do and want to know more, you are just a click away."
+        title={t("HeroAction.title")}
+        description={t("HeroAction.description")}
         buttonLabel="info@animalshepherd.org"
         buttonHref="mailto:info@animalshepherd.org"
         buttonVariant="primary"
@@ -42,15 +44,13 @@ export default function ContactPage() {
       <section className="py-24 px-6 lg:px-20 max-w-7xl mx-auto w-full">
         <header className="text-center mb-16">
           <h2 className="text-xs font-bold text-secondary tracking-[0.3em] uppercase mb-4">
-            Our Global Team
+            {t("Team.tag")}
           </h2>
           <h3 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-6">
-            Guardians of the Sanctuary
+            {t("Team.title")}
           </h3>
           <p className="text-secondary text-lg max-w-2xl mx-auto leading-relaxed">
-            This is the dedicated team working alongside Ryan to protect our
-            residents, restore local ecosystems, and advocate for those who have
-            no voice.
+            {t("Team.description")}
           </p>
           <div className="h-1 w-20 bg-secondary mx-auto rounded-full mt-8" />
         </header>
@@ -65,7 +65,7 @@ export default function ContactPage() {
                 {member.name}
               </p>
               <p className="text-secondary/60 text-[10px] uppercase tracking-widest font-bold mb-6">
-                {member.role}
+                {t(`Team.roles.${member.roleKey}`)}
               </p>
               <a
                 href={`mailto:${member.email}`}
@@ -82,7 +82,7 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto w-full">
           <header className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
-              Send a Message
+              {t("Form.title")}
             </h2>
             <div className="h-1 w-20 bg-secondary mx-auto rounded-full" />
           </header>
@@ -91,54 +91,53 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label className="text-xs font-bold text-secondary-dark uppercase tracking-[0.2em] ml-2">
-                  Name
+                  {t("Form.labels.name")}
                 </label>
                 <input
                   type="text"
-                  placeholder="Your Name"
+                  placeholder={t("Form.labels.name_placeholder")}
                   className="w-full p-4 rounded-2xl bg-primary border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all"
                 />
               </div>
               <div className="space-y-2">
                 <label className="text-xs font-bold text-secondary-dark uppercase tracking-[0.2em] ml-2">
-                  Email
+                  {t("Form.labels.email")}
                 </label>
                 <input
                   type="email"
-                  placeholder="Email Address"
+                  placeholder={t("Form.labels.email_placeholder")}
                   className="w-full p-4 rounded-2xl bg-primary border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all"
                 />
               </div>
             </div>
             <div className="space-y-2">
               <label className="text-xs font-bold text-secondary-dark uppercase tracking-[0.2em] ml-2">
-                Subject
+                {t("Form.labels.subject")}
               </label>
               <input
                 type="text"
-                placeholder="How can we help?"
+                placeholder={t("Form.labels.subject_placeholder")}
                 className="w-full p-4 rounded-2xl bg-primary border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all"
               />
             </div>
             <div className="space-y-2">
               <label className="text-xs font-bold text-secondary-dark uppercase tracking-[0.2em] ml-2">
-                Message
+                {t("Form.labels.message")}
               </label>
               <textarea
                 rows={6}
-                placeholder="Enter your message here..."
+                placeholder={t("Form.labels.message_placeholder")}
                 className="w-full p-4 rounded-2xl bg-primary border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all resize-none"
               />
             </div>
             <div className="text-center pt-4">
-              {/* update button for the on submit */}
               <Button
                 variant="secondary"
                 size="lg"
                 className="px-12"
                 href="/getinvolved"
               >
-                Send Message
+                {t("Form.labels.submit")}
               </Button>
             </div>
           </form>
@@ -149,27 +148,25 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           <div className="space-y-4">
             <h2 className="text-2xl font-bold text-secondary-dark uppercase tracking-widest">
-              Visit Us
+              {t("Info.visitTitle")}
             </h2>
             <div className="h-1 w-12 bg-secondary mx-auto rounded-full" />
             <p className="text-secondary-dark font-medium italic">
-              By appointment only.
+              {t("Info.appointment")}
             </p>
             <p className="text-secondary leading-relaxed">
-              Animal Shepherd Sanctuary,
-              <br />
-              Querétaro, Mexico.
+              {t("Info.address")}
             </p>
           </div>
           <div className="space-y-4">
             <h2 className="text-2xl font-bold text-secondary-dark uppercase tracking-widest">
-              Sanctuary Hours
+              {t("Info.hoursTitle")}
             </h2>
             <div className="h-1 w-12 bg-secondary mx-auto rounded-full" />
             <p className="text-secondary leading-relaxed pt-2">
-              Monday — Sunday:
+              {t("Info.days")}
               <br />
-              09:00 am - 06:00 pm
+              {t("Info.time")}
             </p>
           </div>
         </div>

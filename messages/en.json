@@ -345,5 +345,53 @@
         "description": "Include Animal Shepherd in your estate planning to ensure the future of our mission."
       }
     }
+  },
+  "ContactPage": {
+    "Hero": {
+      "title": "Get in Touch",
+      "paragraph": "We are always open to new ideas, strategic partnerships, and professional feedback. Feel free to send us a message."
+    },
+    "HeroAction": {
+      "title": "Direct Communication",
+      "description": "If you are interested in the things we do and want to know more, you are just a click away."
+    },
+    "Team": {
+      "tag": "Our Global Team",
+      "title": "Guardians of the Sanctuary",
+      "description": "This is the dedicated team working alongside Ryan to protect our residents, restore local ecosystems, and advocate for those who have no voice.",
+      "roles": {
+        "adopt": "Adoption Management",
+        "admin": "Administration & Finance",
+        "art": "Cultural Projects & Design",
+        "info": "General Information & Inquiries",
+        "media": "Media Relations & Outreach",
+        "press": "Press & Communications",
+        "project": "Project Coordination",
+        "expos": "Art & Legacy Curation",
+        "executive": "Executive Coordinator"
+      }
+    },
+    "Form": {
+      "title": "Send a Message",
+      "labels": {
+        "name": "Name",
+        "name_placeholder": "Your Name",
+        "email": "Email",
+        "email_placeholder": "Email Address",
+        "subject": "Subject",
+        "subject_placeholder": "How can we help?",
+        "message": "Message",
+        "message_placeholder": "Enter your message here...",
+        "submit": "Send Message"
+      }
+    },
+    "Info": {
+      "visitTitle": "Visit Us",
+      "appointment": "By appointment only.",
+      "address": "Animal Shepherd Sanctuary, Querétaro, Mexico.",
+      "hoursTitle": "Sanctuary Hours",
+      "days": "Monday — Sunday:",
+      "time": "09:00 am - 06:00 pm"
+    }
   }
 }

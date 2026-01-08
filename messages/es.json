@@ -345,5 +345,53 @@
         "description": "Incluye a Animal Shepherd en tu planificación patrimonial para asegurar el futuro de nuestra misión."
       }
     }
+  },
+  "ContactPage": {
+    "Hero": {
+      "title": "Ponte en Contacto",
+      "paragraph": "Siempre estamos abiertos a nuevas ideas, alianzas estratégicas y retroalimentación profesional. No dudes en enviarnos un mensaje."
+    },
+    "HeroAction": {
+      "title": "Comunicación Directa",
+      "description": "Si estás interesado en lo que hacemos y quieres saber más, estás a un clic de distancia."
+    },
+    "Team": {
+      "tag": "Nuestro Equipo Global",
+      "title": "Guardianes del Santuario",
+      "description": "Este es el equipo dedicado que trabaja junto a Ryan para proteger a nuestros residentes, restaurar ecosistemas y abogar por los que no tienen voz.",
+      "roles": {
+        "adopt": "Gestión de Adopciones",
+        "admin": "Administración y Finanzas",
+        "art": "Proyectos Culturales y Diseño",
+        "info": "Información General y Consultas",
+        "media": "Relaciones con Medios y Difusión",
+        "press": "Prensa y Comunicación",
+        "project": "Coordinación de Proyectos",
+        "expos": "Curaduría de Arte y Legado",
+        "executive": "Coordinadora Ejecutiva"
+      }
+    },
+    "Form": {
+      "title": "Enviar un Mensaje",
+      "labels": {
+        "name": "Nombre",
+        "name_placeholder": "Tu Nombre",
+        "email": "Correo Electrónico",
+        "email_placeholder": "Dirección de Correo",
+        "subject": "Asunto",
+        "subject_placeholder": "¿Cómo podemos ayudarte?",
+        "message": "Mensaje",
+        "message_placeholder": "Escribe tu mensaje aquí...",
+        "submit": "Enviar Mensaje"
+      }
+    },
+    "Info": {
+      "visitTitle": "Visítanos",
+      "appointment": "Solo con cita previa.",
+      "address": "Santuario Animal Shepherd, Querétaro, México.",
+      "hoursTitle": "Horarios del Santuario",
+      "days": "Lunes — Domingo:",
+      "time": "09:00 am - 06:00 pm"
+    }
   }
 }
