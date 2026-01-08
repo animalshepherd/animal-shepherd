@@ -78,12 +78,12 @@ export default function AdoptPage() {
             {adoptionSteps.map((step) => (
               <div
                 key={step.number}
-                className="relative p-8 bg-primary border border-secondary/10 rounded-3xl shadow-sm group transition-all hover:shadow-md"
+                className="relative p-8 bg-primary border border-secondary/10 rounded-3xl shadow-sm transition-all hover:shadow-md"
               >
                 <span className="absolute -top-4 left-8 bg-secondary text-primary font-bold px-4 py-1 rounded-full text-xs uppercase tracking-widest">
                   Step {step.number}
                 </span>
-                <h3 className="text-lg font-bold text-secondary-dark mt-4 mb-3 group-hover:text-secondary transition-colors uppercase tracking-tight">
+                <h3 className="text-lg font-bold text-secondary-dark mt-4 mb-3 uppercase tracking-tight">
                   {step.title}
                 </h3>
                 <p className="text-secondary leading-relaxed text-sm opacity-80">
@@ -130,7 +130,7 @@ export default function AdoptPage() {
             </div>
 
             <div className="text-center space-y-8">
-              <p className="text-sm text-secondary italic">
+              <p className="text-sm text-secondary italic opacity-70">
                 * Fees may vary based on special medical requirements.
               </p>
             </div>
@@ -154,7 +154,7 @@ export default function AdoptPage() {
             </p>
           </header>
 
-          <form className="bg-parchment/30 p-8 md:p-12 rounded-[40px] border border-secondary/5">
+          <form className="bg-parchment/30 p-8 md:p-12 rounded-3xl border border-secondary/5 shadow-xs">
             <div className="grid grid-cols-1 gap-10">
               <div className="flex flex-col gap-3">
                 <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1">
