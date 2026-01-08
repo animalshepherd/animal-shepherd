@@ -299,5 +299,51 @@
       "quote": "We specialize in those who need it most: seniors, mixed breeds, pitbulls, and the sick. Don’t shop for a breed, adopt a soul in need. Adopt with your ❤️",
       "button": "Learn More About Adopting"
     }
+  },
+  "DonatePage": {
+    "Hero": {
+      "title": "Every Life is Precious",
+      "paragraph": "Animal Shepherd relies on the support of animal-loving friends in our community. Your contribution directly funds the safety and care of every resident."
+    },
+    "HeroAction": {
+      "title": "Make a Transformation Possible",
+      "description": "Choose between a one-time gift or become a Sustaining Supporter with a recurring monthly donation to ensure long-term stability for our rescues. Every dollar given goes directly to the animals, providing them with the medical care, food, and shelter they deserve.",
+      "button": "Donate via PayPal"
+    },
+    "Impact": {
+      "title": "How Your Support Is Used",
+      "p1": "All funds used to feed and provide veterinary care for the animals come through our own personal savings, the earnings of our public services, and private donations. With a strict no-kill philosophy, every resident at Animal Shepherd is cared for until a permanent home is found.",
+      "p2": "While the sanctuary is not open to the general public, founders, donors, and regular supporters are invited to visit once a month by appointment between 09:00 am and 06:00 pm."
+    },
+    "Bank": {
+      "title": "Direct Bank Transfer",
+      "subtitle": "Donations Account",
+      "labels": {
+        "bank": "Bank",
+        "holder": "Account Holder",
+        "account": "Account Number",
+        "clabe": "CLABE",
+        "swift": "SWIFT / BIC"
+      },
+      "footer": {
+        "note": "Please include your name as a reference so we may properly acknowledge your gift.",
+        "description": "Our account is enabled to receive international donations and we are one of the few organizations equipped with a POS (Point of Sale) terminal to conveniently receive gifts and collect adoption fees."
+      }
+    },
+    "OtherWays": {
+      "title": "Other Ways to Help",
+      "sponsor": {
+        "title": "Sponsor a Resident",
+        "description": "Provide monthly support specifically for one animal's food and medical needs."
+      },
+      "supplies": {
+        "title": "Donate Supplies",
+        "description": "We are always in need of high-quality food, bedding, and medical supplies for our sanctuary."
+      },
+      "legacy": {
+        "title": "Legacy Giving",
+        "description": "Include Animal Shepherd in your estate planning to ensure the future of our mission."
+      }
+    }
   }
 }

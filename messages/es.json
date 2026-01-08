@@ -299,5 +299,51 @@
       "quote": "Nos especializamos en quienes más lo necesitan: adultos mayores, mestizos, pitbulls y enfermos. No compres una raza, adopta un alma necesitada. Adopta con el ❤️",
       "button": "Saber Más Sobre Adopciones"
     }
+  },
+  "DonatePage": {
+    "Hero": {
+      "title": "Cada Vida es Preciosa",
+      "paragraph": "Animal Shepherd depende del apoyo de amigos amantes de los animales en nuestra comunidad. Tu contribución financia directamente la seguridad y el cuidado de cada residente."
+    },
+    "HeroAction": {
+      "title": "Haz Posible una Transformación",
+      "description": "Elige entre un regalo único o conviértete en un Colaborador Constante con una donación mensual recurrente para asegurar la estabilidad a largo plazo. Cada peso donado va directamente a los animales.",
+      "button": "Donar vía PayPal"
+    },
+    "Impact": {
+      "title": "Cómo se Usa tu Apoyo",
+      "p1": "Todos los fondos utilizados para alimentar y brindar atención veterinaria provienen de nuestros ahorros personales, ingresos de servicios públicos y donaciones privadas. Con una estricta filosofía de no sacrificio, cada residente es cuidado hasta encontrar un hogar.",
+      "p2": "Aunque el santuario no está abierto al público general, los fundadores, donantes y colaboradores regulares están invitados a visitarnos una vez al mes con previa cita entre las 09:00 am y 06:00 pm."
+    },
+    "Bank": {
+      "title": "Transferencia Bancaria Directa",
+      "subtitle": "Cuenta de Donaciones",
+      "labels": {
+        "bank": "Banco",
+        "holder": "Titular de la Cuenta",
+        "account": "Número de Cuenta",
+        "clabe": "CLABE",
+        "swift": "SWIFT / BIC"
+      },
+      "footer": {
+        "note": "Por favor incluye tu nombre como referencia para que podamos agradecer debidamente tu regalo.",
+        "description": "Nuestra cuenta está habilitada para recibir donaciones internacionales y somos de las pocas organizaciones equipadas con una terminal punto de venta para recibir donativos y cuotas de adopción."
+      }
+    },
+    "OtherWays": {
+      "title": "Otras Formas de Ayudar",
+      "sponsor": {
+        "title": "Apadrina a un Residente",
+        "description": "Brinda apoyo mensual específicamente para las necesidades médicas y alimenticias de un animal."
+      },
+      "supplies": {
+        "title": "Donar Suministros",
+        "description": "Siempre necesitamos comida de alta calidad, camas y suministros médicos para nuestro santuario."
+      },
+      "legacy": {
+        "title": "Legado y Herencias",
+        "description": "Incluye a Animal Shepherd en tu planificación patrimonial para asegurar el futuro de nuestra misión."
+      }
+    }
   }
 }
