@@ -12,7 +12,12 @@ import { lookupTable } from "@/lib/createTipsLookup";
 
 export default function HomePage() {
   const homeHero = useTranslations("HomePage.Hero");
+  const stats = useTranslations("HomePage.Stats");
+  const work = useTranslations("HomePage.Work");
+  const residents = useTranslations("HomePage.Residents");
+  const careTips = useTranslations("HomePage.CareTips");
   const tips = useTranslations("HomePage.Tips");
+  const buttons = useTranslations("Buttons");
 
   const tipsArray = getTipsData(tips);
   const TipsCardData = lookupTable(tipsArray, tipCards);
@@ -40,10 +45,10 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4">
             <Button variant="secondary" href="/donate">
-              Donate Now
+              {buttons("donate")}
             </Button>
             <Button variant="primary" href="/getinvolved">
-              Get Involved
+              {buttons("getInvolved")}
             </Button>
           </div>
         </div>
@@ -66,7 +71,7 @@ export default function HomePage() {
                 1000+
               </p>
               <p className="text-primary/80 font-semibold text-xs md:text-sm uppercase tracking-widest leading-tight">
-                rescued animals
+                {stats("rescued")}
               </p>
             </div>
 
@@ -84,7 +89,7 @@ export default function HomePage() {
                 5000+
               </p>
               <p className="text-primary/80 font-semibold text-xs md:text-sm uppercase tracking-widest leading-tight">
-                trees planted
+                {stats("trees")}
               </p>
             </div>
 
@@ -102,7 +107,7 @@ export default function HomePage() {
                 80+
               </p>
               <p className="text-primary/80 font-semibold text-xs md:text-sm uppercase tracking-widest leading-tight">
-                reforested hectacres
+                {stats("hectares")}
               </p>
             </div>
           </div>
@@ -113,25 +118,15 @@ export default function HomePage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
           <div className="space-y-6 md:space-y-8 text-center lg:text-left">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark leading-tight">
-              Our Work
+              {work("title")}
             </h2>
             <div className="text-secondary text-base md:text-lg space-y-6 leading-relaxed">
-              <p>
-                Animal Shepherd is a non-profit, no-kill organization founded on
-                the belief that every life is precious. We provide a permanent
-                no-cage sanctuary for animals living with challenges that leave
-                them without other options.
-              </p>
-              <p>
-                From intensive clinical rehabilitation to the restoration of
-                over 80 hectares of local ecosystems, our work ensures that
-                every creature is valued through professional sanctuary care and
-                environmental stewardship.
-              </p>
+              <p>{work("p1")}</p>
+              <p>{work("p2")}</p>
             </div>
             <div className="pt-2">
               <Button variant="secondary" href="/about">
-                Read Our Story
+                {buttons("readStory")}
               </Button>
             </div>
           </div>
@@ -149,11 +144,10 @@ export default function HomePage() {
       <section className="bg-secondary/5 py-16 md:py-24 px-6 lg:px-20">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
-            Meet Our Animals
+            {residents("title")}
           </h2>
           <p className="text-secondary text-base md:text-lg max-w-2xl mx-auto">
-            Each animal at our sanctuary has a story. Some are healing, some are
-            thriving, and all are loved.
+            {residents("description")}
           </p>
         </div>
 
@@ -166,7 +160,7 @@ export default function HomePage() {
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 px-4">
           <Button variant="secondary" href="/adopt">
-            Meet the Residents
+            {buttons("meetResidents")}
           </Button>
         </div>
       </section>
@@ -174,11 +168,10 @@ export default function HomePage() {
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-20 overflow-hidden">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
-            Care Tips
+            {careTips("title")}
           </h2>
           <p className="text-secondary text-base md:text-lg max-w-3xl mx-auto">
-            Practical guidance to help you build trust and wellbeing with your
-            pets.
+            {careTips("description")}
           </p>
         </div>
 

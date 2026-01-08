@@ -8,10 +8,34 @@
     "donate": "Donar",
     "contact": "Contacto"
   },
+  "Buttons": {
+    "donate": "Donar Ahora",
+    "getInvolved": "Involúcrate",
+    "readStory": "Nuestra Historia",
+    "meetResidents": "Conoce a los Residentes"
+  },
   "HomePage": {
     "Hero": {
       "title": "Defendiendo a Todos los Animales",
-      "paragraph": "Rescatamos, curamos y protegemos a los animales abandonados, heridos y maltratados, dandoles seguridad, carino y la oportunidad de vivir en libertad; cada vida cuenta y cada animal merece un lugar que pueda llamar hogar."
+      "paragraph": "Rescatamos, curamos y protegemos a los animales abandonados, heridos y maltratados, dándoles seguridad, cariño y la oportunidad de vivir en libertad; cada vida cuenta y cada animal merece un lugar que pueda llamar hogar."
+    },
+    "Stats": {
+      "rescued": "animales rescatados",
+      "trees": "árboles plantados",
+      "hectares": "hectáreas reforestadas"
+    },
+    "Work": {
+      "title": "Nuestro Trabajo",
+      "p1": "Animal Shepherd es una organización sin fines de lucro, de no sacrificio, fundada en la creencia de que cada vida es preciosa. Brindamos un santuario permanente sin jaulas para animales que viven con desafíos que los dejan sin otras opciones.",
+      "p2": "Desde la rehabilitación clínica intensiva hasta la restauración de más de 80 hectáreas de ecosistemas locales, nuestro trabajo garantiza que cada criatura sea valorada a través del cuidado profesional del santuario y la gestión ambiental."
+    },
+    "Residents": {
+      "title": "Conoce a Nuestros Animales",
+      "description": "Cada animal en nuestro santuario tiene una historia. Algunos están sanando, otros están prosperando y todos son amados."
+    },
+    "CareTips": {
+      "title": "Consejos de Cuidado",
+      "description": "Guía práctica para ayudarte a generar confianza y bienestar con tus mascotas."
     },
     "Tips": {
       "1": {

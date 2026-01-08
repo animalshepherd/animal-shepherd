@@ -8,11 +8,34 @@
     "donate": "Donate",
     "contact": "Contact"
   },
-
+  "Buttons": {
+    "donate": "Donate Now",
+    "getInvolved": "Get Involved",
+    "readStory": "Read Our Story",
+    "meetResidents": "Meet the Residents"
+  },
   "HomePage": {
     "Hero": {
       "title": "Fighting for All Animals",
       "paragraph": "We rescue, heal, and protect abandoned, injured, and neglected animals, giving them safety, love, and the chance to live freely. Every life matters, and every animal deserves a place to call home."
+    },
+    "Stats": {
+      "rescued": "rescued animals",
+      "trees": "trees planted",
+      "hectares": "reforested hectares"
+    },
+    "Work": {
+      "title": "Our Work",
+      "p1": "Animal Shepherd is a non-profit, no-kill organization founded on the belief that every life is precious. We provide a permanent no-cage sanctuary for animals living with challenges that leave them without other options.",
+      "p2": "From intensive clinical rehabilitation to the restoration of over 80 hectares of local ecosystems, our work ensures that every creature is valued through professional sanctuary care and environmental stewardship."
+    },
+    "Residents": {
+      "title": "Meet Our Animals",
+      "description": "Each animal at our sanctuary has a story. Some are healing, some are thriving, and all are loved."
+    },
+    "CareTips": {
+      "title": "Care Tips",
+      "description": "Practical guidance to help you build trust and wellbeing with your pets."
     },
     "Tips": {
       "1": {
