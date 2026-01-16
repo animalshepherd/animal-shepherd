@@ -1,13 +1,35 @@
 "use client";
 
+import { useActionState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { teamMembers } from "@/data/team";
 import { Button } from "../components/ui/Button";
 import { HeroActionBox } from "../components/ui/HeroActionBox";
+import { sendContactEmail, FormState } from "../../actions/email";
+
+const initialState: FormState = {
+  success: false,
+  error: "",
+};
 
 export default function ContactPage() {
   const t = useTranslations("ContactPage");
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const [state, formAction, isPending] = useActionState(
+    sendContactEmail,
+    initialState
+  );
+
+  useEffect(() => {
+    if (state.success) {
+      alert("Message sent successfully!");
+      formRef.current?.reset();
+    } else if (state.error) {
+      alert(state.error);
+    }
+  }, [state.success, state.error]);
 
   return (
     <div className="flex flex-col w-full bg-primary antialiased">
@@ -87,14 +109,17 @@ export default function ContactPage() {
             <div className="h-1 w-20 bg-secondary mx-auto rounded-full" />
           </header>
 
-          <form className="space-y-6">
+          <form ref={formRef} action={formAction} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label className="text-xs font-bold text-secondary-dark uppercase tracking-[0.2em] ml-2">
                   {t("Form.labels.name")}
                 </label>
                 <input
+                  name="name"
+                  required
                   type="text"
+                  defaultValue={state.fields?.name}
                   placeholder={t("Form.labels.name_placeholder")}
                   className="w-full p-4 rounded-2xl bg-primary border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all"
                 />
@@ -104,7 +129,10 @@ export default function ContactPage() {
                   {t("Form.labels.email")}
                 </label>
                 <input
+                  name="email"
+                  required
                   type="email"
+                  defaultValue={state.fields?.email}
                   placeholder={t("Form.labels.email_placeholder")}
                   className="w-full p-4 rounded-2xl bg-primary border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all"
                 />
@@ -115,7 +143,10 @@ export default function ContactPage() {
                 {t("Form.labels.subject")}
               </label>
               <input
+                name="subject"
+                required
                 type="text"
+                defaultValue={state.fields?.subject}
                 placeholder={t("Form.labels.subject_placeholder")}
                 className="w-full p-4 rounded-2xl bg-primary border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all"
               />
@@ -125,7 +156,10 @@ export default function ContactPage() {
                 {t("Form.labels.message")}
               </label>
               <textarea
+                name="message"
+                required
                 rows={6}
+                defaultValue={state.fields?.message}
                 placeholder={t("Form.labels.message_placeholder")}
                 className="w-full p-4 rounded-2xl bg-primary border border-gray-100 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all resize-none"
               />
@@ -135,9 +169,10 @@ export default function ContactPage() {
                 variant="secondary"
                 size="lg"
                 className="px-12"
-                href="/getinvolved"
+                type="submit"
+                disabled={isPending}
               >
-                {t("Form.labels.submit")}
+                {isPending ? "Sending..." : t("Form.labels.submit")}
               </Button>
             </div>
           </form>

@@ -1,15 +1,37 @@
 "use client";
 
+import { useActionState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { AnimalCard } from "../components/ui/AnimalCard";
 import { HeroActionBox } from "../components/ui/HeroActionBox";
 import { Button } from "../components/ui/Button";
+import { sendAdoptionEmail, FormState } from "../../actions/email";
 
 import { animals } from "@/data/animals";
 
+const initialState: FormState = {
+  success: false,
+  error: "",
+};
+
 export default function AdoptPage() {
   const t = useTranslations("AdoptPage");
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const [state, formAction, isPending] = useActionState(
+    sendAdoptionEmail,
+    initialState
+  );
+
+  useEffect(() => {
+    if (state.success) {
+      alert("Application sent successfully!");
+      formRef.current?.reset();
+    } else if (state.error) {
+      alert(state.error);
+    }
+  }, [state.success, state.error]);
 
   const stepsKeys = ["1", "2", "3", "4"] as const;
 
@@ -152,15 +174,21 @@ export default function AdoptPage() {
             </p>
           </header>
 
-          <form className="bg-parchment/30 p-8 md:p-12 rounded-3xl border border-secondary/5 shadow-xs">
+          <form
+            ref={formRef}
+            action={formAction}
+            className="bg-parchment/30 p-8 md:p-12 rounded-3xl border border-secondary/5 shadow-xs"
+          >
             <div className="grid grid-cols-1 gap-10">
               <div className="flex flex-col gap-3">
                 <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1">
                   {t("Form.labels.q1")}
                 </label>
                 <textarea
+                  name="q1"
                   required
                   rows={3}
+                  defaultValue={state.fields?.q1}
                   placeholder={t("Form.labels.q1_placeholder")}
                   className="w-full p-4 rounded-2xl bg-primary border border-secondary/10 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all resize-none text-secondary"
                 />
@@ -171,8 +199,10 @@ export default function AdoptPage() {
                   {t("Form.labels.q2")}
                 </label>
                 <input
+                  name="q2"
                   required
                   type="text"
+                  defaultValue={state.fields?.q2}
                   placeholder={t("Form.labels.q2_placeholder")}
                   className="w-full p-4 rounded-2xl bg-primary border border-secondary/10 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all text-secondary"
                 />
@@ -183,8 +213,10 @@ export default function AdoptPage() {
                   {t("Form.labels.q3")}
                 </label>
                 <input
+                  name="q3"
                   required
                   type="text"
+                  defaultValue={state.fields?.q3}
                   placeholder={t("Form.labels.q3_placeholder")}
                   className="w-full p-4 rounded-2xl bg-primary border border-secondary/10 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all text-secondary"
                 />
@@ -195,8 +227,10 @@ export default function AdoptPage() {
                   {t("Form.labels.q4")}
                 </label>
                 <input
+                  name="q4"
                   required
-                  type="text"
+                  type="email"
+                  defaultValue={state.fields?.q4}
                   placeholder={t("Form.labels.q4_placeholder")}
                   className="w-full p-4 rounded-2xl bg-primary border border-secondary/10 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all text-secondary"
                 />
@@ -207,8 +241,10 @@ export default function AdoptPage() {
                   {t("Form.labels.q5")}
                 </label>
                 <textarea
+                  name="q5"
                   required
                   rows={3}
+                  defaultValue={state.fields?.q5}
                   placeholder={t("Form.labels.q5_placeholder")}
                   className="w-full p-4 rounded-2xl bg-primary border border-secondary/10 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all resize-none text-secondary"
                 />
@@ -219,8 +255,10 @@ export default function AdoptPage() {
                   {t("Form.labels.q6")}
                 </label>
                 <textarea
+                  name="q6"
                   required
                   rows={3}
+                  defaultValue={state.fields?.q6}
                   placeholder={t("Form.labels.q6_placeholder")}
                   className="w-full p-4 rounded-2xl bg-primary border border-secondary/10 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all resize-none text-secondary"
                 />
@@ -231,9 +269,10 @@ export default function AdoptPage() {
                   variant="secondary"
                   size="lg"
                   className="px-16"
-                  href="/getinvolved"
+                  type="submit"
+                  disabled={isPending}
                 >
-                  {t("Form.labels.submit")}
+                  {isPending ? "Sending..." : t("Form.labels.submit")}
                 </Button>
                 <p className="text-xs text-secondary/50 uppercase tracking-widest text-center leading-relaxed">
                   {t("Form.labels.privacy")}
