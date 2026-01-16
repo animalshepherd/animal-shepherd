@@ -3,6 +3,7 @@
 import Link from "next/link";
 
 type ButtonSize = "sm" | "md" | "lg";
+type ButtonType = "button" | "submit" | "reset";
 
 const baseStyles =
   "inline-flex items-center justify-center rounded-lg cursor-pointer font-semibold text-center transition-all duration-300 active:scale-95 disabled:opacity-50 disabled:pointer-events-none";
@@ -24,16 +25,18 @@ interface BaseProps extends React.PropsWithChildren {
   variant?: keyof typeof variants;
   size?: ButtonSize;
   className?: string;
-  onClick?: (event: React.MouseEvent<Element>) => void;
+  type?: ButtonType;
+  disabled?: boolean;
 }
 
 interface LinkButtonProps extends BaseProps {
   href: string;
+  onClick?: (event: React.MouseEvent<Element>) => void;
 }
 
 interface ActionButtonProps extends BaseProps {
   href?: never;
-  onClick: (event: React.MouseEvent<Element>) => void;
+  onClick?: (event: React.MouseEvent<Element>) => void;
 }
 
 export type ButtonProps = LinkButtonProps | ActionButtonProps;
@@ -42,6 +45,8 @@ export const Button = ({
   children,
   variant = "primary",
   size = "md",
+  type = "button",
+  disabled = false,
   onClick,
   href,
   className = "",
@@ -50,14 +55,24 @@ export const Button = ({
 
   if (href) {
     return (
-      <Link href={href} className={combinedStyles} onClick={onClick}>
+      <Link
+        href={href}
+        className={combinedStyles}
+        onClick={onClick}
+        aria-disabled={disabled}
+      >
         {children}
       </Link>
     );
   }
 
   return (
-    <button onClick={onClick} type="button" className={combinedStyles}>
+    <button
+      onClick={onClick}
+      type={type}
+      disabled={disabled}
+      className={combinedStyles}
+    >
       {children}
     </button>
   );
