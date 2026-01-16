@@ -23,74 +23,68 @@ const AdoptionSchema = z.object({
   q6: z.string().min(1, { error: "Home setup details are required" }),
 });
 
-export async function sendContactEmail(formData: FormData) {
-  const validatedFields = ContactSchema.safeParse({
-    name: formData.get("name"),
-    email: formData.get("email"),
-    subject: formData.get("subject"),
-    message: formData.get("message"),
-  });
+export type FormState = {
+  success?: boolean;
+  error?: string;
+  fields?: Record<string, string>;
+};
 
-  if (!validatedFields.success) {
-    return { success: false, error: "Validation failed" };
-  }
+export async function sendContactEmail(
+  prevState: FormState,
+  formData: FormData
+): Promise<FormState> {
+  const fields = {
+    name: formData.get("name") as string,
+    email: formData.get("email") as string,
+    subject: formData.get("subject") as string,
+    message: formData.get("message") as string,
+  };
 
-  const { name, email, subject, message } = validatedFields.data;
+  const validated = ContactSchema.safeParse(fields);
+  if (!validated.success)
+    return { success: false, error: "Validation failed", fields };
 
   try {
     await resend.emails.send({
       from: "Sanctuary Contact <website@animalshepherd.org>",
       to: "animalshepherd.tech@gmail.com",
-      replyTo: email,
-      subject: `Contact Form: ${subject}`,
-      html: `
-        <h2>New General Inquiry</h2>
-        <p><strong>From:</strong> ${name} (${email})</p>
-        <p><strong>Subject:</strong> ${subject}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message}</p>
-      `,
+      replyTo: fields.email,
+      subject: `Contact: ${fields.subject}`,
+      html: `<p><strong>From:</strong> ${fields.name}</p><p>${fields.message}</p>`,
     });
     return { success: true };
   } catch {
-    return { success: false, error: "Failed to send email" };
+    return { success: false, error: "Server error", fields };
   }
 }
 
-export async function sendAdoptionEmail(formData: FormData) {
-  const validatedFields = AdoptionSchema.safeParse({
-    q1: formData.get("q1"),
-    q2: formData.get("q2"),
-    q3: formData.get("q3"),
-    q4: formData.get("q4"),
-    q5: formData.get("q5"),
-    q6: formData.get("q6"),
-  });
+export async function sendAdoptionEmail(
+  prevState: FormState,
+  formData: FormData
+): Promise<FormState> {
+  const fields = {
+    q1: formData.get("q1") as string,
+    q2: formData.get("q2") as string,
+    q3: formData.get("q3") as string,
+    q4: formData.get("q4") as string,
+    q5: formData.get("q5") as string,
+    q6: formData.get("q6") as string,
+  };
 
-  if (!validatedFields.success) {
-    return { success: false, error: "Validation failed" };
-  }
-
-  const { q1, q2, q3, q4, q5, q6 } = validatedFields.data;
+  const validated = AdoptionSchema.safeParse(fields);
+  if (!validated.success)
+    return { success: false, error: "Validation failed", fields };
 
   try {
     await resend.emails.send({
       from: "Adoption Desk <website@animalshepherd.org>",
       to: "animalshepherd.tech@gmail.com",
-      replyTo: q4,
+      replyTo: fields.q4,
       subject: "New Adoption Application",
-      html: `
-        <h2>New Adoption Inquiry</h2>
-        <p><strong>Animal:</strong> ${q1}</p>
-        <p><strong>Applicant:</strong> ${q2}</p>
-        <p><strong>Phone:</strong> ${q3}</p>
-        <p><strong>Email:</strong> ${q4}</p>
-        <p><strong>Experience:</strong> ${q5}</p>
-        <p><strong>Home Setup:</strong> ${q6}</p>
-      `,
+      html: `<h2>Application from ${fields.q2}</h2><p>Animal: ${fields.q1}</p>`,
     });
     return { success: true };
   } catch {
-    return { success: false, error: "Failed to send application" };
+    return { success: false, error: "Server error", fields };
   }
 }
