@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   title: "Animal Shepherd",
   description:
     "Animal Shepherd is a no-kill sanctuary rescuing and rehabilitating dogs, cats, and farm animals through adoption, care, and community education.",
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({

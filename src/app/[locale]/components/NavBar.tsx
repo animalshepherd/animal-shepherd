@@ -29,12 +29,7 @@ export const NavBar = ({ links }: NavBarProps) => {
             onClick={closeMenu}
           >
             <div className="relative h-12 w-12">
-              <Image
-                src="/animal-shepherd-logo-no-text-transparent.png"
-                fill
-                priority
-                alt="Logo Nav"
-              />
+              <Image src="/icon.png" fill priority alt="Logo Nav" />
             </div>
           </Link>
         </div>
