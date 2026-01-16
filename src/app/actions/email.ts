@@ -47,7 +47,7 @@ export async function sendContactEmail(
   try {
     await resend.emails.send({
       from: "Sanctuary Contact <website@animalshepherd.org>",
-      to: "animalshepherd.tech@gmail.com",
+      to: "info@animalshepherd.org",
       replyTo: fields.email,
       subject: `Contact: ${fields.subject}`,
       html: `<p><strong>From:</strong> ${fields.name}</p><p>${fields.message}</p>`,
@@ -78,7 +78,7 @@ export async function sendAdoptionEmail(
   try {
     await resend.emails.send({
       from: "Adoption Desk <website@animalshepherd.org>",
-      to: "animalshepherd.tech@gmail.com",
+      to: "info@animalshepherd.org",
       replyTo: fields.q4,
       subject: "New Adoption Application",
       html: `<h2>Application from ${fields.q2}</h2><p>Animal: ${fields.q1}</p>`,
