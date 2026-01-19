@@ -123,7 +123,7 @@ export const Footer = ({ links }: FooterProps) => {
             <h3 className="text-sm font-bold uppercase tracking-widest text-primary text-center">
               {tf("support")}
             </h3>
-            <p className="mt-4 text-xs italic leading-loose text-primary/60 text-center">
+            <p className="mt-4 text-sm italic leading-loose text-primary/80 text-center font-semibold">
               {tf("googleMember")}
             </p>
             <Button
