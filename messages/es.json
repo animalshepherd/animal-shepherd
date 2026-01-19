@@ -180,7 +180,7 @@
     },
     "HeroAction": {
       "title": "Un Compromiso de por Vida",
-      "description": "Nuestro proceso de adopción es reflexivo y se centra en el bienestar a largo plazo de cada animal. Trabajamos estrechamente contigo para asegurar una pareja responsable.",
+      "description": "Nuestro proceso de adopción es reflexivo y se centra en el bienestar a largo plazo de cada animal. Trabajamos estrechamente contigo para asegurar un match ideal.",
       "button": "Iniciar Solicitud"
     },
     "Family": {
@@ -227,7 +227,7 @@
         "q3": "3. Información de Contacto *",
         "q3_placeholder": "Teléfono, Correo y @Instagram",
         "q4": "4. Ubicación *",
-        "q4_placeholder": "Ciudad, Delegación/Municipio y Colonia",
+        "q4_placeholder": "Ciudad, Delegación/Zona y Barrio",
         "q5": "5. Vivienda y Hogar *",
         "q5_placeholder": "¿Casa o departamento? / ¿Propio o rentado? / ¿Vives con niños u otras mascotas?",
         "q6": "6. Estilo de Vida y Rutina *",
