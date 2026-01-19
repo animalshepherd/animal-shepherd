@@ -43,28 +43,28 @@ export default function PartnershipsPage() {
       <section className="py-24 px-6 lg:px-20 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="space-y-6 group">
-            <h3 className="text-xl font-bold text-secondary-dark group-hover:text-secondary transition-colors">
+            <h3 className="text-center text-xl font-bold text-secondary-dark group-hover:text-secondary transition-colors">
               {t("Pillars.corporate.title")}
             </h3>
-            <p className="text-secondary text-sm leading-relaxed">
+            <p className="text-center text-secondary text-sm leading-relaxed">
               {t("Pillars.corporate.description")}
             </p>
           </div>
 
           <div className="space-y-6 group">
-            <h3 className="text-xl font-bold text-secondary-dark group-hover:text-secondary transition-colors">
+            <h3 className="text-center text-xl font-bold text-secondary-dark group-hover:text-secondary transition-colors">
               {t("Pillars.esg.title")}
             </h3>
-            <p className="text-secondary text-sm leading-relaxed">
+            <p className="text-center text-secondary text-sm leading-relaxed">
               {t("Pillars.esg.description")}
             </p>
           </div>
 
           <div className="space-y-6 group">
-            <h3 className="text-xl font-bold text-secondary-dark group-hover:text-secondary transition-colors">
+            <h3 className="text-center md:text-left text-xl font-bold text-secondary-dark group-hover:text-secondary transition-colors">
               {t("Pillars.education.title")}
             </h3>
-            <p className="text-secondary text-sm leading-relaxed">
+            <p className="text-center md:text-left text-secondary text-sm leading-relaxed">
               {t("Pillars.education.description")}
             </p>
           </div>
@@ -81,7 +81,7 @@ export default function PartnershipsPage() {
               <h3 className="text-3xl md:text-5xl font-bold leading-tight">
                 {t("Art.title")}
               </h3>
-              <div className="h-1 w-20 bg-primary rounded-full" />
+              <div className="h-1 w-20 bg-primary mx-auto rounded-full" />
             </header>
 
             <div className="space-y-6 text-white/80 text-lg leading-relaxed">
@@ -108,32 +108,20 @@ export default function PartnershipsPage() {
               </ul>
             </div>
 
-            <div className="pt-4 space-y-4">
-              <div>
-                <p className="text-sm font-bold uppercase tracking-widest text-primary italic">
-                  &quot;{t("Art.quote")}&quot;
-                </p>
-                <p className="text-xs uppercase tracking-widest opacity-50 mt-1">
-                  — Alejandro Magallanes
-                </p>
-              </div>
-              <Button
-                size="sm"
-                href="https://www.instagram.com/p/CGK7p-un-R-/"
-                className="text-white border-white/20 hover:bg-white/10"
-              >
+            <div className="space-y-4">
+              <Button size="sm" href="https://www.instagram.com/p/CGKs9bGp8T-/">
                 {t("Art.button")}
               </Button>
             </div>
           </div>
 
-          <div className="relative aspect-square bg-white/5 rounded-3xl flex items-center justify-center p-12 border border-white/10">
+          <div className="relative aspect-square bg-white/5 rounded-3xl flex items-center justify-center p-3 border border-white/10">
             <div className="relative w-full h-full">
               <Image
-                src="/animal-shepherd-logo.jpg"
-                alt="Animal Shepherd Emblem by Alejandro Magallanes"
+                src="/alejandro_magallnes_instagram_black_logo.webp"
+                alt="Animal Shepherd Logo by Alejandro Magallanes"
                 fill
-                className="object-contain"
+                className="object-contain rounded-2xl"
               />
             </div>
           </div>
