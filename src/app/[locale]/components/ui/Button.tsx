@@ -18,7 +18,7 @@ const variants = {
   primary:
     "bg-primary-dark text-secondary-dark border border-secondary-dark/20 hover:bg-primary shadow-sm",
   secondary:
-    "bg-secondary text-primary border border-secondary hover:bg-secondary-hover text-white shadow-md",
+    "bg-secondary text-primary border border-secondary hover:bg-secondary-hover shadow-md",
 } as const;
 
 interface BaseProps extends React.PropsWithChildren {
