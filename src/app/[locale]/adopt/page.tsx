@@ -21,7 +21,7 @@ export default function AdoptPage() {
 
   const [state, formAction, isPending] = useActionState(
     sendAdoptionEmail,
-    initialState
+    initialState,
   );
 
   useEffect(() => {
@@ -268,7 +268,6 @@ export default function AdoptPage() {
                 <Button
                   variant="secondary"
                   size="lg"
-                  className="px-16"
                   type="submit"
                   disabled={isPending}
                 >
