@@ -405,5 +405,10 @@
       "days": "Monday — Sunday:",
       "time": "09:00 am - 06:00 pm"
     }
+  },
+  "404": {
+    "title": "Oops! This page has gone for walkies.",
+    "description": "The page you are looking for might have been moved, deleted, or never existed. Let's get you back to the animals.",
+    "button": "Return Home"
   }
 }

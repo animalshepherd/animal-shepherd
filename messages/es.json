@@ -405,5 +405,10 @@
       "days": "Lunes — Domingo:",
       "time": "09:00 am - 06:00 pm"
     }
+  },
+  "404": {
+    "title": "¡Uy! Esta página se fue de paseo.",
+    "description": "Es posible que la página que buscas haya sido movida, eliminada o nunca haya existido. Vamos de regreso con los animales.",
+    "button": "Regresar al Inicio"
   }
 }
