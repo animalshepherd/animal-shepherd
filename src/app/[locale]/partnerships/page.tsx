@@ -40,7 +40,7 @@ export default function PartnershipsPage() {
         buttonVariant="primary"
       />
 
-      <section className="py-24 px-6 lg:px-20 max-w-7xl mx-auto">
+      <section className="py-16 sm:py-20 px-6 lg:px-20 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="space-y-6 group">
             <h3 className="text-center text-xl font-bold text-secondary-dark group-hover:text-secondary transition-colors">
@@ -71,14 +71,14 @@ export default function PartnershipsPage() {
         </div>
       </section>
 
-      <section className="bg-secondary py-24 px-6 lg:px-20 text-white overflow-hidden">
+      <section className="bg-secondary py-16 sm:py-20 px-6 lg:px-20 text-white overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <header className="space-y-4">
-              <h2 className="text-xs font-bold tracking-[0.3em] uppercase opacity-70">
+              <h2 className="text-center sm:text-left text-xs font-bold tracking-[0.3em] uppercase opacity-70">
                 {t("Art.tag")}
               </h2>
-              <h3 className="text-3xl md:text-5xl font-bold leading-tight">
+              <h3 className="text-center sm:text-left text-3xl md:text-5xl font-bold leading-tight">
                 {t("Art.title")}
               </h3>
               <div className="h-1 w-20 bg-primary mx-auto rounded-full" />
@@ -108,7 +108,7 @@ export default function PartnershipsPage() {
               </ul>
             </div>
 
-            <div className="space-y-4">
+            <div className="flex justify-center items-center sm:justify-start space-y-4">
               <Button size="sm" href="https://www.instagram.com/p/CGKs9bGp8T-/">
                 {t("Art.button")}
               </Button>
@@ -128,12 +128,12 @@ export default function PartnershipsPage() {
         </div>
       </section>
 
-      <section className="py-24 px-6 lg:px-20 max-w-4xl mx-auto text-center">
+      <section className="py-16 sm:py-20 px-6 lg:px-20 max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-secondary-dark mb-8">
           {t("CTA.title")}
         </h2>
         <p className="text-secondary text-lg mb-12">{t("CTA.description")}</p>
-        <Button variant="secondary" size="lg" href="/contact" className="px-12">
+        <Button variant="secondary" size="xl" href="/contact">
           {t("CTA.button")}
         </Button>
       </section>
