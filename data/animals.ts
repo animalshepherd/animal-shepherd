@@ -6,10 +6,10 @@ export interface Animal {
 export const animals: Animal[] = [
   {
     src: "/dog-24.webp",
-    alt: "A calm rescue dog sitting in the grass",
+    alt: "A rescue dog looking into the camera",
   },
   {
-    src: "/cat-04.webp",
+    src: "/cat-15.webp",
     alt: "A curious cat looking at the camera",
   },
   {
@@ -17,20 +17,20 @@ export const animals: Animal[] = [
     alt: "A happy dog posing in the sanctuary garden",
   },
   {
-    src: "/cat-06.webp",
+    src: "/cat-22.webp",
     alt: "A relaxed cat lounging in a sunny spot",
   },
   {
     src: "/dog-45.webp",
-    alt: "A playful rescue dog outdoors",
+    alt: "A rescue dog posing for the camera",
   },
   {
     src: "/dog-27.webp",
-    alt: "A focused dog standing in the sanctuary field",
+    alt: "A focused dog standing for the camera",
   },
   {
-    src: "/cat-17.webp",
-    alt: "A gentle cat resting comfortably",
+    src: "/cat-19.webp",
+    alt: "A gentle cat relaxing",
   },
   {
     src: "/dog-67.webp",
@@ -38,18 +38,18 @@ export const animals: Animal[] = [
   },
   {
     src: "/cat-12.webp",
-    alt: "A small kitten rescued by the sanctuary",
+    alt: "A cat rescued by the sanctuary",
   },
   {
     src: "/dog-47.webp",
-    alt: "A senior dog enjoying the peace of the sanctuary",
-  },
-  {
-    src: "/cat-18.webp",
-    alt: "A sleek cat exploring its surroundings",
+    alt: "A dog posing",
   },
   {
     src: "/dog-65.webp",
-    alt: "A large rescue dog standing proudly",
+    alt: "A rescue dog standing proudly",
+  },
+  {
+    src: "/cat-18.webp",
+    alt: "A cat exploring relaxing",
   },
 ];
