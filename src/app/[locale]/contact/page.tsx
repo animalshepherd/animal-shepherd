@@ -19,7 +19,7 @@ export default function ContactPage() {
 
   const [state, formAction, isPending] = useActionState(
     sendContactEmail,
-    initialState
+    initialState,
   );
 
   useEffect(() => {
@@ -168,7 +168,6 @@ export default function ContactPage() {
               <Button
                 variant="secondary"
                 size="lg"
-                className="px-12"
                 type="submit"
                 disabled={isPending}
               >
