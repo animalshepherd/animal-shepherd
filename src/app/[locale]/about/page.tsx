@@ -64,9 +64,9 @@ export default function AboutPage() {
             </p>
           </header>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <div className="p-8 bg-primary-dark/20 border border-secondary-dark/10 rounded-3xl shadow-sm">
-              <h3 className="text-xl font-bold text-secondary-dark mb-4">
+              <h3 className="text-center sm:text-left text-xl font-bold text-secondary-dark mb-4">
                 {t("Pillars.rescue.title")}
               </h3>
               <ul className="space-y-3 text-secondary-dark text-sm">
@@ -223,15 +223,11 @@ export default function AboutPage() {
           <p className="text-secondary mb-12 text-lg">
             {t("Join.description")}
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-6">
-            <Button
-              variant="primary"
-              href="/getinvolved"
-              className="px-12 py-4"
-            >
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+            <Button variant="primary" href="/getinvolved">
               {b("getInvolved")}
             </Button>
-            <Button variant="secondary" href="/adopt" className="px-12 py-4">
+            <Button variant="secondary" href="/adopt">
               {b("learnAdopting")}
             </Button>
           </div>
