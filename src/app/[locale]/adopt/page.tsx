@@ -69,7 +69,7 @@ export default function AdoptPage() {
 
       <section
         id="meet-the-family"
-        className="py-24 px-6 lg:px-20 max-w-screen-2xl mx-auto w-full scroll-mt-20"
+        className="py-16 px-6 lg:px-20 max-w-screen-2xl mx-auto w-full scroll-mt-20"
       >
         <header className="text-center mb-16 space-y-4">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark">
@@ -88,7 +88,7 @@ export default function AdoptPage() {
         </div>
       </section>
 
-      <section className="bg-parchment py-24 px-6 lg:px-20 border-y border-secondary/5">
+      <section className="bg-parchment py-20 px-6 lg:px-20 border-y border-secondary/5">
         <div className="max-w-7xl mx-auto">
           <header className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
@@ -106,7 +106,7 @@ export default function AdoptPage() {
                 <span className="absolute -top-4 left-8 bg-secondary text-primary font-bold px-4 py-1 rounded-full text-xs">
                   Step {key}
                 </span>
-                <h3 className="text-lg font-bold text-secondary-dark mt-4 mb-3">
+                <h3 className="text-lg font-bold text-secondary-dark mb-3">
                   {t(`HowToAdopt.steps.${key}.title`)}
                 </h3>
                 <p className="text-secondary leading-relaxed text-sm opacity-80">
@@ -118,7 +118,7 @@ export default function AdoptPage() {
         </div>
       </section>
 
-      <section className="bg-secondary py-24 px-6 lg:px-20">
+      <section className="bg-secondary py-20 px-6 lg:px-20">
         <div className="max-w-4xl mx-auto">
           <div className="bg-primary p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100">
             <header className="text-center mb-12">
@@ -162,7 +162,7 @@ export default function AdoptPage() {
 
       <section
         id="adoption-form"
-        className="py-24 px-6 lg:px-20 bg-primary scroll-mt-10"
+        className="py-20 px-6 lg:px-20 bg-primary scroll-mt-10"
       >
         <div className="max-w-4xl mx-auto w-full">
           <header className="text-center mb-12">
