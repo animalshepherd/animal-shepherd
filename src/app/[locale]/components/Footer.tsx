@@ -129,7 +129,6 @@ export const Footer = ({ links }: FooterProps) => {
             <Button
               href="https://www.paypal.com/paypalme/animalshepherd"
               variant="primary"
-              size="md"
               className="mt-8 w-full text-xs py-4"
             >
               {tf("paypal")}

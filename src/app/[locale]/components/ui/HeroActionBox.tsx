@@ -29,8 +29,8 @@ export const HeroActionBox = ({
           </p>
 
           {buttonLabel && buttonHref && (
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button variant={buttonVariant} href={buttonHref}>
+            <div className="flex flex-wrap justify-center">
+              <Button variant={buttonVariant} href={buttonHref} size="xl">
                 {buttonLabel}
               </Button>
             </div>
