@@ -133,7 +133,7 @@ export default function PartnershipsPage() {
           {t("CTA.title")}
         </h2>
         <p className="text-secondary text-lg mb-12">{t("CTA.description")}</p>
-        <Button variant="secondary" size="xl" href="/contact">
+        <Button variant="secondary" size="lg" href="/contact">
           {t("CTA.button")}
         </Button>
       </section>
