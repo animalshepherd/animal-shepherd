@@ -301,7 +301,7 @@
       "description": "Somos una organización sin fines de lucro compuesta en su totalidad por voluntarios que no recibe financiamiento estatal ni federal. En nuestros primeros 10 años, hemos rescatado a más de 1,000 animales. ¡Únete a nuestro equipo!",
       "programTitle": "Programa de Voluntariado",
       "programDescription": "Contamos con convenios con universidades y empresas para proyectos sociales y prácticas profesionales. Obtén experiencia de campo y conexión directa con la naturaleza. ¡Ayuda a los animales rescatados paseando, bañando, jugando y alimentándolos!",
-      "button": "Conviértete en Voluntario"
+      "button": "Sé voluntario"
     },
     "Adopt": {
       "title": "Adoptar",
@@ -309,7 +309,7 @@
       "responsibleTitle": "Adopciones Responsables",
       "responsibleDescription": "Desde 2023, formamos parte del programa Pedigree Adóptame de MARS, siendo uno de los refugios con mayores tasas de adopción en México. Nuestro proceso se enfoca en el 'match ideal', aplicando un protocolo riguroso para cada animal.",
       "quote": "Nos especializamos en quienes más lo necesitan: adultos mayores, mestizos, pitbulls y enfermos. No compres uno de raza, adopta uno sin casa: Adopta con el ❤️",
-      "button": "Saber Más Sobre Adopciones"
+      "button": "Saber más"
     }
   },
   "DonatePage": {
