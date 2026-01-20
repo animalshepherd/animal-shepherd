@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-type ButtonSize = "sm" | "md" | "lg";
+type ButtonSize = "sm" | "md" | "lg" | "xl";
 type ButtonType = "button" | "submit" | "reset";
 
 const baseStyles =
@@ -11,7 +11,8 @@ const baseStyles =
 const sizes = {
   sm: "px-4 py-2 text-xs",
   md: "px-6 py-3 text-sm md:text-base",
-  lg: "px-8 py-4 text-base md:text-lg",
+  lg: "w-52 py-3 text-base",
+  xl: "w-64 py-4 text-sm md:text-lg",
 } as const;
 
 const variants = {
@@ -44,7 +45,7 @@ export type ButtonProps = LinkButtonProps | ActionButtonProps;
 export const Button = ({
   children,
   variant = "primary",
-  size = "md",
+  size = "lg",
   type = "button",
   disabled = false,
   onClick,
