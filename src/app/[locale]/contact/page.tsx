@@ -63,7 +63,7 @@ export default function ContactPage() {
         buttonVariant="primary"
       />
 
-      <section className="py-24 px-6 lg:px-20 max-w-7xl mx-auto w-full">
+      <section className="py-16 sm:py-20 px-6 lg:px-20 max-w-7xl mx-auto w-full">
         <header className="text-center mb-16">
           <h2 className="text-xs font-bold text-secondary tracking-[0.3em] uppercase mb-4">
             {t("Team.tag")}
@@ -100,7 +100,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="bg-secondary/5 py-24 px-6 lg:px-20 border-y border-gray-100">
+      <section className="bg-secondary/5 py-16 sm:py-20 px-6 lg:px-20 border-y border-gray-100">
         <div className="max-w-4xl mx-auto w-full">
           <header className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
@@ -178,7 +178,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-24 px-6 lg:px-20 max-w-4xl mx-auto text-center">
+      <section className="py-16 py-20 px-6 lg:px-20 max-w-4xl mx-auto text-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           <div className="space-y-4">
             <h2 className="text-2xl font-bold text-secondary-dark uppercase tracking-widest">

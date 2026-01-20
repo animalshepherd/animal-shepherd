@@ -40,7 +40,7 @@ export default function GetInvolvedPage() {
         buttonVariant="primary"
       />
 
-      <section className="py-24 px-6 lg:px-20 max-w-7xl mx-auto w-full">
+      <section className="py-16 sm:py-20 px-6 lg:px-20 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
           <div className="flex flex-col h-full space-y-8">
             <div className="space-y-6">

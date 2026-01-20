@@ -114,7 +114,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 px-6 lg:px-20 max-w-7xl mx-auto">
+      <section className="py-16 md:py-20 px-6 lg:px-20 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
           <div className="space-y-6 md:space-y-8 text-center lg:text-left">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark leading-tight">
@@ -141,7 +141,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-secondary/5 py-16 md:py-24 px-6 lg:px-20">
+      <section className="bg-secondary/5 py-16 md:py-20 px-6 lg:px-20">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
             {residents("title")}
@@ -165,7 +165,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-20 overflow-hidden">
+      <section className="py-16 md:py-20 px-4 sm:px-6 lg:px-20 overflow-hidden">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
             {careTips("title")}

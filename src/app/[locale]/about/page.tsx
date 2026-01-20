@@ -145,7 +145,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-24 px-6 lg:px-20 max-w-7xl mx-auto">
+      <section className="py-16 sm:py-20 px-6 lg:px-20 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24 lg:mb-32">
           <div className="space-y-6 text-center lg:text-left">
             <h3 className="text-xs font-bold text-secondary tracking-widest uppercase">

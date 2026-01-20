@@ -39,7 +39,7 @@ export default function DonatePage() {
         buttonVariant="primary"
       />
 
-      <section className="py-24 px-6 lg:px-20 max-w-5xl mx-auto">
+      <section className="py-16 sm:py-20 px-6 lg:px-20 max-w-5xl mx-auto">
         <header className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
             {t("Impact.title")}
@@ -53,7 +53,7 @@ export default function DonatePage() {
         </div>
       </section>
 
-      <section className="bg-secondary/5 py-24 px-6 lg:px-20">
+      <section className="bg-secondary/5 py-16 sm:py-20 px-6 lg:px-20">
         <div className="max-w-4xl mx-auto">
           <div className="bg-primary p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100">
             <header className="text-center mb-10">
@@ -120,7 +120,7 @@ export default function DonatePage() {
         </div>
       </section>
 
-      <section className="py-24 px-6 lg:px-20 max-w-7xl mx-auto">
+      <section className="py-16 sm:py-20 px-6 lg:px-20 max-w-7xl mx-auto">
         <header className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
             {t("OtherWays.title")}
