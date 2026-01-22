@@ -15,7 +15,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/owner-dog-14.webp"
-            alt="The peaceful grounds of Animal Shepherd sanctuary"
+            alt="Sanctuary owner playing with dog"
             fill
             fetchPriority="high"
             className="object-cover"
