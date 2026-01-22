@@ -72,21 +72,21 @@ export default function PartnershipsPage() {
       </section>
 
       <section className="bg-secondary py-16 sm:py-20 px-6 lg:px-20 text-white overflow-hidden">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center text-center lg:text-left">
           <div className="space-y-8">
             <header className="space-y-4">
-              <h2 className="text-center sm:text-left text-xs font-bold tracking-[0.3em] uppercase opacity-70">
+              <h2 className=" text-xs font-bold uppercase opacity-70">
                 {t("Art.tag")}
               </h2>
-              <h3 className="text-center sm:text-left text-3xl md:text-5xl font-bold leading-tight">
+              <h3 className=" text-3xl md:text-5xl font-bold leading-tight">
                 {t("Art.title")}
               </h3>
               <div className="h-1 w-20 bg-primary mx-auto rounded-full" />
             </header>
 
-            <div className="space-y-6 text-white/80 text-lg leading-relaxed">
+            <div className="space-y-6 text-white/80 text-lg leading-relaxed text-center lg:text-left">
               <p>{t("Art.description")}</p>
-              <ul className="space-y-4 border-l border-white/20 pl-6">
+              <ul className="hidden lg:block space-y-4 border-l border-white/20 pl-6">
                 <li className="text-sm italic tracking-wide">
                   <span className="font-bold block text-white not-italic mb-1">
                     {t("Art.impact.label")}
@@ -108,7 +108,7 @@ export default function PartnershipsPage() {
               </ul>
             </div>
 
-            <div className="flex justify-center items-center sm:justify-start space-y-4">
+            <div className="flex justify-center items-center lg:justify-start space-y-4">
               <Button size="sm" href="https://www.instagram.com/p/CGKs9bGp8T-/">
                 {t("Art.button")}
               </Button>
