@@ -112,10 +112,14 @@ export default function ContactPage() {
           <form ref={formRef} action={formAction} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-2">
+                <label
+                  htmlFor="name"
+                  className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-2"
+                >
                   {t("Form.labels.name")}
                 </label>
                 <input
+                  id="name"
                   name="name"
                   required
                   type="text"
@@ -125,10 +129,14 @@ export default function ContactPage() {
                 />
               </div>
               <div className="space-y-2">
-                <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-2">
+                <label
+                  htmlFor="email"
+                  className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-2"
+                >
                   {t("Form.labels.email")}
                 </label>
                 <input
+                  id="email"
                   name="email"
                   required
                   type="email"
@@ -139,10 +147,14 @@ export default function ContactPage() {
               </div>
             </div>
             <div className="space-y-2">
-              <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-2">
+              <label
+                htmlFor="subject"
+                className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-2"
+              >
                 {t("Form.labels.subject")}
               </label>
               <input
+                id="subject"
                 name="subject"
                 required
                 type="text"
@@ -152,10 +164,14 @@ export default function ContactPage() {
               />
             </div>
             <div className="space-y-2">
-              <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-2">
+              <label
+                htmlFor="message"
+                className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-2"
+              >
                 {t("Form.labels.message")}
               </label>
               <textarea
+                id="message"
                 name="message"
                 required
                 rows={6}
