@@ -14,7 +14,7 @@ export default function AboutPage() {
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/owner-dog-14.webp"
+            src="/owner-dog-01.webp"
             alt="Sanctuary owner playing with dog"
             fill
             fetchPriority="high"
@@ -161,7 +161,7 @@ export default function AboutPage() {
           </div>
           <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="/cat-17.webp"
+              src="/cat-05.webp"
               alt="Cat in nature"
               fill
               className="object-cover"
@@ -172,7 +172,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl order-last lg:order-first">
             <Image
-              src="/owner-dog-30.webp"
+              src="/owner-dog-03.webp"
               alt="Founder of Animal Shepherd with a rescue animal"
               fill
               className="object-cover"

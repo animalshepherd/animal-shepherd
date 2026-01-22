@@ -40,7 +40,7 @@ export default function AdoptPage() {
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/dog-55.webp"
+            src="/dog-08.webp"
             alt="A happy rescued dog at the sanctuary"
             fill
             priority

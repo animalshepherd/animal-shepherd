@@ -132,7 +132,7 @@ export default function HomePage() {
           </div>
           <div className="relative h-[300px] sm:h-[400px] md:h-[450px] w-full rounded-3xl overflow-hidden shadow-xl">
             <Image
-              src="/owner-dog-28.webp"
+              src="/owner-dog-02.webp"
               fill
               alt="Caregiver with animal"
               className="object-cover"
@@ -152,10 +152,10 @@ export default function HomePage() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto mb-12">
-          <AnimalCard src="/dog-56.webp" alt="Dog staring into the distance" />
-          <AnimalCard src="/cat-04.webp" alt="Cat looking at camera" />
-          <AnimalCard src="/dog-22.webp" alt="Dog posing" />
-          <AnimalCard src="/cat-06.webp" alt="Cat relaxing" />
+          <AnimalCard src="/dog-09.webp" alt="Dog staring into the distance" />
+          <AnimalCard src="/cat-01.webp" alt="Cat looking at camera" />
+          <AnimalCard src="/dog-02.webp" alt="Dog posing" />
+          <AnimalCard src="/cat-02.webp" alt="Cat relaxing" />
         </div>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 px-4">

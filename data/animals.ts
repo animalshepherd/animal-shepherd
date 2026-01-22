@@ -5,51 +5,51 @@ export interface Animal {
 
 export const animals: Animal[] = [
   {
-    src: "/dog-24.webp",
+    src: "/dog-03.webp",
     alt: "A rescue dog looking into the camera",
   },
   {
-    src: "/cat-15.webp",
+    src: "/cat-04.webp",
     alt: "A curious cat looking at the camera",
   },
   {
-    src: "/dog-28.webp",
+    src: "/dog-05.webp",
     alt: "A happy dog posing in the sanctuary garden",
   },
   {
-    src: "/cat-22.webp",
+    src: "/cat-08.webp",
     alt: "A relaxed cat lounging in a sunny spot",
   },
   {
-    src: "/dog-45.webp",
+    src: "/dog-06.webp",
     alt: "A rescue dog posing for the camera",
   },
   {
-    src: "/dog-27.webp",
+    src: "/dog-04.webp",
     alt: "A focused dog standing for the camera",
   },
   {
-    src: "/cat-19.webp",
+    src: "/cat-07.webp",
     alt: "A gentle cat relaxing",
   },
   {
-    src: "/dog-67.webp",
+    src: "/dog-11.webp",
     alt: "A resilient rescue dog looking forward",
   },
   {
-    src: "/cat-12.webp",
+    src: "/cat-03.webp",
     alt: "A cat rescued by the sanctuary",
   },
   {
-    src: "/dog-47.webp",
+    src: "/dog-07.webp",
     alt: "A dog posing",
   },
   {
-    src: "/dog-65.webp",
+    src: "/dog-09.webp",
     alt: "A rescue dog standing proudly",
   },
   {
-    src: "/cat-18.webp",
+    src: "/cat-06.webp",
     alt: "A cat exploring relaxing",
   },
 ];

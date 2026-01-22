@@ -12,7 +12,7 @@ export default function DonatePage() {
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/cat-25.webp"
+            src="/cat-09.webp"
             alt="Animal Shepherd sanctuary residents"
             fill
             priority
