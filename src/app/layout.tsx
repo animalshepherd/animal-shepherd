@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   description:
     "Animal Shepherd is a no-kill sanctuary rescuing and rehabilitating dogs, cats, and farm animals through adoption, care, and community education.",
   icons: {
-    icon: "/icon.png",
-    apple: "/icon.png",
+    icon: "/icon.svg",
+    apple: "/icon.svg",
   },
 };
 
