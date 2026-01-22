@@ -65,11 +65,7 @@ export default function GetInvolvedPage() {
                 </p>
               </div>
               <div className="pt-8 flex items-center justify-center lg:justify-start">
-                <Button
-                  variant="secondary"
-                  size="lg"
-                  href="mailto:info@animalshepherd.org"
-                >
+                <Button variant="secondary" size="lg" href="/contact">
                   {t("Volunteer.button")}
                 </Button>
               </div>
