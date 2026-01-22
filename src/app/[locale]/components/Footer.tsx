@@ -18,8 +18,8 @@ export const Footer = ({ links }: FooterProps) => {
   return (
     <footer className="w-full bg-secondary py-12 text-primary">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
-          <div className="flex flex-col items-center text-center md:items-start md:text-left lg:col-span-4">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-8">
+          <div className="flex flex-col items-center text-center lg:items-start lg:text-left lg:col-span-4">
             <IntlLink
               href="/"
               className="inline-block transition-transform hover:scale-105"
@@ -38,7 +38,7 @@ export const Footer = ({ links }: FooterProps) => {
             </p>
           </div>
 
-          <div className="text-center md:text-left lg:col-span-2">
+          <div className="text-center lg:text-left lg:col-span-2">
             <h3 className="text-sm font-bold uppercase tracking-widest text-primary">
               {tf("quickLinks")}
             </h3>
@@ -58,7 +58,7 @@ export const Footer = ({ links }: FooterProps) => {
             </nav>
           </div>
 
-          <div className="text-center md:text-left lg:col-span-3">
+          <div className="text-center lg:text-left lg:col-span-3">
             <h3 className="text-sm font-bold uppercase tracking-widest text-primary">
               {tf("connect")}
             </h3>
@@ -69,7 +69,7 @@ export const Footer = ({ links }: FooterProps) => {
               >
                 info@animalshepherd.org
               </a>
-              <div className="flex items-center justify-center gap-4 md:justify-start">
+              <div className="flex items-center justify-center gap-4 lg:justify-start">
                 <Link
                   href="https://instagram.com/animal.shepherd"
                   target="_blank"
@@ -137,8 +137,8 @@ export const Footer = ({ links }: FooterProps) => {
         </div>
 
         <div className="mt-20 border-t border-primary/10 pt-10">
-          <div className="flex flex-col items-center justify-between gap-10 md:flex-row">
-            <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
+          <div className="flex flex-col items-center justify-between gap-10 lg:flex-row">
+            <div className="flex flex-col items-center gap-4 text-center lg:flex-row lg:text-left">
               <Image
                 src="/logo-pedigree-adoptame.png"
                 alt="Pedigree Adóptame Logo"
