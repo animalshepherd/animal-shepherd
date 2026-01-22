@@ -24,12 +24,9 @@ export default function ContactPage() {
 
   useEffect(() => {
     if (state.success) {
-      alert("Message sent successfully!");
       formRef.current?.reset();
-    } else if (state.error) {
-      alert(state.error);
     }
-  }, [state.success, state.error]);
+  }, [state.success]);
 
   return (
     <div className="flex flex-col w-full bg-primary antialiased">
@@ -102,12 +99,33 @@ export default function ContactPage() {
 
       <section className="bg-secondary/5 py-16 sm:py-20 px-6 lg:px-20 border-y border-gray-100">
         <div className="max-w-4xl mx-auto w-full">
-          <header className="text-center mb-16">
+          <header className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-4">
               {t("Form.title")}
             </h2>
             <div className="h-1 w-20 bg-secondary mx-auto rounded-full" />
           </header>
+
+          {state.success && (
+            <div
+              role="status"
+              className="mb-6 rounded-2xl border border-secondary bg-parchment px-6 py-4 text-center"
+            >
+              <p className="text-sm font-medium text-secondary">
+                Thank you for getting in touch. Your message has been sent
+                successfully.
+              </p>
+            </div>
+          )}
+
+          {state.error && (
+            <div
+              role="alert"
+              className="mb-6 rounded-2xl border border-red-200 bg-red-50 px-6 py-4 text-center"
+            >
+              <p className="text-sm font-medium text-red-800">{state.error}</p>
+            </div>
+          )}
 
           <form ref={formRef} action={formAction} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
