@@ -181,10 +181,14 @@ export default function AdoptPage() {
           >
             <div className="grid grid-cols-1 gap-10">
               <div className="flex flex-col gap-3">
-                <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1">
+                <label
+                  htmlFor="q1"
+                  className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1"
+                >
                   {t("Form.labels.q1")}
                 </label>
                 <textarea
+                  id="q1"
                   name="q1"
                   required
                   rows={3}
@@ -195,10 +199,14 @@ export default function AdoptPage() {
               </div>
 
               <div className="flex flex-col gap-3">
-                <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1">
+                <label
+                  htmlFor="q2"
+                  className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1"
+                >
                   {t("Form.labels.q2")}
                 </label>
                 <input
+                  id="q2"
                   name="q2"
                   required
                   type="text"
@@ -209,10 +217,14 @@ export default function AdoptPage() {
               </div>
 
               <div className="flex flex-col gap-3">
-                <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1">
+                <label
+                  htmlFor="q3"
+                  className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1"
+                >
                   {t("Form.labels.q3")}
                 </label>
                 <input
+                  id="q3"
                   name="q3"
                   required
                   type="text"
@@ -223,10 +235,14 @@ export default function AdoptPage() {
               </div>
 
               <div className="flex flex-col gap-3">
-                <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1">
+                <label
+                  htmlFor="q4"
+                  className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1"
+                >
                   {t("Form.labels.q4")}
                 </label>
                 <input
+                  id="q4"
                   name="q4"
                   required
                   type="email"
@@ -237,10 +253,14 @@ export default function AdoptPage() {
               </div>
 
               <div className="flex flex-col gap-3">
-                <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1">
+                <label
+                  htmlFor="q5"
+                  className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1"
+                >
                   {t("Form.labels.q5")}
                 </label>
                 <textarea
+                  id="q5"
                   name="q5"
                   required
                   rows={3}
@@ -251,10 +271,14 @@ export default function AdoptPage() {
               </div>
 
               <div className="flex flex-col gap-3">
-                <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1">
+                <label
+                  htmlFor="q6"
+                  className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-1"
+                >
                   {t("Form.labels.q6")}
                 </label>
                 <textarea
+                  id="q6"
                   name="q6"
                   required
                   rows={3}
