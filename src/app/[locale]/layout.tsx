@@ -2,6 +2,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "../../i18n/routing";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import { NavBar } from "./components/NavBar";
 import { Footer } from "./components/Footer";
@@ -30,6 +31,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
+      <GoogleAnalytics gaId="AW-17889552378" />
       <NavBar links={navLinks} />
       {children}
       <Footer links={navLinks} />
