@@ -36,8 +36,8 @@ export default function ContactPage() {
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/animals.webp"
-            alt="Contact Animal Shepherd Sanctuary"
+            src="/dogs.webp"
+            alt="Dogs relaxing in the sanctuary"
             fill
             priority
             className="object-cover"
