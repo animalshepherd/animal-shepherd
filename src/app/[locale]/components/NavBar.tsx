@@ -100,13 +100,12 @@ export const NavBar = ({ links }: NavBarProps) => {
           </button>
         </div>
       </div>
-
       <div
-        className={`fixed inset-0 top-16 z-40 bg-secondary transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed inset-x-0 top-16 z-40 h-dvh bg-secondary transition-transform duration-300 ease-in-out lg:hidden ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <nav className="flex h-full flex-col p-8">
+        <nav className="flex flex-col p-8">
           <ul className="flex flex-col gap-6">
             {links.map((link) => (
               <li
@@ -116,14 +115,14 @@ export const NavBar = ({ links }: NavBarProps) => {
                 <Link
                   href={link.href}
                   onClick={closeMenu}
-                  className="block w-full text-2xl font-bold tracking-tight text-primary"
+                  className="block w-full text-xl font-bold tracking-tight text-primary"
                 >
                   {t(link.label)}
                 </Link>
               </li>
             ))}
           </ul>
-          <div className="mt-auto space-y-6 pb-12">
+          <div className="mt-10">
             <Button
               variant="primary"
               href="/donate"
