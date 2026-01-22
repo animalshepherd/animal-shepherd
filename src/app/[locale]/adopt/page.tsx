@@ -26,12 +26,9 @@ export default function AdoptPage() {
 
   useEffect(() => {
     if (state.success) {
-      alert("Application sent successfully!");
       formRef.current?.reset();
-    } else if (state.error) {
-      alert(state.error);
     }
-  }, [state.success, state.error]);
+  }, [state.success]);
 
   const stepsKeys = ["1", "2", "3", "4"] as const;
 
@@ -174,6 +171,27 @@ export default function AdoptPage() {
             </p>
           </header>
 
+          {state.success && (
+            <div
+              role="status"
+              className="mb-6 rounded-2xl border border-secondary bg-parchment px-6 py-4 text-center"
+            >
+              <p className="text-sm font-medium text-secondary">
+                Thank you for getting in touch. Your message has been sent
+                successfully.
+              </p>
+            </div>
+          )}
+
+          {state.error && (
+            <div
+              role="alert"
+              className="mb-6 rounded-2xl border border-red-200 bg-red-50 px-6 py-4 text-center"
+            >
+              <p className="text-sm font-medium text-red-800">{state.error}</p>
+            </div>
+          )}
+
           <form
             ref={formRef}
             action={formAction}
@@ -245,7 +263,7 @@ export default function AdoptPage() {
                   id="q4"
                   name="q4"
                   required
-                  type="email"
+                  type="text"
                   defaultValue={state.fields?.q4}
                   placeholder={t("Form.labels.q4_placeholder")}
                   className="w-full p-4 rounded-2xl bg-primary border border-secondary/10 focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all text-secondary"
