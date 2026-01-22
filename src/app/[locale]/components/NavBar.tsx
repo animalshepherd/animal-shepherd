@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Link } from "../../../i18n/navigation";
 import { useTranslations } from "next-intl";
@@ -18,6 +18,17 @@ export const NavBar = ({ links }: NavBarProps) => {
 
   const t = useTranslations("Navigation");
   const b = useTranslations("Buttons");
+
+  useEffect(() => {
+    if (isOpen) {
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      document.documentElement.style.overflow = "";
+    }
+    return () => {
+      document.documentElement.style.overflow = "";
+    };
+  }, [isOpen]);
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full h-16 border-b border-secondary-dark bg-secondary">
@@ -100,8 +111,9 @@ export const NavBar = ({ links }: NavBarProps) => {
           </button>
         </div>
       </div>
+
       <div
-        className={`fixed inset-x-0 top-16 z-40 h-dvh bg-secondary transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed inset-x-0 top-16 bottom-0 z-40 bg-secondary transition-transform duration-300 ease-in-out lg:hidden ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
