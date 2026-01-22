@@ -29,7 +29,7 @@ export default function HomePage() {
           <Image
             src="/homepage-hero.webp"
             fill
-            priority
+            fetchPriority="high"
             alt="Founder interacting with sanctuary dogs"
             className="object-cover"
           />
@@ -152,7 +152,7 @@ export default function HomePage() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto mb-12">
-          <AnimalCard src="/dog-01.webp" alt="Dog sitting" />
+          <AnimalCard src="/dog-56.webp" alt="Dog sitting" />
           <AnimalCard src="/cat-04.webp" alt="Cat looking" />
           <AnimalCard src="/dog-22.webp" alt="Dog posing" />
           <AnimalCard src="/cat-06.webp" alt="Cat relaxing" />
