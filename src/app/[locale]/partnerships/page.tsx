@@ -13,8 +13,8 @@ export default function PartnershipsPage() {
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/animals.webp"
-            alt="Animal Shepherd Strategic Alliances"
+            src="/owner-dogs-04.webp"
+            alt="Owner playing with dogs"
             fill
             priority
             className="object-cover"

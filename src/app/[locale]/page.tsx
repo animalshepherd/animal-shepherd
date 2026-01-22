@@ -132,9 +132,9 @@ export default function HomePage() {
           </div>
           <div className="relative h-[300px] sm:h-[400px] md:h-[450px] w-full rounded-3xl overflow-hidden shadow-xl">
             <Image
-              src="/owner-dog-02.webp"
+              src="/owner-dogs-02.webp"
               fill
-              alt="Caregiver with animal"
+              alt="Owner playing with dogs"
               className="object-cover"
             />
           </div>

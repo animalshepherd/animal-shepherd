@@ -13,7 +13,7 @@ export default function DonatePage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/cat-09.webp"
-            alt="Animal Shepherd sanctuary residents"
+            alt="Cat relaxing at the sanctuary"
             fill
             priority
             className="object-cover"

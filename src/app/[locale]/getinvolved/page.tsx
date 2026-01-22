@@ -14,7 +14,7 @@ export default function GetInvolvedPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/dog-01.webp"
-            alt="The Animal Shepherd sanctuary grounds"
+            alt="Dog relaxing at the sanctuary"
             fill
             priority
             className="object-cover"

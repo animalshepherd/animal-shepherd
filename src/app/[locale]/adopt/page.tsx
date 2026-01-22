@@ -41,7 +41,7 @@ export default function AdoptPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/dog-08.webp"
-            alt="A happy rescued dog at the sanctuary"
+            alt="A rescued dog at the sanctuary"
             fill
             priority
             className="object-cover"
