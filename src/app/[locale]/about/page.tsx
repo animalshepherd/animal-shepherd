@@ -17,7 +17,7 @@ export default function AboutPage() {
             src="/owner-dog-14.webp"
             alt="The peaceful grounds of Animal Shepherd sanctuary"
             fill
-            priority
+            fetchPriority="high"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black/50" />
