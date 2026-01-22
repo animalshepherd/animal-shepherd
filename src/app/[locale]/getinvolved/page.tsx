@@ -45,10 +45,10 @@ export default function GetInvolvedPage() {
           <div className="flex flex-col h-full space-y-8">
             <div className="space-y-6">
               <div className="space-y-4">
-                <h3 className="text-center md:text-left text-3xl font-bold text-secondary-dark">
+                <h3 className="text-center lg:text-left text-3xl font-bold text-secondary-dark">
                   {t("Volunteer.title")}
                 </h3>
-                <div className="h-1 w-16 bg-secondary rounded-sm mx-auto md:mx-0" />
+                <div className="h-1 w-16 bg-secondary rounded-sm mx-auto lg:mx-0" />
               </div>
               <p className="text-secondary text-lg leading-relaxed">
                 {t("Volunteer.description")}
@@ -57,14 +57,14 @@ export default function GetInvolvedPage() {
 
             <div className="flex-1 flex flex-col pt-8 border-t border-secondary/10">
               <div className="flex-1 space-y-6">
-                <h4 className="text-center md:text-left text-2xl font-bold text-secondary-dark">
+                <h4 className="text-center lg:text-left text-2xl font-bold text-secondary-dark">
                   {t("Volunteer.programTitle")}
                 </h4>
-                <p className="text-center md:text-left text-secondary text-base leading-relaxed">
+                <p className="text-center lg:text-left text-secondary text-base leading-relaxed">
                   {t("Volunteer.programDescription")}
                 </p>
               </div>
-              <div className="pt-8 flex items-center justify-center md:justify-start">
+              <div className="pt-8 flex items-center justify-center lg:justify-start">
                 <Button
                   variant="secondary"
                   size="lg"
@@ -79,29 +79,29 @@ export default function GetInvolvedPage() {
           <div className="flex flex-col h-full space-y-8">
             <div className="space-y-6">
               <div className="space-y-4">
-                <h3 className="text-center md:text-left text-3xl font-bold text-secondary-dark">
+                <h3 className="text-center lg:text-left text-3xl font-bold text-secondary-dark">
                   {t("Adopt.title")}
                 </h3>
-                <div className="h-1 w-16 bg-secondary rounded-sm mx-auto md:mx-0" />
+                <div className="h-1 w-16 bg-secondary rounded-sm mx-auto lg:mx-0" />
               </div>
-              <p className="text-secondary text-lg leading-relaxed text-center md:text-left">
+              <p className="text-secondary text-lg leading-relaxed text-center lg:text-left">
                 {t("Adopt.description")}
               </p>
             </div>
 
             <div className="flex-1 flex flex-col pt-8 border-t border-secondary/10">
               <div className="flex-1 space-y-6">
-                <h4 className="text-2xl font-bold text-secondary-dark text-center md:text-left">
+                <h4 className="text-2xl font-bold text-secondary-dark text-center lg:text-left">
                   {t("Adopt.responsibleTitle")}
                 </h4>
-                <p className="text-secondary text-base leading-relaxed text-center md:text-left">
+                <p className="text-secondary text-base leading-relaxed text-center lg:text-left">
                   {t("Adopt.responsibleDescription")}
                 </p>
-                <p className="text-secondary text-base leading-relaxed italic text-center md:text-left">
+                <p className="text-secondary text-base leading-relaxed italic text-center lg:text-left">
                   &quot;{t("Adopt.quote")}&quot;
                 </p>
               </div>
-              <div className="pt-8 flex items-center justify-center md:justify-start">
+              <div className="pt-8 flex items-center justify-center lg:justify-start">
                 <Button variant="primary" size="lg" href="/adopt">
                   {t("Adopt.button")}
                 </Button>
