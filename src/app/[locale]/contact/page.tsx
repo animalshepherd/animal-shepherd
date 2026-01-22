@@ -65,7 +65,7 @@ export default function ContactPage() {
 
       <section className="py-16 sm:py-20 px-6 lg:px-20 max-w-7xl mx-auto w-full">
         <header className="text-center mb-16">
-          <h2 className="text-xs font-bold text-secondary tracking-[0.3em] uppercase mb-4">
+          <h2 className="text-xs font-bold text-secondary tracking-widest uppercase mb-4">
             {t("Team.tag")}
           </h2>
           <h3 className="text-3xl md:text-4xl font-bold text-secondary-dark mb-6">
@@ -112,7 +112,7 @@ export default function ContactPage() {
           <form ref={formRef} action={formAction} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <label className="text-xs font-bold text-secondary-dark uppercase tracking-[0.2em] ml-2">
+                <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-2">
                   {t("Form.labels.name")}
                 </label>
                 <input
@@ -125,7 +125,7 @@ export default function ContactPage() {
                 />
               </div>
               <div className="space-y-2">
-                <label className="text-xs font-bold text-secondary-dark uppercase tracking-[0.2em] ml-2">
+                <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-2">
                   {t("Form.labels.email")}
                 </label>
                 <input
@@ -139,7 +139,7 @@ export default function ContactPage() {
               </div>
             </div>
             <div className="space-y-2">
-              <label className="text-xs font-bold text-secondary-dark uppercase tracking-[0.2em] ml-2">
+              <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-2">
                 {t("Form.labels.subject")}
               </label>
               <input
@@ -152,7 +152,7 @@ export default function ContactPage() {
               />
             </div>
             <div className="space-y-2">
-              <label className="text-xs font-bold text-secondary-dark uppercase tracking-[0.2em] ml-2">
+              <label className="text-xs font-bold text-secondary-dark uppercase tracking-widest ml-2">
                 {t("Form.labels.message")}
               </label>
               <textarea
