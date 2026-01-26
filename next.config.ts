@@ -3,6 +3,9 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
+  images: {
+    qualities: [25, 50, 75],
+  },
 };
 
 const withNextIntl = createNextIntlPlugin();
