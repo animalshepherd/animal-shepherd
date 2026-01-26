@@ -3,6 +3,8 @@
 import { useActionState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { sendGAEvent } from "@next/third-parties/google";
+
 import { teamMembers } from "@/data/team";
 import { Button } from "../components/ui/Button";
 import { HeroActionBox } from "../components/ui/HeroActionBox";
@@ -27,6 +29,12 @@ export default function ContactPage() {
       formRef.current?.reset();
     }
   }, [state.success]);
+
+  const handleMessageTracking = (): void => {
+    sendGAEvent("event", "conversion", {
+      send_to: "AW-17889552378/TufzCM_xp-kbEPrPs9JC",
+    });
+  };
 
   return (
     <div className="flex flex-col w-full bg-primary antialiased">
@@ -58,6 +66,7 @@ export default function ContactPage() {
         buttonLabel="info@animalshepherd.org"
         buttonHref="mailto:info@animalshepherd.org"
         buttonVariant="primary"
+        onClick={handleMessageTracking}
       />
 
       <section className="py-16 sm:py-20 px-6 lg:px-20 max-w-7xl mx-auto w-full">
@@ -204,6 +213,7 @@ export default function ContactPage() {
                 size="lg"
                 type="submit"
                 disabled={isPending}
+                onClick={handleMessageTracking}
               >
                 {isPending ? "Sending..." : t("Form.labels.submit")}
               </Button>

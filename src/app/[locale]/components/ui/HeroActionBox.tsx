@@ -8,6 +8,7 @@ interface HeroActionBoxProps {
   buttonLabel?: string;
   buttonHref?: string;
   buttonVariant?: "primary" | "secondary";
+  onClick?: () => void;
 }
 
 export const HeroActionBox = ({
@@ -16,6 +17,7 @@ export const HeroActionBox = ({
   buttonLabel,
   buttonHref,
   buttonVariant = "primary",
+  onClick,
 }: HeroActionBoxProps) => {
   return (
     <section className="relative z-10 -mt-12 px-6 lg:px-20 max-w-6xl mx-auto w-full">
@@ -30,7 +32,12 @@ export const HeroActionBox = ({
 
           {buttonLabel && buttonHref && (
             <div className="flex flex-wrap justify-center">
-              <Button variant={buttonVariant} href={buttonHref} size="xl">
+              <Button
+                variant={buttonVariant}
+                href={buttonHref}
+                size="xl"
+                onClick={onClick}
+              >
                 {buttonLabel}
               </Button>
             </div>
