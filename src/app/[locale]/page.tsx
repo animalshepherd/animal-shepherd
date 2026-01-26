@@ -30,6 +30,7 @@ export default function HomePage() {
             src="/homepage-hero.webp"
             fill
             fetchPriority="high"
+            quality={50}
             alt="Founder interacting with sanctuary dogs"
             className="object-cover"
           />
