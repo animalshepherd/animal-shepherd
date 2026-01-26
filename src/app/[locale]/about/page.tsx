@@ -17,9 +17,8 @@ export default function AboutPage() {
             src="/owner-dogs-01.webp"
             alt="Sanctuary owner playing with dog"
             fill
-            preload
             fetchPriority="high"
-            quality={60}
+            quality={50}
             sizes="100vw"
             className="object-cover"
           />
