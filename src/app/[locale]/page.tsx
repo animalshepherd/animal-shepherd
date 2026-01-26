@@ -31,7 +31,6 @@ export default function HomePage() {
             fill
             fetchPriority="high"
             quality={50}
-            loading="eager"
             alt="Founder interacting with sanctuary dogs"
             className="object-cover"
           />
