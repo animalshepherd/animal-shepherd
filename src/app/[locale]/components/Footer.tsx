@@ -86,7 +86,7 @@ export const Footer = ({ links }: FooterProps) => {
                   />
                 </Link>
                 <Link
-                  href="https://wa.me/5532760504"
+                  href="https://wa.me/5585749036"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="opacity-70 hover:opacity-100 transition-opacity"
