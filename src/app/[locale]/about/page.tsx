@@ -194,7 +194,10 @@ export default function AboutPage() {
             </div>
 
             <blockquote className="border-l-4 border-secondary pl-6 italic text-secondary-dark font-medium py-2 text-left">
-              &quot;{t("Restoration.quote")}&quot;
+              <p>&quot;{t("Restoration.quote")}&quot;</p>
+              <cite className="not-italic text-xs uppercase tracking-widest text-secondary mt-2 block">
+                — Ryan Cosgaya
+              </cite>
             </blockquote>
           </div>
         </div>
