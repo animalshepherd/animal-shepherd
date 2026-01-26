@@ -17,7 +17,10 @@ export default function AboutPage() {
             src="/owner-dogs-01.webp"
             alt="Sanctuary owner playing with dog"
             fill
+            preload
             fetchPriority="high"
+            quality={60}
+            sizes="100vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black/50" />
@@ -164,6 +167,7 @@ export default function AboutPage() {
               src="/cat-05.webp"
               alt="Cat in nature"
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />
           </div>
