@@ -26,7 +26,7 @@ export const Footer = ({ links }: FooterProps) => {
             >
               <div className="relative h-20 w-20">
                 <Image
-                  src="/animal-shepherd-logo-transparent.png"
+                  src="/animal-shepherd-logo-transparent.svg"
                   fill
                   priority
                   alt="Animal Shepherd Logo"
