@@ -151,17 +151,25 @@ export const Footer = ({ links }: FooterProps) => {
               </span>
             </div>
 
-            <p className="text-xs font-bold uppercase tracking-widest text-primary/30 text-center">
-              &copy; {currentYear}{" "}
-              <Link
-                href="https://www.greenhousewebdesigns.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary transition-colors underline decoration-primary/10 underline-offset-8"
+            <div className="flex flex-col items-center gap-4 lg:items-end">
+              <p className="text-xs font-bold uppercase tracking-widest text-primary/30 text-center lg:text-right">
+                &copy; {currentYear}{" "}
+                <Link
+                  href="https://www.greenhousewebdesigns.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors underline decoration-primary/10 underline-offset-8"
+                >
+                  {tf("designBy")}
+                </Link>
+              </p>
+              <IntlLink
+                href="/privacy"
+                className="text-[10px] font-bold uppercase tracking-widest text-primary/20 hover:text-primary transition-colors"
               >
-                {tf("designBy")}
-              </Link>
-            </p>
+                {tf("privacyPolicy")}
+              </IntlLink>
+            </div>
           </div>
         </div>
       </div>

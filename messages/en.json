@@ -18,7 +18,8 @@
     "googleMember": "Animal Shepherd is a Verified Member of the Google for Nonprofits Program.",
     "paypal": "Donate via PayPal",
     "partner": "Proud Partners of Pedigree Adóptame",
-    "designBy": "Greenhouse Web Designs"
+    "designBy": "Greenhouse Web Designs",
+    "privacyPolicy": "Privacy Policy"
   },
   "Buttons": {
     "donate": "Donate",
@@ -410,5 +411,40 @@
     "title": "Oops! This page has gone for walkies.",
     "description": "The page you are looking for might have been moved, deleted, or never existed. Let's get you back to the animals.",
     "button": "Return Home"
+  },
+  "PrivacyPage": {
+    "title": "Privacy Policy",
+    "intro": "Animal Shepherd AC is committed to protecting your privacy. This policy explains how we collect, use, and protect personal information submitted through our website.",
+    "sections": {
+      "collection": {
+        "title": "Information We Collect",
+        "p1": "We collect personal information when you submit a contact form or an adoption application on our website.",
+        "p2": "This information may include your name, email address, contact details, location, household information, lifestyle details, and any additional information you choose to provide."
+      },
+      "usage": {
+        "title": "How We Use Your Information",
+        "p1": "The information you provide is used solely to respond to enquiries, communicate with you, and evaluate adoption applications. We do not use your data for marketing purposes."
+      },
+      "storage": {
+        "title": "Data Storage",
+        "p1": "Form submissions are sent directly to our official email address and are not stored in a database on the website. Information is retained only as long as necessary to manage communication and adoption processes."
+      },
+      "sharing": {
+        "title": "Sharing of Information",
+        "p1": "We do not sell, rent, or share your personal information with third parties, except where required by law."
+      },
+      "analytics": {
+        "title": "Analytics",
+        "p1": "We use Google Analytics to understand how our website is used. Analytics data is collected in aggregate form and does not directly identify individual users."
+      },
+      "rights": {
+        "title": "Your Rights",
+        "p1": "You may request access to, correction of, or deletion of your personal information by contacting us at info@animalshepherd.org."
+      },
+      "changes": {
+        "title": "Changes to This Policy",
+        "p1": "We may update this Privacy Policy from time to time. Any changes will be posted on this page."
+      }
+    }
   }
 }
