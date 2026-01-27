@@ -21,10 +21,10 @@ export const LanguageSwitcher = () => {
           key={lng}
           type="button"
           onClick={() => handleSwitch(lng)}
-          className={`px-1.5 py-1 text-sm font-semibold rounded-md transition-colors duration-200
+          className={`px-1.5 py-1 text-sm font-semibold rounded-md transition-colors duration-200 cursor-pointer
             ${
               locale === lng
-                ? "bg-primary text-secondary-dark"
+                ? "bg-primary-dark text-secondary-dark"
                 : "bg-transparent text-primary hover:bg-secondary-dark hover:text-primary"
             }`}
         >
