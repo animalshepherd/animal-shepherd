@@ -33,7 +33,7 @@ export const Footer = ({ links }: FooterProps) => {
                 />
               </div>
             </IntlLink>
-            <p className="mt-8 max-w-xs text-base leading-relaxed text-primary/80">
+            <p className="mt-8 max-w-xs text-base font leading-relaxed text-primary/80">
               {tf("description")}
             </p>
           </div>
@@ -48,7 +48,7 @@ export const Footer = ({ links }: FooterProps) => {
                   <li key={link.label}>
                     <IntlLink
                       href={link.href}
-                      className="block text-sm font-medium text-primary/70 transition-colors hover:text-primary py-1"
+                      className="block text-sm font-medium text-primary transition-colors hover:text-primary py-1"
                     >
                       {t(link.label)}
                     </IntlLink>
@@ -65,7 +65,7 @@ export const Footer = ({ links }: FooterProps) => {
             <div className="mt-8 space-y-8">
               <a
                 href="mailto:info@animalshepherd.org"
-                className="block text-sm font-medium text-primary/70 hover:text-primary transition-colors"
+                className="block text-sm font-medium text-primary hover:text-primary transition-colors"
               >
                 info@animalshepherd.org
               </a>
