@@ -136,7 +136,7 @@ export const Footer = ({ links }: FooterProps) => {
           </div>
         </div>
 
-        <div className="mt-20 border-t border-primary/10 pt-10">
+        <div className="mt-12 border-t border-primary/10 pt-10">
           <div className="flex flex-col items-center justify-between gap-10 lg:flex-row">
             <div className="flex flex-col items-center gap-4 text-center lg:flex-row lg:text-left">
               <Image
@@ -151,21 +151,21 @@ export const Footer = ({ links }: FooterProps) => {
               </span>
             </div>
 
-            <div className="flex flex-col items-center gap-4 lg:items-end">
-              <p className="text-xs font-bold uppercase tracking-widest text-primary/30 text-center lg:text-right">
-                &copy; {currentYear}{" "}
-                <Link
-                  href="https://www.greenhousewebdesigns.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors underline decoration-primary/10 underline-offset-8"
-                >
-                  {tf("designBy")}
-                </Link>
+            <div className="flex flex-col items-center gap-2 lg:items-end">
+              <p className="text-xs font-bold tracking-widest text-primary/30 text-center lg:text-right">
+                &copy; {currentYear} Animal Shepherd. {tf("allRightsReserved")}
               </p>
+              <Link
+                href="https://www.greenhousewebdesigns.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-bold tracking-widest text-primary/30 hover:text-primary transition-colors underline decoration-primary/10 underline-offset-2 text-center lg:text-right"
+              >
+                {tf("designBy")}
+              </Link>
               <IntlLink
                 href="/privacy"
-                className="text-[10px] font-bold uppercase tracking-widest text-primary/20 hover:text-primary transition-colors"
+                className="mt-2 text-xs font-semibold tracking-widest text-primary/20 hover:text-primary transition-colors"
               >
                 {tf("privacyPolicy")}
               </IntlLink>
