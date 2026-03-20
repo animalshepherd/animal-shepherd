@@ -34,21 +34,21 @@ export const NavBar = ({ links }: NavBarProps) => {
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full h-16 border-b border-secondary-dark bg-secondary">
-      <div className="mx-auto flex h-full max-w-7xl items-center px-4 xl:px-0">
-        <div className="flex flex-1 items-center justify-start">
+      <div className="mx-auto grid h-full max-w-7xl grid-cols-2 items-center px-6 lg:grid-cols-3">
+        <div className="flex justify-start">
           <Link
             href="/"
             className="flex items-center transition-transform hover:scale-105"
             onClick={closeMenu}
           >
-            <div className="relative h-12 w-12">
+            <div className="relative h-10 w-10 xl:h-12 xl:w-12">
               <Image src="/icon.svg" fill priority alt="Logo Nav" />
             </div>
           </Link>
         </div>
 
-        <nav className="hidden lg:flex flex-2 items-center justify-center">
-          <ul className="flex items-center gap-8">
+        <nav className="hidden items-center justify-center lg:flex">
+          <ul className="flex items-center gap-3 xl:gap-6">
             {links.map((link) => {
               const isActive = pathname === link.href;
 
@@ -56,7 +56,7 @@ export const NavBar = ({ links }: NavBarProps) => {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className={`relative py-1 text-sm font-semibold uppercase tracking-wider transition-colors hover:text-primary/70 whitespace-nowrap text-primary`}
+                    className={`relative py-1 text-[12px] font-semibold uppercase tracking-wider transition-colors hover:text-primary/70 whitespace-nowrap text-primary xl:text-[13px]`}
                   >
                     {t(link.label)}
                     <span
@@ -71,7 +71,7 @@ export const NavBar = ({ links }: NavBarProps) => {
           </ul>
         </nav>
 
-        <div className="flex flex-1 items-center justify-end gap-2 md:gap-4">
+        <div className="flex items-center justify-end gap-3 xl:gap-6">
           <div className="flex items-center">
             <LanguageSwitcher />
           </div>
@@ -81,7 +81,7 @@ export const NavBar = ({ links }: NavBarProps) => {
               variant="primary"
               href="/donate"
               size="sm"
-              className="uppercase tracking-widest whitespace-nowrap"
+              className="px-3 text-[11px] uppercase tracking-widest whitespace-nowrap xl:px-4 xl:text-xs"
             >
               {b("donate")}
             </Button>
