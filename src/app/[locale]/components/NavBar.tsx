@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { Link } from "../../../i18n/navigation";
+import { Link, usePathname } from "../../../i18n/navigation";
 import { useTranslations } from "next-intl";
 import { Button } from "./ui/Button";
 import { LanguageSwitcher } from "../components/LangToggle";
@@ -13,6 +13,8 @@ interface NavBarProps {
 
 export const NavBar = ({ links }: NavBarProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
@@ -46,17 +48,26 @@ export const NavBar = ({ links }: NavBarProps) => {
         </div>
 
         <nav className="hidden lg:flex flex-2 items-center justify-center">
-          <ul className="flex items-center gap-4">
-            {links.map((link) => (
-              <li key={link.label}>
-                <Link
-                  href={link.href}
-                  className="text-primary text-sm font-bold transition-opacity hover:opacity-70 whitespace-nowrap"
-                >
-                  {t(link.label)}
-                </Link>
-              </li>
-            ))}
+          <ul className="flex items-center gap-8">
+            {links.map((link) => {
+              const isActive = pathname === link.href;
+
+              return (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className={`relative py-1 text-sm font-semibold uppercase tracking-wider transition-colors hover:text-primary/70 whitespace-nowrap text-primary`}
+                  >
+                    {t(link.label)}
+                    <span
+                      className={`absolute inset-x-0 -bottom-2 h-0.5 bg-primary transition-transform duration-300 ease-out ${
+                        isActive ? "scale-x-100" : "scale-x-0"
+                      }`}
+                    />
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </nav>
 
@@ -119,20 +130,26 @@ export const NavBar = ({ links }: NavBarProps) => {
       >
         <nav className="flex flex-col p-8">
           <ul className="flex flex-col gap-6">
-            {links.map((link) => (
-              <li
-                key={link.label}
-                className="border-b border-secondary-dark/20 pb-4"
-              >
-                <Link
-                  href={link.href}
-                  onClick={closeMenu}
-                  className="block w-full text-xl font-bold tracking-tight text-primary"
+            {links.map((link) => {
+              const isActive = pathname === link.href;
+
+              return (
+                <li
+                  key={link.label}
+                  className="border-b border-secondary-dark/20 pb-4"
                 >
-                  {t(link.label)}
-                </Link>
-              </li>
-            ))}
+                  <Link
+                    href={link.href}
+                    onClick={closeMenu}
+                    className={`block w-full text-xl font-bold tracking-tight text-primary ${
+                      isActive ? "opacity-100" : "opacity-60"
+                    }`}
+                  >
+                    {t(link.label)}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
           <div className="mt-10">
             <Button
