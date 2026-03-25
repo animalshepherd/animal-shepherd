@@ -53,7 +53,7 @@ export async function sendAdoptionEmail(
     await resend.emails.send({
       from: "Adoption Desk <website@animalshepherd.org>",
       to: "info@animalshepherd.org",
-      replyTo: fields.q4,
+      replyTo: fields.q3,
       subject: "New Adoption Application",
       html: `<h2>Application from ${fields.q2}</h2><p>Animal: ${fields.q1}</p>`,
     });
