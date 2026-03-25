@@ -26,7 +26,7 @@ export async function sendContactEmail(
       from: "Sanctuary Contact <website@animalshepherd.org>",
       to: "info@animalshepherd.org",
       replyTo: fields.email,
-      subject: `Contact: ${fields.subject}`,
+      subject: `Contact Form: ${fields.subject}`,
       html: `<p><strong>From:</strong> ${fields.name}</p><p>${fields.message}</p>`,
     });
 
