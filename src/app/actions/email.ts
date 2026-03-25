@@ -55,7 +55,7 @@ export async function sendAdoptionEmail(
       to: "info@animalshepherd.org",
       replyTo: fields.q3,
       subject: "New Adoption Application",
-      html: `<h2>Application from ${fields.q2}</h2><p>Animal: ${fields.q1}</p>`,
+      html: `<h2>Application from ${fields.q2}</h2><p>Message: ${fields.q1}</p>`,
     });
 
     return { success: true };
