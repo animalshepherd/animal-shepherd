@@ -159,7 +159,7 @@ export default function HomePage() {
           <AnimalCard src="/cat-02.webp" alt="Cat relaxing" />
         </div>
 
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 px-4">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
           <Button variant="secondary" href="/adopt">
             {buttons("meetResidents")}
           </Button>
