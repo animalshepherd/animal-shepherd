@@ -109,7 +109,7 @@ export default function PartnershipsPage() {
             </div>
 
             <div className="flex justify-center items-center lg:justify-start space-y-4">
-              <Button size="md" href="https://www.instagram.com/p/CGKs9bGp8T-/">
+              <Button href="https://www.instagram.com/p/CGKs9bGp8T-/">
                 {t("Art.button")}
               </Button>
             </div>
