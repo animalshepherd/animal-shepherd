@@ -119,17 +119,18 @@ export const Footer = ({ links }: FooterProps) => {
             </div>
           </div>
 
-          <div className="rounded-2xl bg-white/5 p-8 border border-white/10 lg:col-span-3">
+          <div className="flex flex-col items-center justify-center rounded-2xl bg-white/5 p-8 border border-white/10 lg:col-span-3">
             <h3 className="text-sm font-bold uppercase tracking-widest text-primary text-center">
               {tf("support")}
             </h3>
             <p className="mt-4 text-sm italic leading-loose text-primary/80 text-center font-semibold">
               {tf("googleMember")}
             </p>
+
             <Button
               href="https://www.paypal.com/paypalme/animalshepherd"
               variant="primary"
-              className="mt-8 w-full text-xs py-4"
+              className="mt-8 w-full py-4"
             >
               {tf("paypal")}
             </Button>
