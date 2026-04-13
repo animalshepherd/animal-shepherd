@@ -11,8 +11,8 @@ const baseStyles =
 const sizes = {
   sm: "px-4 py-2 text-xs",
   md: "px-6 py-3 text-sm md:text-base",
-  lg: "w-52 py-3 text-base",
-  xl: "w-64 py-4 text-sm md:text-lg",
+  lg: "w-full sm:w-52 py-3 text-base",
+  xl: "w-64 py-4 text-base md:text-lg",
 } as const;
 
 const variants = {
